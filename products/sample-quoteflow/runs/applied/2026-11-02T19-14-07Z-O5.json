@@ -1,0 +1,8 @@
+{
+  "task_id": "O5",
+  "agent": "om-market-sizer",
+  "status": "done",
+  "output": ["research/market-size.md"],
+  "summary": "Bottom-up sizing: TAM about $0.62B, SAM about $0.19B, SOM about $0.2M ARR in year 3. Mostly assumptions; top-down check and CA/AU data are pending.",
+  "new_tasks": []
+}

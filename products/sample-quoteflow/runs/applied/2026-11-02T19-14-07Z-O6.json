@@ -1,0 +1,10 @@
+{
+  "task_id": "O6",
+  "agent": "om-trend-watcher",
+  "status": "done",
+  "output": ["research/intel/trends.md"],
+  "summary": "Trend scan from the brief plus two keyless web searches: AI proposal generators are crowded; the open angle is price options and deposit, not AI. All signals are Estimated (vendor blogs); volume data, Reddit/HN and regional trends are pending.",
+  "new_tasks": [
+    {"title": "Draft guide: presenting price options in a freelance proposal", "agent": "om-writer", "brief": "Use research/intel/trends.md top trend 1. Verified claims only (claims.md). No AI or 'in minutes' claims. Draft into outbox/ for approval.", "depends_on": [], "priority": 3}
+  ]
+}

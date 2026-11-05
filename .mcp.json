@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "whalyom-core": {
+      "command": "node",
+      "args": [
+        "tools/mcp/whalyom-core.mjs"
+      ],
+      "env": {
+        "WHALYOM_HOME": "."
+      }
+    }
+  }
+}

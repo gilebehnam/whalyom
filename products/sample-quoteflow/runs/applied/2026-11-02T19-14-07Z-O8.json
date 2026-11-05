@@ -1,0 +1,17 @@
+{
+  "task_id": "O8",
+  "agent": "om-positioning-strategist",
+  "status": "done",
+  "output": ["research/positioning.md"],
+  "summary": "Positioning built from brief.md and the verified claims (C1-C11): category 'proposal app for freelancers and small agencies', beachhead solo freelance designers and developers, and the main alternative is the template + PDF + e-sign + invoice patchwork. Five ideas compared. Recommended lead: the one-link flow from brief to signed proposal and deposit request (A), with price options (B) and 'minus the suite' (C) as support. Team (D) is held and regional (E) is parked.",
+  "notes": "Test product: nothing publishable. No outbox drafts, so no approvals. All competitor facts are unverified, so no 'only', 'cheaper' or 'in minutes' claims. Pending: live-site checks (no domain), competitor verification, and owner answers on C12-C15 and plan limits.",
+  "experiments": [
+    {"id": "E-O8-1", "hypothesis": "Lead message A (one-link flow) gets more trial signups than B (price options) on the first landing page", "metric": "trial signup rate per variant", "status": "planned"},
+    {"id": "E-O8-2", "hypothesis": "Buyers understand 'proposal app for freelancers' better than 'brief-to-proposal app'", "metric": "share of interviewees who correctly describe the product from the frame alone, plus search volume", "status": "planned"},
+    {"id": "E-O8-3", "hypothesis": "Solo freelancers rank 'client stalls between yes and deposit' as a top-3 pain", "metric": "count n/N in owner-run interviews", "status": "planned"}
+  ],
+  "new_tasks": [
+    {"title": "Message house from positioning idea A", "agent": "om-message-architect", "brief": "Build the message house from research/positioning.md section 7 (lead A, support B and C). Verified claims C1-C11 only. Drafts stay internal: test product.", "depends_on": ["O8"], "priority": 2},
+    {"title": "Verify competitor features, pricing and regional availability", "agent": "om-competitor-intel", "brief": "Check on Bonsai, HoneyBook, Proposify and PandaDoc's own pages, with dates: whether each one combines proposal + price options + e-sign + deposit in one client link, their pricing and per-seat costs, and HoneyBook's UK/AU availability. This decides whether positioning ideas A, D and E can make comparative claims.", "depends_on": [], "priority": 2}
+  ]
+}

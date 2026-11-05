@@ -1,0 +1,41 @@
+# Needs you know
+
+Updated 2026-11-05T15:34:26.746Z. Most important first.
+
+- **critical** — Decision 14: How many people in your warm network fit the ICP? A count, not names. — Due Fri Nov 6
+- **decision** — Decision 1: Domain: which domain, and has the "Quoteflow" / "Quote Flow" name collision check been done? Pick domain; name — Due Fri Nov 6
+- **decision** — Decision 2: Is the EU in scope? Yes / No. product.json lists EU, brief.md does not. — Due Fri Nov 6
+- **decision** — Decision 3: Payments: does Quoteflow only request a deposit, or process it? If it processes: which processor? Request only — Due Fri Nov 6
+- **decision** — Decision 5: Trial: is a credit card required? Yes / No. — Due Fri Nov 6
+- **decision** — Decision 6: Currencies and VAT/GST for UK, CA, AU: USD only / local currency (list) / VAT-GST handled (list). — Due Fri Nov 13
+- **decision** — Decision 7: Timed demo: will you record a timed run of brief to sent proposal? Yes (date) / No. Without it "in minutes" st — Due Fri Nov 13
+- **decision** — Decision 8: Legal: who writes or reviews ToS, privacy, cookie and refund pages, and e-signature wording (including validit — Due Fri Nov 13
+- **decision** — Decision 9: Accounts: which GA4 property, Search Console, email provider and payments account will be used? Name each, or  — Due Fri Nov 6
+- **decision** — Decision 10: Which personal accounts will you use for Reddit, Indie Hackers, LinkedIn, X and PH? List per platform. — Due Fri Nov 6
+- **decision** — Decision 11: English spelling: US / UK. — Due Fri Nov 6
+- **decision** — Decision 12: Is a free-plan signup a conversion, or only a trial start? Free signup counts / Trial start only. — Due Fri Nov 6
+- **decision** — Decision 13: Confirm the revised targets: activated trials this window (number set by G02), $95 MRR moved to the next windo — Due Fri Nov 6
+- **decision** — Privacy draft cannot be finalised until L1 to L5 are answered — Entity and address, EU scope, deposit flow, billing processor and e-signature records are placeholders. A lawyer must review before any publication.
+- **decision** — Owner to confirm the north star and the window steering metric — product.json says north_star 'revenue' and plan.md says MRR, which is a lagging revenue metric and fails the customer-centric test. reports/kpi-tree.md proposes MRR as the business KPI and activated accounts as the 30-day steering metric. Owner should confirm, along with plan questions 12-14 (free signup as conversion, trial card, targets).
+- **decision** — Tracking cannot be installed until owner decisions #1, #2, #5, #9 and #12 are answered — Domain, EU scope, card-for-trial, GA4/Search Console/payments accounts and whether a free signup counts as a conversion are open. owner-decisions.md has no stack line, so the guide assumes plain gtag plus GA4 Measurement Protocol. Confirm or name another stack.
+- **decision** — Four owner answers gate the pricing and signup pages — Pro contents (decision 4), card required at trial (decision 5), whether a free signup counts as a conversion (decision 12) and what happens when the trial ends. Without them the pricing page cannot ship and the CTA hierarchy cannot be set. Answer by Fri 2026-11-06.
+- **decision** — Demo needs a working app or prototype to record — product.json is paused with no domain and brief.md calls the product fictional. The owner must provide a clickable prototype or keep the script as a spec. Also confirm how the deposit step works (C15); the script shows a request only.
+- **decision** — G39: keep $95 MRR out of Day 30 — At 10% trial-to-paid, 5 paid needs about 50 trials started by Nov 18; the mid case gives about 32 (3.2 paid). Confirm decision 13 (goal moves to Dec 3 - Jan 1). Re-run the forecast once you answer decisions 0 (go-live date) and 14 (warm-network ICP count), both due Fri Nov 6.
+- **decision** — Approve retiring three duplicate experiments — E-O19-1, E-O19-2 and E-O11-1 duplicate other tests and would double count. Owner to confirm, then apply-results can set them retired.
+- **decision** — A3 and A4 blocked — Owner answers needed: Pro vs Free (decision 4), proposal definition, and L1-L5 for the privacy policy.
+- **approval** — Approve: Home page variant A (one-link flow) — publish · by om-landing-builder · review fix
+- **approval** — Approve: Home page variant B (price options) — publish · by om-landing-builder · review pass
+- **approval** — Approve: Pricing page with Team section — Blocked by review: compliance-guard: block. qa-tester: block. brand-guardian: block. Unfilled [OWNER TO CONFIRM] placeholders in the Pro card and FAQ; owner dec Approving overrides the review.
+- **approval** — Approve: Privacy policy draft — Blocked by review: compliance-guard: block. qa-tester: block. brand-guardian: block. Lawyer-review draft with bracketed unknowns (entity, address, contact, date Approving overrides the review.
+- **approval** — Approve: Demo video (after recording): upload and use on landing page / Product Hunt kit — publish · by om-video-producer · review fix
+- **warning** — Reddit rules not verified at source — reddit.com is blocked for the fetch tool. Someone with a browser must read the sidebar/rules of r/freelance, r/webdev and r/SideProject before any post.
+- **warning** — KPI tree path mismatch with downstream tasks — G02 brief says metrics/kpi-tree.md; this run wrote reports/kpi-tree.md as instructed. G08, G36, G37 and G39 read metrics/kpi-tree.md. Main session should pick one path and fix those task inputs. No duplicate was written.
+- **warning** — 50 trial_started target looks out of reach on the assumptions — At 3% visit-to-signup and 80% trial start, the 50-trial goal needs about 2,100 visitors in the window; the launch-scenario assumption gives about 36. G39 should test this with the owner's real go-live date.
+- **warning** — Agent may be stuck: om-cost-optimizer — Started 2026-11-04T00:00:00Z on COST-2026-11-04
+- **warning** — Agent may be stuck: om-learner — Started 2026-11-04T09:00:00Z on LEARN-2026-11-04
+- **warning** — Agent may be stuck: om-reporter — Started 2026-11-04T09:00:00.000Z on REP-2026-11-03
+- **info** — Feature pages partly unreachable — Bonsai /features and Proposify /features returned 404; both read from homepage. Bonsai and HoneyBook e-signature unconfirmed, so no 'lacks e-signature' wording. Hand-check before publish.
+- **info** — No KPI can be observed yet — Analytics, billing and the app event stream are not set up (accounts.analytics and accounts.payments are null). G36 should report 'no data' until T6/G07 and the app are live.
+- **info** — Consent legal wording needs the lawyer — Region list, default-granted for US/CA/AU, and basic vs advanced consent mode are policy choices for the owner and the reviewer in decision #8. Facts used: K-0f5c3b780a, K-1aab001f7d, K-71e291eb75, K-f512726fdf.
+- **info** — UK subscription rules may apply to the trial — K-d61ac4930b: draft UK rules, expected from 1 Jan 2027 but not yet confirmed, require pre-contract info, reminders after trials and online cancellation. Spec builds these in cheaply; lawyer to decide applicability.
+- **info** — No experiment has data — Product is paused with no domain, analytics or payments. No winner or loser is declared. Earliest real readings are the interview tests due 2026-11-13 (E-O8-2, E-O8-3, E-O20-1, E-O20-2) once the owner supplies interview notes.

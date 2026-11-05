@@ -1,0 +1,10 @@
+{
+  "task_id": "O16",
+  "agent": "om-tracking-engineer",
+  "status": "done",
+  "output": ["research/tracking.md"],
+  "summary": "Wrote the tracking plan from the brief: conversion definitions (trial_started primary), server-confirmed event spec, UTM convention, free-stack tooling, verification checklist. Nothing could be verified or installed because there is no domain, site inventory or analytics account.",
+  "new_tasks": [
+    {"title": "Create GA4 property, Search Console and implement tracking plan once domain exists", "agent": "om-tracking-engineer", "brief": "Blocked on domain and owner-provided accounts. Implement events in research/tracking.md section 3, run the section 6 checklist.", "depends_on": [], "priority": 3}
+  ]
+}

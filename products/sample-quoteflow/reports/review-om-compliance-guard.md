@@ -1,0 +1,9 @@
+# Compliance review (om-compliance-guard), 2026-11-04
+
+Checked against claims.md (C1-C11 verified; C12-C19 needs-proof), platform rules, CAN-SPAM/GDPR, ad policy. Global: brief.md says Quoteflow is fictional, so nothing may go live whatever the verdict.
+
+- A1: fix. Only C1-C11 used. Changed the section 1 heading "Everything your client needs to say yes" (outcome framing) to a plain list of what the link holds. Removed "You stop stitching a PDF, a signing tool..." (unverified implied replacement claim). Live site still needs a real signup URL and privacy/cookie notice.
+- A2: pass. Earlier fix stands. This pass removed the leftover outcome line "The question becomes 'which option', not 'yes or no'". Only C1-C11 used. Number of price options stays unstated.
+- A3: block. Unfilled [OWNER TO CONFIRM] placeholders in the Pro card and the FAQ. Open owner decision on Pro vs Free (a price change). The "start Pro trial, then choose Team" path is unconfirmed. Claims used are within C1-C11. Unblock: owner answers, placeholders removed, rerun checks.
+- A4: block. Draft privacy policy with many bracketed unknowns (entity, address, processors, retention, EU scope L1-L5) and a flagged "we do not sell personal data" statement. It is marked for lawyer review. No unverified claims used (C13 and C15 not asserted). Unblock: lawyer sign-off and owner answers.
+- A5: fix. The script uses only C2-C7 and C10, with no C12/C15/C19 claims. Changed two outcome lines in the voiceover and the clean read: price options "so the question becomes which one, not yes or no" and scope "so the client agrees ... before work starts". The upload itself is on hold: no video exists, the owner must record it, and the product is fictional. The approval covers a video file that does not exist yet. Rerun the check on the recorded video, its description and captions. Disclose the fictional client. The "in minutes" claim (C12) may only be added if the stopwatch evidence supports it.

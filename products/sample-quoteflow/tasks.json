@@ -1,0 +1,1387 @@
+[
+  {
+    "id": "T1",
+    "title": "Switch-interview script and recruiting plan",
+    "agent": "om-icp-builder",
+    "brief": "Turn research/jtbd.md section 11 into a switch-interview script and a recruiting plan for 10-15 prospects. Drafts go to outbox/ for approval. No outreach without approval.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-jtbd-analyst"
+  },
+  {
+    "id": "T2",
+    "title": "Draft landing page copy from the message house",
+    "agent": "om-landing-builder",
+    "brief": "Use research/message-house.md pillars and verified claims only. Draft to outbox/. Needs a domain before publishing.",
+    "depends_on": [
+      "O11"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-message-architect"
+  },
+  {
+    "id": "T3",
+    "title": "Competitor fact check for alternative and versus pages",
+    "agent": "om-competitor-intel",
+    "brief": "Verify Bonsai, HoneyBook, Proposify, PandaDoc pricing and features on their own pages with dates, so research/keywords.md clusters A and B can be drafted.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-keyword-researcher",
+    "finished_at": "2026-11-02T20:57:40.092Z",
+    "output": [
+      "research/competitors.md"
+    ],
+    "summary": "Checked Bonsai, HoneyBook, Proposify and PandaDoc pricing and features on their own pricing pages on 2026-11-03 and rewrote research/competitors.md with sourced tables. Key findings: HoneyBook serves UK, CA and AU, so the UK/AU gap hypothesis is false, and 'cheaper than' (C16) cannot be claimed.",
+    "attempts": 1
+  },
+  {
+    "id": "T4",
+    "title": "Live SERP feature check for top 20 queries",
+    "agent": "om-serp-analyst",
+    "brief": "Re-run research/serp.md with Firecrawl/Tavily connectors or screenshots to verify top-10 order, AI Overviews, PAA, snippets; add UK/CA/AU locales. Needs a session with Bash.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-serp-analyst"
+  },
+  {
+    "id": "T5",
+    "title": "Verify competitor pricing on each vendor's own pricing page",
+    "agent": "om-pricing-intel",
+    "brief": "Open the Bonsai, HoneyBook, Proposify and PandaDoc pricing pages. Record date, plan names, monthly and annual prices, proposal and seat limits, trial length and card requirement, and UK/CA/AU currency. Resolve the older vs newer HoneyBook and Bonsai price sets. Update research/pricing-intel.md and mark rows verified or not found.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-pricing-intel",
+    "finished_at": "2026-11-02T20:57:40.092Z",
+    "output": [
+      "products/sample-quoteflow/research/pricing-intel.md"
+    ],
+    "summary": "Checked vendor pricing pages on 2026-11-03. HoneyBook (USD live page: Starter $29, Essentials $49, Premium $109 per month billed yearly; 30-day trial, no card, no free plan) and PandaDoc (Free, Starter $19 and Business $49 per seat billed annually; Starter 14-day trial, no card) are verified. Bonsai and Proposify were not reachable from this environment, so those rows are marked not found, and their search-snippet prices are kept as unverified. The HoneyBook older/newer price sets are resolved to the live set; the Bonsai sets remain unresolved. UK/CA/AU currency was not shown on any verified page.",
+    "attempts": 1
+  },
+  {
+    "id": "T6",
+    "title": "Create GA4 property, Search Console and implement tracking plan once domain exists",
+    "agent": "om-tracking-engineer",
+    "brief": "Blocked on domain and owner-provided accounts. Implement events in research/tracking.md section 3, run the section 6 checklist.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-tracking-engineer"
+  },
+  {
+    "id": "T7",
+    "title": "Resolve legal and payments gaps before launch",
+    "agent": "om-cmo",
+    "brief": "Escalate to the owner: confirm EU scope, payment flow and processor, ToS, privacy and refund policy, e-signature wording (research/risks.md T3, T4).",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-risk-officer",
+    "finished_at": "2026-11-02T20:55:26.02Z",
+    "output": [
+      "reports/legal-payments-escalation.md"
+    ],
+    "summary": "Owner escalation for five legal and payments decisions (EU scope, deposit flow and processor, subscription billing and refund policy, legal-page route, e-signature records and wording), mapped to G01 lines 2, 3, 6, 8, 9 with Nov 6 and Nov 13 deadlines, interim wording rules and default fallbacks. plan.md not changed; follow-up work is already covered by G06, G13 and G35.",
+    "attempts": 1
+  },
+  {
+    "id": "G01",
+    "title": "Owner decision pack: domain, stack, EU, payments, plan limits, legal",
+    "agent": "om-chief-of-staff",
+    "brief": "Inputs: plan.md §12, research/risks.md, claims.md (C12-C19), product.json. Compile the 13 owner decisions as one page of yes/no or pick-one questions, each with the plan task it unblocks. Include the go/no-go date Fri 2026-11-13. Output: reports/owner-decisions.md. Do not decide for the owner.",
+    "depends_on": [],
+    "priority": 1,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 5,
+    "review": "Usefulness 5, accuracy 5, ICP fit 5. All 16 lines of plan.md section 12 (brief said 13) are listed as answer-ready yes/no or pick-one questions, each with an answer-by date, the plan task it unblocks and its claim or risk. It carries the Fri 2026-11-13 go/no-go date, flags the hard blockers (0, 4, 10b) and the consequences of open lines, and decides nothing for the owner. The 13 vs 16 discrepancy is disclosed. Minor: the table runs a little over one page. I did not re-check the task ids against plan.md.",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "reports/owner-decisions.md"
+    ],
+    "summary": "Owner decision pack written: all 16 lines from plan.md section 12 (the brief said 13) as answer-ready questions, each with its answer-by date and the plan tasks it unblocks. It carries the Fri 2026-11-13 go/no-go date and marks questions 0, 4 and 10b as hard blockers. No decisions were made for the owner.",
+    "attempts": 1
+  },
+  {
+    "id": "G02",
+    "title": "30-day KPI tree and targets",
+    "agent": "om-kpi-definer",
+    "brief": "Inputs: plan.md §7 and §9, research/tracking.md. Define the KPI tree from MRR down to trial_started, activation and visitors, with targets and closed-window rules for rates. Output: metrics/kpi-tree.md.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "finished_at": "2026-11-02T22:27:46.361Z",
+    "output": [
+      "reports/kpi-tree.md"
+    ],
+    "summary": "Wrote the 30-day KPI tree: Productivity game, MRR as the business north star, activated accounts (proposal_sent within 7 days of sign_up, closed 7-day cohorts) as the window steering metric, five inputs (visitors, visit-to-signup, activation, trial start, trial-to-paid), closed-window rules and assumption-labelled targets for two launch scenarios. No live data exists, so every target is an assumption except the owner's 50 trial_started goal.",
+    "attempts": 1
+  },
+  {
+    "id": "G03",
+    "title": "Verify competitor pricing and features on their own pages",
+    "agent": "om-competitor-intel",
+    "brief": "Inputs: research/competitors.md, research/pricing-intel.md. Open the pricing and feature pages for Bonsai, HoneyBook, Proposify and PandaDoc. Record plans, prices (monthly and annual), proposal limits, seats, e-sign, deposit/payment features and regions, each with URL and date. Resolve the conflicting old and new prices. Output: research/competitors-verified.md.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "finished_at": "2026-11-02T22:27:12.582Z",
+    "output": [
+      "research/competitors.md"
+    ],
+    "summary": "Added a dated (2026-11-03) feature matrix for Bonsai, HoneyBook, Proposify and PandaDoc covering templates, e-signature, deposits/payments and client portal. Bonsai and Proposify rest on homepages only because their feature pages returned 404.",
+    "attempts": 1
+  },
+  {
+    "id": "G04",
+    "title": "Verify live community self-promotion rules",
+    "agent": "om-community-scout",
+    "brief": "Inputs: research/communities.md. Fetch the rules or sidebar pages for r/freelance, r/webdev, r/web_design, r/graphic_design, r/SideProject, r/startups, r/agency, r/smallbusiness, Indie Hackers, Show HN guidelines. Record each rule on links, self-promotion and weekly threads, with URL and date. Output: research/community-rules.md.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "finished_at": "2026-11-02T22:26:48.668Z",
+    "output": [
+      "research/communities.md"
+    ],
+    "summary": "Added a dated top-5 self-promotion rules table to communities.md. Reddit blocks the fetch tool and IH/PH guideline URLs failed, so verdicts come from web search (Product Hunt from official pages; Reddit and IH secondary and unverified at source; r/SideProject no source found).",
+    "attempts": 1
+  },
+  {
+    "id": "G05",
+    "title": "Landing page (A/B) and pricing page drafts",
+    "agent": "om-landing-builder",
+    "brief": "Inputs: research/positioning.md (Idea A lead, Idea B variant), research/message-house.md, profile.md, claims.md C1-C11. Draft home variant A (one-link flow) and B (price options), a pricing page (Free, Pro, Team, 14-day trial), and a short Team section. No 'in minutes', no comparisons, no social proof. Output: outbox/landing/home-a.md, outbox/landing/home-b.md, outbox/landing/pricing.md; list them as publish approvals.",
+    "depends_on": [],
+    "priority": 1,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 4,
+    "review": "All three files exist and match the brief. Claims stay within C1-C11. There is no 'in minutes', no comparisons and no social proof. Prices, the 3-proposal Free limit, the 14-day trial and the 5 Team seats match claims.md. A and B differ only in headline angle and body, which keeps E-O8-1 clean. Both fit the ICP of freelancers and 2-10 person agencies. Open owner questions (Pro contents, currency, post-trial behaviour) are marked clearly. Deductions: the Pro card has no content, so pricing.md cannot be published as drafted. The Team line 'same one-link proposal for everyone' is a mild inference. The pages say 'Pro 14-day trial' but not what Pro adds. Every file says it is a fictional test product and must not go live.",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "outbox/landing/home-a.md",
+      "outbox/landing/home-b.md",
+      "outbox/landing/pricing.md"
+    ],
+    "summary": "Drafted home variant A (one-link flow), home variant B (price options) and a pricing page with Free, Pro, Team, the 14-day trial and a Team section. Only C1-C11 are used; no 'in minutes', comparisons or social proof. Pro contents, currency and post-trial behaviour are open owner questions, marked in the files.",
+    "attempts": 1
+  },
+  {
+    "id": "G06",
+    "title": "Legal page drafts for lawyer review",
+    "agent": "om-legal-pages",
+    "brief": "Inputs: research/risks.md T3 and T4, reports/owner-decisions.md. Draft ToS, privacy policy, cookie notice and refund policy outlines marked 'for lawyer review'. Say 'deposit request' only; no 'legally binding' e-signature wording. Output: outbox/legal/.",
+    "depends_on": [
+      "G01"
+    ],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "finished_at": "2026-11-02T22:26:48.668Z",
+    "output": [
+      "outbox/site/privacy.md"
+    ],
+    "summary": "Drafted a short privacy policy marked DRAFT needing lawyer review, using only verified claims and the L1 to L5 escalation. Unknowns (entity, address, hosting, processors, retention, EU scope, signing records) are left as bracketed placeholders.",
+    "attempts": 1
+  },
+  {
+    "id": "G07",
+    "title": "Tracking implementation guide",
+    "agent": "om-tracking-engineer",
+    "brief": "Inputs: research/tracking.md, reports/owner-decisions.md (stack). Write the install steps for GA4, Search Console, server-side trial_started and subscription_started, first-touch UTM storage, consent mode for UK/EU, and the verification checklist. Output: research/tracking-implementation.md. Install nothing without the owner.",
+    "depends_on": [
+      "G01"
+    ],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 4,
+    "review": "Covers every item in the brief (GA4, Search Console, server-side trial_started/subscription_started, first-touch UTM, UK/EU consent mode, 20-row verification checklist) in the requested file. Accurate and honest: nothing installed, checklist marked not run, blocking owner decisions surfaced as an alert, stack assumption stated, fact ids cited, no invented numbers, idempotency and no-PII rules included. Fit to a SaaS trial/subscription ICP is good. Not a 5 because the stack is assumed (no owner-decisions stack line) and consent policy needs legal review before it can be installed.",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "research/tracking-implementation.md"
+    ],
+    "summary": "Wrote the install guide for GA4, Search Console, server-side trial_started and subscription_started (Measurement Protocol), first-touch UTM cookie, UK/EU consent mode and a 20-row verification checklist. Nothing installed. The stack is not in owner-decisions.md, so it uses the free-mode default (gtag + MP, no GTM) and lists the blocking decisions.",
+    "attempts": 1
+  },
+  {
+    "id": "G08",
+    "title": "UTM registry for all planned channels",
+    "agent": "om-utm-manager",
+    "brief": "Inputs: research/tracking.md §4, plan.md §4, metrics/kpi-tree.md. Build one tagged URL pattern per channel and asset (PH, each directory, each community, LinkedIn, X, emails, warm network) with campaign 2026-11-launch. Output: outbox/utm-log.md.",
+    "depends_on": [
+      "G02"
+    ],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G09",
+    "title": "CRO review of landing, signup and trial path",
+    "agent": "om-cro",
+    "brief": "Inputs: outbox/landing/*, research/tracking.md, research/icp.md. Review the drafts for clarity, CTA, objections (icp.md table) and signup friction. Spec the signup and trial start steps. Output: research/cro-signup-review.md with ranked changes. Live-page audit is pending the domain.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 5,
+    "review": "Usefulness 5: 12 ranked changes with impact/confidence/effort and blockers, a full signup and trial-start spec (steps 0-4) with owner-decision branches, edge cases and per-step metrics. Accuracy 5: stays inside the brief, admits there is no live audit and no verified benchmarks, uses no banned claims (C12-C19), cites only K-d61ac4930b for the UK rule and flags it as unconfirmed, and avoids duplicating existing experiments. Fit to ICP 5: objection table maps icp.md row by row, and the trial-first versus free-first question is tied to Solo Sam's volume. Gaps are minor: the live-page audit is pending the domain, as the brief allows. Approve.",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "research/cro-signup-review.md"
+    ],
+    "summary": "Reviewed home A/B and pricing drafts against icp.md objections and tracking.md, and wrote 12 ranked changes plus a signup and trial-start spec (steps 0-4 with owner-decision branches). Top blockers: empty Pro card, unanswered card/post-trial question, no product proof; live-page audit is pending the domain.",
+    "attempts": 1
+  },
+  {
+    "id": "G10",
+    "title": "First-proposal activation spec",
+    "agent": "om-onboarding-optimizer",
+    "brief": "Inputs: research/tracking.md §3 (activation funnel), research/jtbd.md, profile.md. Spec the first run from sign_up to brief_created, proposal_created and proposal_sent, the empty states, and the plan_limit_reached prompt at proposal 3 (C7). Output: research/activation-plan.md.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G11",
+    "title": "14-day trial email sequence",
+    "agent": "om-activation-emails",
+    "brief": "Inputs: research/activation-plan.md, reports/owner-decisions.md (email provider, card requirement), claims.md. Draft emails for Day 0, 1, 3, 7, 12 and 14, one action each, with unsubscribe and sender address placeholders. Output: outbox/email/trial-sequence.md; list it as a send approval.",
+    "depends_on": [
+      "G10",
+      "G01"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G12",
+    "title": "Waitlist capture and launch announcement emails",
+    "agent": "om-email-nurture",
+    "brief": "Inputs: outbox/landing/*, claims.md. Draft the waitlist form copy with consent text, the confirmation email and the launch-day email to opt-in contacts only. Output: outbox/email/waitlist.md; list it as a send approval.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G13",
+    "title": "Email setup and compliance checklist",
+    "agent": "om-deliverability",
+    "brief": "Inputs: research/risks.md T4, reports/owner-decisions.md. SPF, DKIM, DMARC, sending domain, CAN-SPAM, CASL and AU Spam Act requirements, consent records, unsubscribe handling. Output: research/email-setup.md.",
+    "depends_on": [
+      "G01"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G14",
+    "title": "Timed demo script: brief to signed proposal and deposit request",
+    "agent": "om-video-producer",
+    "brief": "Inputs: claims.md C2-C6, research/positioning.md Idea A. Write a 60-90 second demo script and shot list, with a stopwatch overlay so the owner can time it (evidence for C12). Output: content/demo-script.md. Recording is done by the owner.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 4,
+    "review": "Usefulness 4: 9-shot, 75 s script with voiceover, captions, one-take stopwatch rule and a C12 evidence log; it can only be recorded once a prototype exists, and the agent flags that. Accuracy 5: narration uses only verified C2-C7 and C10, avoids C12, C15 and C17-C19, and keeps 'deposit request' wording. ICP fit 4: freelancer/agency voice, with a fictional client and a disclosure note. Minor issues: the 'Three tools' hook implies a status quo that is not in claims.md, and the shot timings run tight (about 150 words at 2.3 wps is about 65 s of speech). Neither blocks use.",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "content/demo-script.md"
+    ],
+    "summary": "Wrote a 75-second (60-90 s range) demo script with a 9-shot list, voiceover, captions plan and a stopwatch overlay rule (clock starts at brief paste, stops at deposit request, one uncut take) to produce evidence for C12. Uses only C2-C7 and C10; no speed claim in the narration.",
+    "attempts": 1
+  },
+  {
+    "id": "G15",
+    "title": "Directory shortlist and listing drafts",
+    "agent": "om-directory-submitter",
+    "brief": "Inputs: outbox/landing/*, reports/owner-decisions.md (domain), research/communities.md. Pick 10-15 relevant free directories (SaaSHub, AlternativeTo, G2 and Capterra free listings, others). Draft one accurate listing per directory, C1-C11 only. Output: outbox/directories/; one publish approval per listing. Submit nothing.",
+    "depends_on": [
+      "G05",
+      "G01"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G16",
+    "title": "Launch platform drafts",
+    "agent": "om-launch-platforms",
+    "brief": "Inputs: outbox/landing/*, claims.md. Draft submissions for BetaList, Indie Hackers products, Uneed and similar free launch platforms, timed for the week of Tue 2026-11-17. Output: outbox/launch-platforms/; one publish approval each.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G17",
+    "title": "Product Hunt launch kit",
+    "agent": "om-producthunt",
+    "brief": "Inputs: outbox/landing/*, content/demo-script.md, claims.md. Tagline, description, maker comment, gallery brief, FAQ replies, a launch-day checklist for Tue 2026-11-17 with a Tue 2026-12-01 fallback. No vote asking, no fake accounts. Output: outbox/producthunt/; publish approval.",
+    "depends_on": [
+      "G05",
+      "G14"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G18",
+    "title": "Reddit 90/10 plan and value-only answer drafts",
+    "agent": "om-reddit",
+    "brief": "Inputs: research/community-rules.md, research/voc.md, research/serp.md (deposit and pricing consensus). A 30-day participation plan for the owner's account, plus 10 value-only answer drafts on proposals, deposits, price options and scope. No product mention until the rules allow it and account history exists. Output: outbox/reddit/; publish approvals.",
+    "depends_on": [
+      "G04"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G19",
+    "title": "Indie Hackers build-in-public series and Show HN draft",
+    "agent": "om-hn-indiehackers",
+    "brief": "Inputs: research/community-rules.md, content/demo-script.md, profile.md. Four honest IH posts (pre-launch, 0 customers, no invented metrics) and one Show HN draft held until a live demo exists. Output: outbox/ih-hn/; publish approvals.",
+    "depends_on": [
+      "G04",
+      "G14"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G20",
+    "title": "Owner LinkedIn posts for agency owners and marketers",
+    "agent": "om-linkedin",
+    "brief": "Inputs: outbox/landing/*, research/icp.md (Agency Alex, Marketing Maya), claims.md. Eight posts for the owner's own profile on proposal lessons, price options and the Team plan (C9). No automation, no bulk connection requests. Output: outbox/linkedin/; publish approvals.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G21",
+    "title": "X build-in-public set",
+    "agent": "om-x",
+    "brief": "Inputs: outbox/landing/*, claims.md. Ten posts and two threads for the owner's account, launch week included. Output: outbox/x/; publish approvals.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G22",
+    "title": "Find freelance Slack and Discord groups",
+    "agent": "om-discord-slack",
+    "brief": "Inputs: research/communities.md §7, research/icp.md. List public freelance designer, developer and agency Slack and Discord groups with join method, promo channel and rules (URL and date). No DMs. Output: research/slack-discord.md.",
+    "depends_on": [],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G23",
+    "title": "30-day content calendar and briefs",
+    "agent": "om-content-strategist",
+    "brief": "Inputs: research/keywords.md, research/serp.md (Q13, Q15, Q17, Q5-8). Calendar and briefs for: deposit guide, good-better-best guide, proposal expiry guide, proposal vs quote explainer, 3 niche templates. Each brief names the verified claims it may use. Output: content/calendar.md.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G24",
+    "title": "Guide: how to ask for a deposit in a proposal",
+    "agent": "om-writer",
+    "brief": "Inputs: content/calendar.md brief, research/serp.md Q13, claims.md C5. A tool-neutral guide with a script and a short CTA to the deposit request (C5). No payment-processing claim (C15). Output: content/guides/deposit-in-proposal.md.",
+    "depends_on": [
+      "G23"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G25",
+    "title": "Guide: good-better-best price options for freelance proposals",
+    "agent": "om-writer",
+    "brief": "Inputs: content/calendar.md brief, research/serp.md Q15, claims.md C3. A guide adapted to freelancers, with examples; no unverified close-rate figures. Output: content/guides/price-options.md.",
+    "depends_on": [
+      "G23"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G26",
+    "title": "Niche proposal templates with price options",
+    "agent": "om-template-maker",
+    "brief": "Inputs: content/calendar.md, research/keywords.md Cluster E. Web design, web development and social media proposal templates with scope, timeline and 3 price options. Output: content/templates/.",
+    "depends_on": [
+      "G23"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G27",
+    "title": "Fact-check guides and templates",
+    "agent": "om-editor",
+    "brief": "Inputs: content/guides/*, content/templates/*, claims.md. Check every product statement against C1-C11 and every outside fact for a source. Output: reports/editor-content-wave1.md with pass/fix per file.",
+    "depends_on": [
+      "G24",
+      "G25",
+      "G26"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G28",
+    "title": "GEO drafts: llms.txt, entity facts, answer-ready FAQ",
+    "agent": "om-geo-optimizer",
+    "brief": "Inputs: outbox/landing/*, claims.md, research/keywords.md. Draft llms.txt, a short facts page (what it is, who it is for, prices) and 10 FAQ answers, all C1-C11. Output: content/geo/.",
+    "depends_on": [
+      "G05"
+    ],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G29",
+    "title": "Launch technical SEO checklist",
+    "agent": "om-tech-seo",
+    "brief": "Inputs: reports/owner-decisions.md (domain, CMS), research/keywords.md mapping. Sitemap, robots, canonical, schema (SoftwareApplication, FAQ), metadata, indexing and Search Console steps for launch day. Output: research/tech-seo-launch.md. Live crawl pending the domain.",
+    "depends_on": [
+      "G01"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G30",
+    "title": "Alternative pages built on verified competitor facts",
+    "agent": "om-comparison-pages",
+    "brief": "Inputs: research/competitors-verified.md, research/keywords.md Cluster A, claims.md. Draft Proposify and PandaDoc alternative pages first (better new-site fit per serp.md), then Bonsai ('for freelancers') and HoneyBook. Only dated, cited competitor facts. No 'cheaper' (C16). Output: content/alternatives/.",
+    "depends_on": [
+      "G03"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G31",
+    "title": "Free price-options generator spec",
+    "agent": "om-free-tool-builder",
+    "brief": "Inputs: content/calendar.md, research/serp.md Q18, claims.md C3. Spec a small free tool that builds 3 price options from a project scope and ends with a Quoteflow CTA. No AI-generation or speed claims. Output: research/free-tool-spec.md.",
+    "depends_on": [
+      "G23"
+    ],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G32",
+    "title": "Warm-network note templates",
+    "agent": "om-sales-agent",
+    "brief": "Inputs: outbox/landing/*, reports/owner-decisions.md, research/icp.md. 3 short personal note templates for the owner to send by hand to people they know (freelancers, agency owners), asking for a trial or feedback. No lists, no bulk sends. Output: outbox/outreach/warm-network.md; send approval.",
+    "depends_on": [
+      "G05",
+      "G01"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G33",
+    "title": "Interview kit and recruitment post",
+    "agent": "om-persona-interviewer",
+    "brief": "Inputs: research/icp.md (research templates), research/positioning.md E-O8-2 and E-O8-3. Script for 10-15 interviews, screener, recruitment post draft and synthesis template. Output: research/interview-kit.md; the recruit post goes to outbox/interviews/ as a publish approval.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G34",
+    "title": "Consented beta-quote collection process",
+    "agent": "om-social-proof",
+    "brief": "Inputs: research/interview-kit.md, research/risks.md T2. A process and consent wording for collecting real quotes from beta users who completed a proposal. Nothing fabricated. Output: research/proof-collection.md.",
+    "depends_on": [
+      "G33"
+    ],
+    "priority": 4,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G35",
+    "title": "Compliance pass on wave-1 outbox drafts",
+    "agent": "om-compliance-guard",
+    "brief": "Inputs: outbox/landing/*, outbox/email/*, outbox/directories/*, outbox/producthunt/*, outbox/reddit/*, outbox/linkedin/*, claims.md, research/risks.md. Reject any needs-proof claim (C12-C19), fake proof, platform-rule breach or missing email compliance item. Output: reports/compliance-wave1.md.",
+    "depends_on": [
+      "G05",
+      "G11",
+      "G15",
+      "G17",
+      "G18",
+      "G20"
+    ],
+    "priority": 1,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G36",
+    "title": "Weekly scorecard and trigger checks",
+    "agent": "om-analyst",
+    "brief": "Inputs: metrics/kpi-tree.md, research/tracking-implementation.md, plan.md §8. Monday scorecards on Nov 9, 16, 23, 30: trials vs 50, trials by source, closed-cohort activation, trial-to-paid, MRR vs $95; flag any kill criterion. Output: reports/weekly-scorecard.md. Report 'no data' honestly until tracking is live.",
+    "depends_on": [
+      "G02",
+      "G07"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G37",
+    "title": "Experiment designs for E-O18 and E-O8",
+    "agent": "om-experiment-manager",
+    "brief": "Inputs: runs/O18.json experiments, research/positioning.md §8, research/pricing-intel.md §6, metrics/kpi-tree.md. For each: sample size or minimum signal, duration, decision rule and kill criterion. Output: research/experiment-designs.md.",
+    "depends_on": [
+      "G02"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G38",
+    "title": "Day-30 retrospective and LEARNINGS input",
+    "agent": "om-retro",
+    "brief": "Inputs: reports/weekly-scorecard.md, experiments.json, plan.md. On 2026-12-02 compare results to the goals, list what worked and what did not with experiment ids, and propose LEARNINGS entries and next-plan changes. Output: reports/retro-30d.md.",
+    "depends_on": [
+      "G36"
+    ],
+    "priority": 5,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "T39",
+    "title": "Revise plan.md after red team: goal, gates and trigger timing",
+    "agent": "om-cmo",
+    "brief": "Inputs: reports/red-team.md, plan.md, reports/owner-decisions.md once it exists. Change the Day-30 primary goal to activated trials (closed cohorts) and report MRR without a target. Add go/no-go lines for a working app tested by 5 beta users and an interview gate (G33). Re-time the '<10 trials' trigger to 7 days after launch and the activation trigger to the beta cohort. Make Pro-vs-Free (decision 4) a blocker for G05 pricing and G11. Output: plan.md (revised).",
+    "depends_on": [],
+    "priority": 1,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-red-team",
+    "score": 5,
+    "review": "All brief items are in plan.md rev 3: Day-30 goal is activated trials in closed cohorts with MRR reported and no target; go/no-go lines GN-1 to GN-6 cover the working app, 5 beta users end to end and the G33 interview gate; the '<10 trials' trigger is at 7 days after launch and the activation trigger is on the beta cohort; decision 4 blocks G05 pricing and G11 (GN-5). It is honest that owner-decisions.md does not exist and that the 13b edits are not yet in tasks.json. It also flags the 57 open tasks against the 40 cap with a merge list. Specific dates and pass thresholds make it usable for a solo-founder ICP. Follow-up: the main session must apply 13b and 13d, and the owner decisions are still open.",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "plan.md"
+    ],
+    "summary": "plan.md is now revision 3. It confirms activated trials (closed cohorts) as the Day-30 goal with MRR reported and no target, adds go/no-go lines GN-1 to GN-6 in section 8a (working app, 5 beta users end to end, the G33 interview gate, Pro vs Free as a blocker for the G05 pricing page and G11), re-times the '<10 trials' trigger to 7 days after launch, and changes the activation trigger to a count on the beta cohort. It also flags that the section 13b dependency edits are not yet in tasks.json and that 57 tasks are open against the 40 cap, with a list of duplicates to merge in section 13d. reports/owner-decisions.md does not exist yet, so every owner decision is still open.",
+    "attempts": 1
+  },
+  {
+    "id": "T40",
+    "title": "Add proposal-volume and willingness-to-pay questions to the interview kit",
+    "agent": "om-persona-interviewer",
+    "brief": "Inputs: reports/red-team.md Risk 3 and Risk 2, research/icp.md. Add: proposals sent in each of the last 2 months; current tools for proposal, signature and deposit; what they would pay for beyond more proposals; past paid proposal tools. Add a tally sheet and the kill criteria from the red team (median <=3 per month; fewer than 3 of 10 describe the gap as current pain). Output: research/interview-kit.md (section added).",
+    "depends_on": [],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-red-team"
+  },
+  {
+    "id": "T41",
+    "title": "Add three red-team questions to the owner decision pack",
+    "agent": "om-chief-of-staff",
+    "brief": "Inputs: reports/red-team.md 'Recommended next step', plan.md §12. Add to reports/owner-decisions.md as top items: (a) does a working app exist that can send a real proposal with signature and deposit request today, (b) owner hours per week for build, support and replies, (c) what Pro adds over Free (marked as blocker for pricing page and trial emails). Do not decide for the owner.",
+    "depends_on": [],
+    "priority": 1,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-red-team",
+    "score": 4,
+    "review": "All three red-team questions are present and starred as blockers: line 0 (working app that can send a real proposal with signature and deposit request), line 10b (owner hours per week) and line 4 (Pro vs Free, explicitly blocking G05 pricing page and G11 trial emails). Nothing is decided for the owner, and the deadlines and consequences are clear. Two gaps. The result summary says the file did not exist and was created by T41, but the file header says it was written by G01, so the provenance is inconsistent. Lines 4 and 10b are not at the top of the table: they sit at rows 5 and 12 and are only starred, so the brief's 'as top items' is met only partly. Suggest moving the three starred lines to the top.",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "reports/owner-decisions.md"
+    ],
+    "summary": "Created reports/owner-decisions.md (it did not exist) with three top blocker questions from the red team: does a working app exist, owner hours per week, and what Pro adds over Free (blocks pricing page G05 and trial emails G11). No answers proposed; owner fields left blank.",
+    "attempts": 1
+  },
+  {
+    "id": "G39",
+    "title": "Trial-window forecast from the owner's real go-live date",
+    "agent": "om-forecaster",
+    "brief": "Inputs: plan.md §7 and §8, reports/red-team.md Risk 1, reports/owner-decisions.md (go-live date for signup plus billing tested end to end, warm-network ICP count), metrics/kpi-tree.md. Model paid subscriptions by Wed 2026-12-02 as trial-eligible days (trials starting on or before Nov 18) x expected trials per day x trial-to-paid at 10% and 20%, plus a scenario for PH on Nov 17 vs Dec 8. Label every input as owner-supplied or assumption. Recommend whether the $95 MRR goal can return to Day 30 (only if 5 or more paid at 10%). Output: metrics/trial-window-forecast.md. No numbers go into copy.",
+    "depends_on": [
+      "G01",
+      "G02"
+    ],
+    "priority": 1,
+    "status": "done",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo",
+    "score": 5,
+    "review": "Arithmetic checks out in all scenarios (A, B, C trial counts and paid at 10%/20%). Every input is labelled as assumption or plan rule, since decisions 0 and 14 are still open. The forecast gives a clear call (keep the $95 MRR goal in the Dec 3 - Jan 1 window), says what would reverse it, and lists re-run triggers. It keeps numbers out of copy and respects the claims rules. Minor gap: the Team/Pro mix is not modelled, which the file states openly.",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "metrics/trial-window-forecast.md"
+    ],
+    "summary": "Owner has not answered decisions 0 and 14, so every input is an assumption. On the plan's dates, paid by Dec 2 is about 1-3 at 10% (PH Nov 17) and under 2 if PH moves to Dec 8; only 1 of 9 cases reaches 5 paid at 10%. Recommendation: keep the $95 MRR goal in the next window, not Day 30.",
+    "attempts": 1
+  },
+  {
+    "id": "G40",
+    "title": "Closed beta protocol and end-to-end proposal test (beta gate)",
+    "agent": "om-onboarding-optimizer",
+    "brief": "Inputs: research/activation-plan.md, outbox/outreach/warm-network.md, research/risks.md T3, T8 and the go/no-go checklist, reports/owner-decisions.md, claims.md. Write the closed-beta protocol for 5-10 people from the owner's warm network: owner pre-test (one real proposal with signature and deposit request to a test client, screen-recorded), invite waves, the beta user checklist (sign up, create, send one real proposal to a real client), a feedback form, a bug-triage rule, and the gate check for Fri 2026-11-13 (at least 5 non-owner users each sent one real proposal). Also the first-closed-cohort activation check. Wording says 'deposit request' only, never 'legally binding'. Output: research/closed-beta-plan.md. Any message to beta users is drafted in outbox/beta/ and listed as a send approval; send nothing.",
+    "depends_on": [
+      "G10",
+      "G32"
+    ],
+    "priority": 1,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "G41",
+    "title": "Interview synthesis and launch-gate verdict",
+    "agent": "om-persona-interviewer",
+    "brief": "Inputs: research/interview-kit.md, the owner's interview notes (first 10 by Thu 2026-11-12), research/icp.md, research/positioning.md, reports/red-team.md Risks 2 and 3. Tally: how many of the first 10 describe the brief-to-proposal-to-deposit gap as a current pain (gate: 3 or more); proposals sent last month and the month before (median, and whether it is 3 or fewer, which triggers the Free-cap decision); what they would pay for beyond volume; current tools. Give a pass/fail verdict per gate for the Fri 2026-11-13 review. Quote no one without consent; no names in outputs. Output: research/interview-synthesis.md. If interview notes are missing, mark the gate 'pending' and do not guess.",
+    "depends_on": [
+      "G33"
+    ],
+    "priority": 1,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-cmo"
+  },
+  {
+    "id": "T42",
+    "title": "Collect verbatim competitor review quotes",
+    "agent": "om-review-miner",
+    "brief": "Get verbatim quotes with URL, role and date for Bonsai, HoneyBook, Proposify, PandaDoc from a fetchable source or owner export (G2, Capterra, Reddit, app stores). Append to research/reviews.md.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-review-miner"
+  },
+  {
+    "id": "T43",
+    "title": "Draft guide: presenting price options in a freelance proposal",
+    "agent": "om-writer",
+    "brief": "Use research/intel/trends.md top trend 1. Verified claims only (claims.md). No AI or 'in minutes' claims. Draft into outbox/ for approval.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-trend-watcher"
+  },
+  {
+    "id": "T44",
+    "title": "Verify competitor pricing and features on their own pages",
+    "agent": "om-competitor-intel",
+    "brief": "Fetch current public pricing and feature pages for Bonsai, HoneyBook, Proposify and PandaDoc, with URL and date. Replace UNVERIFIED rows in research/competitors.md. This is needed before claims.md C16 (price comparison) or any alternative/versus page can be drafted.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-product-analyst"
+  },
+  {
+    "id": "T45",
+    "title": "Seed keyword list from profile and competitor gaps",
+    "agent": "om-keyword-researcher",
+    "brief": "Use profile.md (sections 4-5) and the gap list in research/competitors.md: niche proposal templates, price options in proposals, asking for a deposit, alternative/versus terms. Markets US, UK, CA, AU. Write the results to research/keywords.md.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-product-analyst"
+  },
+  {
+    "id": "T46",
+    "title": "Message house from positioning idea A",
+    "agent": "om-message-architect",
+    "brief": "Build the message house from research/positioning.md section 7 (lead A, support B and C). Verified claims C1-C11 only. Drafts stay internal: test product.",
+    "depends_on": [
+      "O8"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-positioning-strategist"
+  },
+  {
+    "id": "T47",
+    "title": "Verify competitor features, pricing and regional availability",
+    "agent": "om-competitor-intel",
+    "brief": "Check on Bonsai, HoneyBook, Proposify and PandaDoc's own pages, with dates: whether each one combines proposal + price options + e-sign + deposit in one client link, their pricing and per-seat costs, and HoneyBook's UK/AU availability. This decides whether positioning ideas A, D and E can make comparative claims.",
+    "depends_on": [],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-02T19:14:07Z",
+    "created_by": "om-positioning-strategist"
+  },
+  {
+    "id": "O10",
+    "title": "JTBD analysis from brief, profile, claims, voc and icp: core job, functional/social/emotio",
+    "agent": "om-jtbd-analyst",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/jtbd.md"
+    ],
+    "summary": "JTBD analysis from brief, profile, claims, voc and icp: core job, functional/social/emotional jobs, ranked pains, four forces, triggers, alternatives, messaging angles. All buyer insight is hypothesis (no customers, no verbatim VoC, no domain).",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O11",
+    "title": "Built the message house from positioning, ICP and JTBD: one promise, three pillars (one li",
+    "agent": "om-message-architect",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/message-house.md"
+    ],
+    "summary": "Built the message house from positioning, ICP and JTBD: one promise, three pillars (one link, scope and price in writing, focused tool with free plan), per-persona proof from verified claims C1-C11 only, PR-FAQ spine and channel angles. Dependency status is approved-fallback (no Narrative canon); unverified claims C12-C19 held back.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O12",
+    "title": "Built six keyword clusters prioritised by bottom-of-funnel intent (alternatives, versus, b",
+    "agent": "om-keyword-researcher",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/keywords.md"
+    ],
+    "summary": "Built six keyword clusters prioritised by bottom-of-funnel intent (alternatives, versus, best-for, problem+solution, templates/free tool) with quick wins and claim guardrails. No volume/KD data exists (no tools, no domain), so difficulty is qualitative and every number is listed as pending.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O13",
+    "title": "Ranked 11 communities (r/freelance, r/webdev, r/SideProject, Indie Hackers, directories, e",
+    "agent": "om-community-scout",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/communities.md"
+    ],
+    "summary": "Ranked 11 communities (r/freelance, r/webdev, r/SideProject, Indie Hackers, directories, etc.) by ICP fit and tool openness, with recalled self-promotion rules and an engagement protocol. Rules are from memory and flagged VERIFY; no live site, member counts or private group names yet.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O14",
+    "title": "SERP brief for 20 target queries. 4 queries partially observed via WebSearch (no rank orde",
+    "agent": "om-serp-analyst",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/serp.md"
+    ],
+    "summary": "SERP brief for 20 target queries. 4 queries partially observed via WebSearch (no rank order or features), 16 estimated; all difficulty scores Estimated. Best new-site openings: deposit and good-better-best guides, niche template pages, UK/AU angle.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O15",
+    "title": "Built a competitor pricing comparison (Bonsai, HoneyBook, Proposify, PandaDoc) against the",
+    "agent": "om-pricing-intel",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "products/sample-quoteflow/research/pricing-intel.md"
+    ],
+    "summary": "Built a competitor pricing comparison (Bonsai, HoneyBook, Proposify, PandaDoc) against the verified Quoteflow price points. Competitor prices come from search summaries and are UNVERIFIED; they must be checked on each vendor's pricing page before any comparison copy. No domain, so live-site checks are pending. No price change or outbound action proposed.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O16",
+    "title": "Wrote the tracking plan from the brief: conversion definitions (trial_started primary), se",
+    "agent": "om-tracking-engineer",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/tracking.md"
+    ],
+    "summary": "Wrote the tracking plan from the brief: conversion definitions (trial_started primary), server-confirmed event spec, UTM convention, free-stack tooling, verification checklist. Nothing could be verified or installed because there is no domain, site inventory or analytics account.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O17",
+    "title": "Pre-mortem risk register: 10 Tigers (4 launch-blocking), 4 Paper Tigers, 4 Elephants, with",
+    "agent": "om-risk-officer",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/risks.md"
+    ],
+    "summary": "Pre-mortem risk register: 10 Tigers (4 launch-blocking), 4 Paper Tigers, 4 Elephants, with guardrails per channel and a go/no-go checklist. Site checks and owner decisions (EU scope, payments, legal pages) are listed as pending.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O18",
+    "title": "30-day plan (Nov 3 - Dec 2, 2026) with one revenue goal, $95 MRR (5 Pro at $19), plus the ",
+    "agent": "om-cmo",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "plan.md"
+    ],
+    "summary": "30-day plan (Nov 3 - Dec 2, 2026) with one revenue goal, $95 MRR (5 Pro at $19), plus the 50-trial leading goal. Channels in order: CRO, launch (PH Tue Nov 17), directories, communities, warm network, lifecycle email; SEO/GEO start now; paid and cold outbound skipped ($0 cap). 38 dependency-ordered tasks; most site-based work is pending the domain and owner decisions (G01). Test product: nothing is published.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O19",
+    "title": "Red-teamed plan.md. Top risks: (1) $95 MRR by Day 30 is not reachable because only trials ",
+    "agent": "om-red-team",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "reports/red-team.md"
+    ],
+    "summary": "Red-teamed plan.md. Top risks: (1) $95 MRR by Day 30 is not reachable because only trials from about Nov 12-18 can convert, and the Day-14 and activation kill triggers fire at the wrong time; (2) PH launch with no evidence of a working, beta-tested app or validated demand, and too much owner work in one week; (3) the free 3-proposal cap may cover the beachhead (2-6 briefs a month) while Pro adds nothing defined, so trials end in a downgrade. Proposed changes: an activation-based Day-30 goal, a beta gate before PH, and Pro-vs-Free as a hard blocker. Note: O19 was not present in tasks.json (empty).",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O2",
+    "title": "O2",
+    "agent": "om-competitor-intel",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/competitors.md"
+    ],
+    "summary": "",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O20",
+    "title": "Revised plan.md after the red team (O19). The Day-30 goal is now activated trials in close",
+    "agent": "om-cmo",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "plan.md"
+    ],
+    "summary": "Revised plan.md after the red team (O19). The Day-30 goal is now activated trials in closed cohorts, and $95 MRR moves to the next window. Added a closed-beta gate and an interview gate before any launch. PH defaults to Tue Dec 8; Nov 17 only if both gates pass by Fri Nov 13. Kill triggers are re-timed, and Pro-vs-Free (G01 #4) blocks pricing and trial-email approval. 3 new tasks (G39-G41). Edits to existing tasks G01, G02, G05, G11, G15-G17, G28, G32, G33 and G36, plus deferral of G22 and G31, are listed in plan.md §13b; the main session must apply them, because apply-results cannot edit existing tasks. No domain yet, so all live-site work is pending. Test product: nothing is published.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O3",
+    "title": "O3",
+    "agent": "om-voc-miner",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/voc.md"
+    ],
+    "summary": "",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O4",
+    "title": "Partial review mining: G2 and Trustpilot fetches were blocked and search returned only sum",
+    "agent": "om-review-miner",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/reviews.md"
+    ],
+    "summary": "Partial review mining: G2 and Trustpilot fetches were blocked and search returned only summaries, so reviews.md has indicative ratings and paraphrased, second-hand loved/pain themes for Bonsai, HoneyBook, Proposify and PandaDoc, with no verbatim quotes. Verbatim collection and PandaDoc/Proposify pain points are pending.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O5",
+    "title": "Bottom-up sizing: TAM about $0.62B, SAM about $0.19B, SOM about $0.2M ARR in year 3. Mostl",
+    "agent": "om-market-sizer",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/market-size.md"
+    ],
+    "summary": "Bottom-up sizing: TAM about $0.62B, SAM about $0.19B, SOM about $0.2M ARR in year 3. Mostly assumptions; top-down check and CA/AU data are pending.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O6",
+    "title": "Trend scan from the brief plus two keyless web searches: AI proposal generators are crowde",
+    "agent": "om-trend-watcher",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/intel/trends.md"
+    ],
+    "summary": "Trend scan from the brief plus two keyless web searches: AI proposal generators are crowded; the open angle is price options and deposit, not AI. All signals are Estimated (vendor blogs); volume data, Reddit/HN and regional trends are pending.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O7",
+    "title": "Built profile.md (category, problem, ICP, 6-part value proposition, positioning, pricing, ",
+    "agent": "om-product-analyst",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "profile.md",
+      "claims.md"
+    ],
+    "summary": "Built profile.md (category, problem, ICP, 6-part value proposition, positioning, pricing, proposed voice, proof) and claims.md (C1-C11 verified from the owner brief; C12-C19 needs-proof, including 'in minutes', EU, currency/VAT, payment processing, competitor price comparisons, integrations, social proof, no-card trial). No domain, so research/site-inventory.md is missing and all site-based checks are pending; the product is a fictional test and nothing may be published.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O8",
+    "title": "Positioning built from brief.md and the verified claims (C1-C11): category 'proposal app f",
+    "agent": "om-positioning-strategist",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/positioning.md"
+    ],
+    "summary": "Positioning built from brief.md and the verified claims (C1-C11): category 'proposal app for freelancers and small agencies', beachhead solo freelance designers and developers, and the main alternative is the template + PDF + e-sign + invoice patchwork. Five ideas compared. Recommended lead: the one-link flow from brief to signed proposal and deposit request (A), with price options (B) and 'minus the suite' (C) as support. Team (D) is held and regional (E) is parked.",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "O9",
+    "title": "ICP and 3 hypothetical personas (Solo Sam beachhead, Agency Alex, Marketing Maya) built fr",
+    "agent": "om-icp-builder",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "output": [
+      "research/icp.md"
+    ],
+    "summary": "ICP and 3 hypothetical personas (Solo Sam beachhead, Agency Alex, Marketing Maya) built from brief.md, profile.md, claims.md and voc.md. All buyer statements are hypotheses: no customers, no verbatim VoC, no domain (live-site checks pending).",
+    "created_at": "2026-11-02T19:50:00Z",
+    "finished_at": "2026-11-02T19:50:00Z",
+    "created_by": "workflow"
+  },
+  {
+    "id": "BG-review",
+    "title": "Reviewed A1-A3 for voice and terminology. A1 and A2 pass with no edits; A3 is blocked by u",
+    "agent": "om-brand-guardian",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-02T19:55:00Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "reports/review-om-brand-guardian.md"
+    ],
+    "summary": "Reviewed A1-A3 for voice and terminology. A1 and A2 pass with no edits; A3 is blocked by unresolved OWNER TO CONFIRM placeholders on the Pro card and Free FAQ.",
+    "attempts": 1
+  },
+  {
+    "id": "EXP-2026-11-02",
+    "title": "Reviewed all 15 experiments on 2026-11-02: all are planned with zero data (no domain, anal",
+    "agent": "om-experiment-manager",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-02T19:55:00Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "runs/EXP-2026-11-02.json"
+    ],
+    "summary": "Reviewed all 15 experiments on 2026-11-02: all are planned with zero data (no domain, analytics, tracking or interviews yet), so no winner or loser is declared and every verdict is pending. Each entry lacks a minimum sample or stop date; proposed ones are listed. Three pairs overlap and should be merged.",
+    "attempts": 1
+  },
+  {
+    "id": "T20261103",
+    "title": "Merge overlapping experiments and set sample sizes and stop dates",
+    "agent": "om-experiment-manager",
+    "brief": "After the Fri 2026-11-13 gate review: retire E-O19-2 and E-O19-1 as superseded by E-O20-1 and E-O20-2, merge E-O11-1 into E-O8-1, and record the verdict (pass, fail or pending) for E-O20-1, E-O20-2, E-O8-2 and E-O8-3 from reports and research/interview-synthesis.md. Set min_sample and stop_date for the landing and pricing experiments once tracking gives a baseline. Declare winners only at the sample.",
+    "depends_on": [
+      "G41",
+      "G40"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T19:55:00Z",
+    "created_by": "om-experiment-manager"
+  },
+  {
+    "id": "QA-outbox",
+    "title": "Reviewed A1-A3: A1 and A2 pass (no URLs or UTMs exist yet, no domain), A3 blocked by unfil",
+    "agent": "om-qa-tester",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-02T19:55:00Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-02T19:55:00Z",
+    "output": [
+      "reports/review-om-qa-tester.md"
+    ],
+    "summary": "Reviewed A1-A3: A1 and A2 pass (no URLs or UTMs exist yet, no domain), A3 blocked by unfilled owner placeholders on Pro contents and proposal definition.",
+    "attempts": 1
+  },
+  {
+    "id": "COST-2026-11-03",
+    "title": "Wrote reports/cost.md. Spend is $0 (free mode), and no per-run cost or token data exists, ",
+    "agent": "om-cost-optimizer",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-02T20:43:57.538Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-02T20:43:57.538Z",
+    "output": [
+      "reports/cost.md"
+    ],
+    "summary": "Wrote reports/cost.md. Spend is $0 (free mode), and no per-run cost or token data exists, so effort is counted in tasks, not money. Found about 9 open tasks that duplicate done or other open work (T2, T45, T46, T43, T6, T1, and the competitor checks T3/T5/T44/T47), and listed cheaper-model candidates (haiku for UTM, review quotes and Slack/Discord lists). The main session must apply the cancel and merge list, since agents cannot edit tasks.json.",
+    "attempts": 1
+  },
+  {
+    "id": "T20261104",
+    "title": "Approve cancel and merge list from cost report",
+    "agent": "om-cmo",
+    "brief": "Inputs: reports/cost.md section 3 and section 4. Decide whether to cancel T2, T45, T46, and merge T43 into G25, T6 into G07, T1 into G33/T40, and the competitor checks T3, T5, T44, T47 into G03. The main session applies the changes to tasks.json. Do not decide model changes without the owner's review of the roster.",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T20:43:57.538Z",
+    "created_by": "om-cost-optimizer"
+  },
+  {
+    "id": "LEARN-2026-11-03",
+    "title": "LEARNINGS.md updated: no proven rules, because all 15 experiments are planned with verdict",
+    "agent": "om-learner",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-02T20:43:57.538Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-02T20:43:57.538Z",
+    "output": [
+      "LEARNINGS.md"
+    ],
+    "summary": "LEARNINGS.md updated: no proven rules, because all 15 experiments are planned with verdict pending. It now has 12 working practices taken from the evaluator reviews (G01, G05, T39, T41) and the experiment design review, each citing its sources. Nothing went to playbooks/: no second product has experiments to confirm a rule.",
+    "attempts": 1
+  },
+  {
+    "id": "T20261105",
+    "title": "Update LEARNINGS after the 2026-11-13 gate verdicts",
+    "agent": "om-learner",
+    "brief": "Once T20261103 records verdicts for E-O20-1, E-O20-2, E-O8-2 and E-O8-3, turn each pass or fail into a rule in LEARNINGS.md section 1, citing the experiment ids. Promote a rule to playbooks/ only if another product's experiments agree.",
+    "depends_on": [
+      "T20261103"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T20:43:57.538Z",
+    "created_by": "om-learner"
+  },
+  {
+    "id": "T20261106",
+    "title": "Mine G2/Capterra/Reddit reviews for the four competitors",
+    "agent": "om-review-miner",
+    "brief": "No review quotes exist yet. Collect dated, URL-sourced complaints about Bonsai, HoneyBook, Proposify, PandaDoc for the alternative pages.",
+    "depends_on": [
+      "T3"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T20:57:40.092Z",
+    "created_by": "om-competitor-intel"
+  },
+  {
+    "id": "K1",
+    "title": "Reconcile competitor prices into one verified table",
+    "agent": "om-knowledge-keeper",
+    "brief": "Merge research/competitors.md and research/pricing-intel.md price data into one table",
+    "depends_on": [],
+    "priority": 2,
+    "status": "done",
+    "created_at": "2026-11-02T21:15:22.6337696Z",
+    "created_by": "owner",
+    "finished_at": "2026-11-02T21:23:57.158Z",
+    "output": [
+      "products/sample-quoteflow/research/pricing-intel.md",
+      "products/sample-quoteflow/research/competitors.md",
+      "products/sample-quoteflow/runs/K1.json"
+    ],
+    "summary": "All four vendor pricing pages loaded on 2026-11-03 (the T5 blocks did not reproduce). pricing-intel.md now holds the single competitor price table: 13 rows, 10 verified and 3 in conflict (Proposify Build annual $39 vs $41, Proposify Grow annual shows $65 for both monthly and annual, PandaDoc Business trial 14 days vs not stated), plus a Proposify plan-name and send-limit mismatch listed in section 2b. competitors.md has no price figures and points to that table; claims.md is untouched and C16 stays needs-proof.",
+    "attempts": 1
+  },
+  {
+    "id": "T20261107",
+    "title": "Hand re-check the four conflict items in pricing-intel.md section 2b (Proposify Build and Grow annual, Proposify plan names and send limits, PandaDoc Business trial)",
+    "agent": "om-pricing-intel",
+    "brief": "Open proposify.com/pricing and pandadoc.com/pricing in a browser (not a text summary). On Proposify, toggle monthly and annual and record every cell for Build, Grow and Scale, including the Grow annual cell, and map the send-limit table (Basic, Team, Business, Enterprise) to the pricing plans. On PandaDoc, check the Business trial on the page, the FAQ and the sign-up flow. Also toggle monthly billing on HoneyBook (honeybook.com/pricing) and PandaDoc Starter and Business to fill the monthly-price cells that are blank today. Record each value with the page date and a screenshot path. Update the status column in research/pricing-intel.md section 2a and section 2b. Do not publish or change any price. Stay within the workspace budget (free mode, no spend).",
+    "depends_on": [],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T21:23:57.158Z",
+    "created_by": "om-knowledge-keeper"
+  },
+  {
+    "id": "T20261108",
+    "title": "Draft value-first replies for the top community",
+    "agent": "om-reddit",
+    "brief": "Top community is r/freelance, where self-promotion is reported as not allowed (unverified at source). Draft value-only replies with no Quoteflow mention and no links, to outbox/. Nothing is posted. A human must read the live r/freelance rules first.",
+    "depends_on": [
+      "G04"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T22:26:48.668Z",
+    "created_by": "om-community-scout"
+  },
+  {
+    "id": "T20261109",
+    "title": "Draft Quoteflow vs PandaDoc page",
+    "agent": "om-comparison-pages",
+    "brief": "Use research/competitors.md feature matrix (G03) and pricing-intel.md verified rows only. No 'cheaper' or speed claims, no deposit-processing claim. Draft to outbox/, test product, publish nothing.",
+    "depends_on": [
+      "G03"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-02T22:27:12.582Z",
+    "created_by": "om-competitor-intel"
+  },
+  {
+    "id": "T20261110",
+    "title": "Revise home A/B and pricing after owner answers (CRO changes 1, 2, 4, 5, 6, 10)",
+    "agent": "om-landing-builder",
+    "brief": "Inputs: research/cro-signup-review.md section 2, reports/owner-decisions.md answers for decisions 4, 5, 12 and post-trial behaviour. Apply the ranked changes; keep A and B differing only in the element under test (E-O8-1). Draft to outbox/landing/; publish approval needed. Do not start before decision 4 is answered.",
+    "depends_on": [
+      "G09"
+    ],
+    "priority": 2,
+    "status": "todo",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "om-cro"
+  },
+  {
+    "id": "T20261111",
+    "title": "Update C12 in claims.md from the recorded stopwatch time",
+    "agent": "om-product-analyst",
+    "brief": "After the owner records the take and fills the evidence log in content/demo-script.md section 7, decide the wording C12 may take (a stated time for this flow, not 'in minutes' in general) and update claims.md.",
+    "depends_on": [
+      "G14"
+    ],
+    "priority": 3,
+    "status": "todo",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "om-video-producer"
+  },
+  {
+    "id": "BG-review-2",
+    "title": "Reviewed A1-A5: A1, A2 pass; A3, A4 block (placeholders, lawyer review); A5 fixed small te",
+    "agent": "om-brand-guardian",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "reports/review-om-brand-guardian.md",
+      "content/demo-script.md"
+    ],
+    "summary": "Reviewed A1-A5: A1, A2 pass; A3, A4 block (placeholders, lawyer review); A5 fixed small terminology issues in the demo script.",
+    "attempts": 1
+  },
+  {
+    "id": "EXP-2026-11-03",
+    "title": "Reviewed 18 experiments: none has data (stage paused, no domain, no analytics, no reports)",
+    "agent": "om-experiment-manager",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "products/sample-quoteflow/runs/EXP-2026-11-03.json"
+    ],
+    "summary": "Reviewed 18 experiments: none has data (stage paused, no domain, no analytics, no reports), so no winner or loser is declared. Retired 3 duplicates, flagged 1 unrunnable and 3 new ones missing min_sample/stop_date, and set a one-landing-test-at-a-time order.",
+    "attempts": 1
+  },
+  {
+    "id": "G35-review",
+    "title": "Reviewed A1-A5: A1 fix, A2 pass, A3 block, A4 block, A5 fix (upload held until video exist",
+    "agent": "om-compliance-guard",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "reports/review-om-compliance-guard.md",
+      "outbox/landing/home-a.md",
+      "outbox/landing/home-b.md",
+      "content/demo-script.md"
+    ],
+    "summary": "Reviewed A1-A5: A1 fix, A2 pass, A3 block, A4 block, A5 fix (upload held until video exists). Small outcome-framing edits applied.",
+    "attempts": 1
+  },
+  {
+    "id": "QA-outbox-2",
+    "title": "Reviewed A1-A5: A2 pass, A1 and A5 had small issues edited, A3 and A4 blocked on owner ans",
+    "agent": "om-qa-tester",
+    "brief": "",
+    "depends_on": [],
+    "status": "done",
+    "created_at": "2026-11-03T21:55:52Z",
+    "created_by": "workflow",
+    "finished_at": "2026-11-03T21:55:52Z",
+    "output": [
+      "reports/review-om-qa-tester.md",
+      "outbox/landing/home-a.md",
+      "content/demo-script.md"
+    ],
+    "summary": "Reviewed A1-A5: A2 pass, A1 and A5 had small issues edited, A3 and A4 blocked on owner answers and placeholders. No domain, so link and UTM checks are pending.",
+    "attempts": 1
+  }
+]

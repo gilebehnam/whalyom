@@ -1,0 +1,34 @@
+{
+  "task_id": "EXP-2026-11-03",
+  "agent": "om-experiment-manager",
+  "status": "done",
+  "output": ["products/sample-quoteflow/runs/EXP-2026-11-03.json"],
+  "summary": "Reviewed 18 experiments: none has data (stage paused, no domain, no analytics, no reports), so no winner or loser is declared. Retired 3 duplicates, flagged 1 unrunnable and 3 new ones missing min_sample/stop_date, and set a one-landing-test-at-a-time order.",
+  "experiments": [
+    {"id": "E-O19-1", "status": "retired", "verdict": "superseded", "note": "Duplicate of E-O20-2. Retired; do not count twice."},
+    {"id": "E-O19-2", "status": "retired", "verdict": "superseded", "note": "Duplicate of E-O20-1. Retired; do not count twice."},
+    {"id": "E-O11-1", "status": "retired", "verdict": "superseded", "note": "Same variants as E-O8-1 (home-a vs home-b). Merged into E-O8-1; hero Pillar 1 vs Pillar 2 is read from that test."},
+    {"id": "E-O15-1", "status": "blocked", "verdict": "pending", "note": "Not startable: decision 4 open and the hypothesis mixes cap, trial and price. Rewrite as one variable per arm before any min_sample is set."},
+    {"id": "E-O8-1", "status": "planned", "verdict": "pending", "note": "First in the landing-test queue. Order: E-O8-1, then E-G09-1 (on the winner), then E-JTBD-1 only if traffic allows. No sample exists, so no read. If underpowered, report directional only."},
+    {"id": "E-JTBD-1", "status": "planned", "verdict": "pending", "note": "Queued behind E-O8-1. No variant copy exists. min_sample and stop_date stay unset until a baseline rate exists."},
+    {"id": "E-O8-2", "status": "planned", "verdict": "pending", "note": "Drop the search-volume part of the metric (unmeasurable, no keyword tool). Owner sets the understanding threshold before interview 1."},
+    {"id": "E-O20-1", "status": "planned", "verdict": "pending", "note": "Due 2026-11-13. Blockers: working app and tracking. A miss is a recorded loser with the blocker named."},
+    {"id": "E-O20-2", "status": "planned", "verdict": "pending", "note": "Due verdict 2026-11-13. No interview notes yet. Label data self-reported."},
+    {"id": "E-O8-3", "status": "planned", "verdict": "pending", "note": "Due 2026-11-13. Waiting on owner interview notes (gate: 3 or more of the first 10)."},
+    {"id": "E-O18-1", "status": "planned", "verdict": "pending", "note": "Conditional on beta and interview gates on Nov 13. If gates fail, record as not run."},
+    {"id": "E-O18-2", "status": "planned", "verdict": "pending", "note": "G04 community rules not verified. Record post count with any zero-removal result."},
+    {"id": "E-O18-3", "status": "planned", "verdict": "pending", "note": "Before/after design, confounded. Needs a before-cohort of real size and email provider decision."},
+    {"id": "E-O18-4", "status": "planned", "verdict": "pending", "note": "Window ends 2026-12-02. Owner states number of notes. Hand-sent only."},
+    {"id": "E-O18-5", "status": "planned", "verdict": "pending", "note": "Revenue is 0, payments not live. Report open trials as pending. Stop 2027-01-01."},
+    {"id": "E-G09-1", "status": "planned", "verdict": "pending", "min_sample": "not set. Needs the baseline sign_up rate from E-O8-1 first", "stop_date": "14 days after it starts, and only after E-O8-1 has a winner", "note": "Missing min_sample, stop_date and verdict field. Runs on the E-O8-1 winner only. Avoid overlapping with E-G14-1 on the same page."},
+    {"id": "E-G09-2", "status": "planned", "verdict": "pending", "min_sample": "not set. Needs real sign_up count with plan=pro and payments live", "stop_date": "not set. Tie to payments go-live", "note": "Blocked on payments (product.json accounts.payments is null) and on decision 4 (what Pro adds). Missing min_sample, stop_date and verdict field."},
+    {"id": "E-G14-1", "status": "planned", "verdict": "pending", "min_sample": "not set. Needs baseline rate", "stop_date": "not set", "note": "Overlaps landing-page tests. Queue after E-G09-1 so one landing change runs at a time. Hypothesis names a 0:60 watch-through, so the video must exist first. Missing min_sample, stop_date and verdict field."}
+  ],
+  "new_tasks": [
+    {"title": "Set analytics and tracking so any landing test can start", "agent": "om-analytics-tracking", "brief": "No analytics account or domain in product.json. Without them E-O8-1, E-G09-1, E-G09-2 and E-G14-1 cannot produce a sample. Verify the agent id exists in state/agents.json before dispatch.", "depends_on": [], "priority": 2}
+  ],
+  "alerts": [
+    {"level": "info", "title": "No experiment has data", "detail": "Product is paused with no domain, analytics or payments. No winner or loser is declared. Earliest real readings are the interview tests due 2026-11-13 (E-O8-2, E-O8-3, E-O20-1, E-O20-2) once the owner supplies interview notes."},
+    {"level": "decision", "title": "Approve retiring three duplicate experiments", "detail": "E-O19-1, E-O19-2 and E-O11-1 duplicate other tests and would double count. Owner to confirm, then apply-results can set them retired."}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "O11",
+  "agent": "om-message-architect",
+  "status": "done",
+  "output": ["research/message-house.md"],
+  "summary": "Built the message house from positioning, ICP and JTBD: one promise, three pillars (one link, scope and price in writing, focused tool with free plan), per-persona proof from verified claims C1-C11 only, PR-FAQ spine and channel angles. Dependency status is approved-fallback (no Narrative canon); unverified claims C12-C19 held back.",
+  "experiments": [
+    {"id": "E-O11-1", "hypothesis": "Pillar 1 (one link, brief to deposit) as the hero message drives more trial signups than Pillar 2 (scope and price options)", "metric": "trial signup rate per variant once a domain and analytics exist", "status": "planned"}
+  ],
+  "new_tasks": [
+    {"title": "Draft landing page copy from the message house", "agent": "om-landing-builder", "brief": "Use research/message-house.md pillars and verified claims only. Draft to outbox/. Needs a domain before publishing.", "depends_on": ["O11"], "priority": 3}
+  ]
+}

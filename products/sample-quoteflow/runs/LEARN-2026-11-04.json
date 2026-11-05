@@ -1,0 +1,14 @@
+{
+  "task_id": "LEARN-2026-11-04",
+  "agent": "om-learner",
+  "status": "done",
+  "output": ["LEARNINGS.md"],
+  "summary": "LEARNINGS.md updated from 18 experiments (none has a verdict, so there are still no proven rules) and 8 evaluator scores, including the new G07, G09, G14 and G39. Added 8 working practices (P7a, P7b, P13-P18) and marked P1, P3, P7 and P12 as recurring. Nothing was promoted to playbooks/: no second real product has evidence, and scoreboard.json holds only zz-paid test fixtures. P7b relies on K-40e9f4674d (Apple MPP inflates opens).",
+  "alerts": [
+    {
+      "level": "info",
+      "title": "Experiment logging keeps skipping min_sample and stop_date",
+      "detail": "The three experiments added on 2026-11-03 (E-G09-1, E-G09-2, E-G14-1) arrived without min_sample or stop_date, which repeats the 2026-11-02 finding. LEARNINGS P1 now asks every agent to log 'not set' plus the trigger that sets it. Consider making apply-results reject experiments that leave these fields out."
+    }
+  ]
+}

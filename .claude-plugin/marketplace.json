@@ -1,0 +1,13 @@
+{
+  "name": "whalyom",
+  "owner": {
+    "name": "Whalyom"
+  },
+  "plugins": [
+    {
+      "name": "whalyom",
+      "source": "./",
+      "description": "Your entire marketing department inside Claude Code."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "O9",
+  "agent": "om-icp-builder",
+  "status": "done",
+  "output": ["research/icp.md"],
+  "summary": "ICP and 3 hypothetical personas (Solo Sam beachhead, Agency Alex, Marketing Maya) built from brief.md, profile.md, claims.md and voc.md. All buyer statements are hypotheses: no customers, no verbatim VoC, no domain (live-site checks pending).",
+  "notes": "Only verified claims C1-C11 used; C12-C19 flagged needs-proof. Owner questions open: EU market, currency/VAT/GST, plan limits, deposit processing, 'in minutes' proof, trial card requirement, expiry feature. No outbound drafts, no approvals needed."
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "LEARN-2026-11-03",
+  "agent": "om-learner",
+  "status": "done",
+  "output": ["LEARNINGS.md"],
+  "summary": "LEARNINGS.md updated: no proven rules, because all 15 experiments are planned with verdict pending. It now has 12 working practices taken from the evaluator reviews (G01, G05, T39, T41) and the experiment design review, each citing its sources. Nothing went to playbooks/: no second product has experiments to confirm a rule.",
+  "new_tasks": [
+    {
+      "title": "Update LEARNINGS after the 2026-11-13 gate verdicts",
+      "agent": "om-learner",
+      "brief": "Once T20261103 records verdicts for E-O20-1, E-O20-2, E-O8-2 and E-O8-3, turn each pass or fail into a rule in LEARNINGS.md section 1, citing the experiment ids. Promote a rule to playbooks/ only if another product's experiments agree.",
+      "depends_on": ["T20261103"],
+      "priority": 3
+    }
+  ]
+}

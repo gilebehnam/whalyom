@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "_about": "Landing brief for the FICTIONAL sample product. Every copy unit cites the claims.md ids it relies on. Written as the om-landing-builder example; agents (om-landing-builder, om-cro, om-personalizer) edit this file, never the built HTML.",
+  "page": {
+    "brand": "Quoteflow",
+    "title": "Quoteflow — turn a client brief into a priced proposal",
+    "description": "Proposal software for freelancers and small agencies: scope, timeline, price options, e-signature and a deposit request in one link.",
+    "lang": "en",
+    "noindex": true,
+    "schema_type": "SoftwareApplication",
+    "category": "BusinessApplication"
+  },
+  "experiment": {
+    "id": "LP-QF-hero",
+    "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+    "metric": "lead_submit_rate",
+    "method": "thompson-bandit"
+  },
+  "hero": {
+    "eyebrow": "Proposal software for freelancers and small agencies",
+    "headline": "Turn a client brief into a priced proposal",
+    "subhead": "Scope, timeline, price options, e-signature and a deposit request, all in one link.",
+    "claims": ["C1", "C2", "C6"],
+    "cta": { "id": "hero-trial", "label": "Start the 14-day Pro trial", "href": "#lead", "claims": ["C10"] },
+    "secondary_cta": { "id": "hero-pricing", "label": "See pricing", "href": "#pricing" },
+    "offer": { "text": "Or stay on the Free plan: 3 proposals per month.", "claims": ["C7"] }
+  },
+  "problem": {
+    "eyebrow": "Sound familiar?",
+    "title": "Every new brief means writing the same proposal again",
+    "points": [
+      { "text": "Scope, timeline and price get rewritten for every client.", "kind": "voc" },
+      { "text": "Vague scope turns into extra work nobody pays for.", "kind": "voc" },
+      { "text": "The proposal, the signature and the deposit request go out through separate tools and emails.", "kind": "voc" }
+    ]
+  },
+  "solution": {
+    "eyebrow": "One job, done in one link",
+    "title": "From brief to signed proposal and deposit request",
+    "body": "Quoteflow turns the client brief into a priced proposal. Your client reads the scope and timeline, picks one of your price options, signs, and gets the deposit request in the same link.",
+    "claims": ["C2", "C3", "C4", "C5", "C6"]
+  },
+  "features": {
+    "eyebrow": "What a proposal includes",
+    "title": "Everything the client needs to say yes",
+    "items": [
+      { "title": "Scope and timeline", "body": "Every proposal sets out what you will do and when.", "claims": ["C3"] },
+      { "title": "Price options", "body": "Offer the client more than one way to buy, inside the proposal.", "claims": ["C3"] },
+      { "title": "E-signature", "body": "The client signs the proposal where they read it.", "claims": ["C4"] },
+      { "title": "Deposit request", "body": "The deposit request is part of the proposal, not a separate email.", "claims": ["C5"] },
+      { "title": "One link", "body": "Scope, timeline, price options, signature and deposit request travel together.", "claims": ["C6"] }
+    ]
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "steps": [
+      { "title": "Start from the client brief", "body": "Quoteflow turns it into a priced proposal.", "claims": ["C2"] },
+      { "title": "Set scope, timeline and price options", "body": "Shape the proposal the way you want to sell it.", "claims": ["C3"] },
+      { "title": "Send one link", "body": "The client gets the whole proposal in a single link.", "claims": ["C6"] },
+      { "title": "Client signs, deposit requested", "body": "E-signature and the deposit request are already in the proposal.", "claims": ["C4", "C5"] }
+    ]
+  },
+  "social_proof": { "items": [] },
+  "comparison": {
+    "title": "One link instead of a stack of tools",
+    "columns": ["Quoteflow", "Templates and separate tools"],
+    "rows": [
+      { "label": "Proposal from the client brief", "values": ["Built from the brief", "Rewritten by hand each time"], "claims": ["C2"] },
+      { "label": "Scope, timeline and price options", "values": ["In the proposal", "In a doc or template"], "claims": ["C3"] },
+      { "label": "E-signature", "values": ["Included", "A separate e-sign tool"], "claims": ["C4"] },
+      { "label": "Deposit request", "values": ["Included", "A separate invoice"], "claims": ["C5"] },
+      { "label": "Everything in one link", "values": ["Yes", "Several emails and attachments"], "claims": ["C6"] }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Start free. Upgrade when you send more.",
+    "plans": [
+      { "name": "Free", "price": "Free", "features": ["3 proposals per month"], "claims": ["C7"], "cta": { "id": "plan-free", "label": "Start free", "href": "#lead" } },
+      { "name": "Pro", "price": "$19", "period": "/month", "badge": "14-day trial", "highlight": true, "features": ["14-day Pro trial"], "claims": ["C8", "C10"], "cta": { "id": "plan-pro", "label": "Start the Pro trial", "href": "#lead", "claims": ["C10"] } },
+      { "name": "Team", "price": "$49", "period": "/month", "features": ["5 seats"], "claims": ["C9"], "cta": { "id": "plan-team", "label": "Choose Team", "href": "#lead" } }
+    ]
+  },
+  "guarantee": {},
+  "faq": {
+    "title": "Questions",
+    "items": [
+      { "q": "Who is Quoteflow for?", "a": "Freelance designers, developers, marketers and agencies of 2-10 people in the US, UK, Canada and Australia.", "claims": ["C11"] },
+      { "q": "What does a proposal include?", "a": "Scope, timeline and price options, with e-signature and a deposit request, all in one link.", "claims": ["C3", "C4", "C5", "C6"] },
+      { "q": "Is there a free plan?", "a": "Yes. The Free plan includes 3 proposals per month.", "claims": ["C7"] },
+      { "q": "Can I try Pro first?", "a": "Yes, there is a 14-day Pro trial. Pro costs $19/month after that.", "claims": ["C8", "C10"] },
+      { "q": "What does the Team plan cost?", "a": "$49/month for 5 seats.", "claims": ["C9"] }
+    ]
+  },
+  "final_cta": {
+    "headline": "Send your next proposal as one link",
+    "body": "Scope, timeline, price options, e-signature and a deposit request, together.",
+    "claims": ["C6"],
+    "cta": { "id": "final-trial", "label": "Start the 14-day Pro trial", "href": "#lead", "claims": ["C10"] }
+  },
+  "lead_form": {
+    "eyebrow": "Get started",
+    "title": "Get your 14-day Pro trial",
+    "body": "Leave your email and we will send your trial invite.",
+    "claims": ["C10"],
+    "form_id": "trial",
+    "fields": ["name", "email"],
+    "submit_label": "Send my trial invite",
+    "thanks": "Thanks. Your invite is on its way."
+  },
+  "variants": [
+    {
+      "id": "b",
+      "name": "One-link outcome",
+      "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+      "metric": "lead_submit_rate",
+      "hero": { "headline": "Proposal, signature and deposit request in one link", "subhead": "Quoteflow turns a client brief into a priced proposal your client can sign.", "claims": ["C2", "C4", "C5", "C6"] },
+      "cta": { "label": "Start my 14-day trial", "claims": ["C10"] }
+    },
+    {
+      "id": "c",
+      "name": "Stop rewriting",
+      "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+      "metric": "lead_submit_rate",
+      "hero": { "headline": "Stop rewriting proposals for every client", "subhead": "Quoteflow turns each client brief into a priced proposal with scope, timeline and price options.", "claims": ["C2", "C3"] },
+      "cta": { "label": "Get my trial invite", "claims": ["C10"] }
+    }
+  ]
+}

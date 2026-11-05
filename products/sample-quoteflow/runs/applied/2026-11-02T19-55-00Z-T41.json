@@ -1,0 +1,7 @@
+{
+  "task_id": "T41",
+  "agent": "om-chief-of-staff",
+  "status": "done",
+  "output": ["reports/owner-decisions.md"],
+  "summary": "Created reports/owner-decisions.md (it did not exist) with three top blocker questions from the red team: does a working app exist, owner hours per week, and what Pro adds over Free (blocks pricing page G05 and trial emails G11). No answers proposed; owner fields left blank."
+}

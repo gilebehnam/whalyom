@@ -1,0 +1,13 @@
+# Skills provided by the claude.ai account (org plugins), not stored locally.
+# check-skills.mjs treats these as installed. Remove a line if the plugin is disabled.
+sales:handle-objection
+sales:lead-triage
+sales:expansion-whitespace
+sales:draft-outreach
+sales:account-research
+sales:call-prep
+brand-voice:brand-voice-enforcement
+small-business:review-reputation
+zoominfo:why-now
+apollo:enrich-lead
+small-business:speed-to-lead

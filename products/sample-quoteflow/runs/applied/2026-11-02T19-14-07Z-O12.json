@@ -1,0 +1,10 @@
+{
+  "task_id": "O12",
+  "agent": "om-keyword-researcher",
+  "status": "done",
+  "output": ["research/keywords.md"],
+  "summary": "Built six keyword clusters prioritised by bottom-of-funnel intent (alternatives, versus, best-for, problem+solution, templates/free tool) with quick wins and claim guardrails. No volume/KD data exists (no tools, no domain), so difficulty is qualitative and every number is listed as pending.",
+  "new_tasks": [
+    {"title": "Competitor fact check for alternative and versus pages", "agent": "om-competitor-intel", "brief": "Verify Bonsai, HoneyBook, Proposify, PandaDoc pricing and features on their own pages with dates, so research/keywords.md clusters A and B can be drafted.", "depends_on": [], "priority": 2}
+  ]
+}

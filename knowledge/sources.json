@@ -1,0 +1,709 @@
+{
+  "about": "Feeds the knowledge fetcher reads (node tools/knowledge.mjs refresh). tier: official = the platform or regulator itself; research = peer-reviewed or preprint research and research firms; industry = trade press, used to find the primary source and never cited alone. cadence_hours: how often to fetch. Every URL here answered with a real feed on 2026-11-03; sites that refuse automated fetches are left out, not worked around.",
+  "sources": [
+    {
+      "id": "google-search-central",
+      "name": "Google Search Central Blog",
+      "url": "https://developers.google.com/search/blog/feed.xml",
+      "tier": "official",
+      "topics": [
+        "search",
+        "ai-search",
+        "content"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "google-search-status",
+      "name": "Google Search Status Dashboard (ranking updates)",
+      "url": "https://status.search.google.com/en/feed.atom",
+      "tier": "official",
+      "topics": [
+        "search"
+      ],
+      "cadence_hours": 12
+    },
+    {
+      "id": "google-search-product",
+      "name": "Google Search product blog",
+      "url": "https://blog.google/products/search/rss/",
+      "tier": "official",
+      "topics": [
+        "ai-search",
+        "search"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "google-ads-commerce",
+      "name": "Google Ads & Commerce blog",
+      "url": "https://blog.google/products/ads-commerce/rss/",
+      "tier": "official",
+      "topics": [
+        "paid-search",
+        "ecommerce",
+        "ai-search"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "google-ads-developers",
+      "name": "Google Ads Developer Blog",
+      "url": "https://ads-developers.googleblog.com/feeds/posts/default",
+      "tier": "official",
+      "topics": [
+        "paid-search",
+        "analytics-measurement"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "google-marketing-platform",
+      "name": "Google Marketing Platform blog",
+      "url": "https://blog.google/products/marketingplatform/360/rss/",
+      "tier": "official",
+      "topics": [
+        "analytics-measurement"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "google-workspace-updates",
+      "name": "Google Workspace Updates (Gmail)",
+      "url": "https://workspaceupdates.googleblog.com/feeds/posts/default",
+      "tier": "official",
+      "topics": [
+        "email"
+      ],
+      "cadence_hours": 48,
+      "keywords": [
+        "gmail",
+        "sender",
+        "spam",
+        "unsubscribe",
+        "promotions",
+        "inbox"
+      ]
+    },
+    {
+      "id": "youtube-official",
+      "name": "YouTube Official Blog",
+      "url": "https://blog.youtube/rss/",
+      "tier": "official",
+      "topics": [
+        "social-organic",
+        "paid-social"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "android-developers",
+      "name": "Android Developers Blog (Google Play)",
+      "url": "https://android-developers.googleblog.com/feeds/posts/default",
+      "tier": "official",
+      "topics": [
+        "app-stores"
+      ],
+      "cadence_hours": 72,
+      "keywords": [
+        "play",
+        "store",
+        "listing",
+        "policy",
+        "billing"
+      ]
+    },
+    {
+      "id": "bing-webmaster",
+      "name": "Bing Webmaster Blog",
+      "url": "https://blogs.bing.com/webmaster/feed",
+      "tier": "official",
+      "topics": [
+        "search",
+        "ai-search"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "microsoft-advertising",
+      "name": "Microsoft Advertising blog",
+      "url": "https://about.ads.microsoft.com/en/blog/rss",
+      "tier": "official",
+      "topics": [
+        "paid-search",
+        "ai-search"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "meta-newsroom",
+      "name": "Meta Newsroom",
+      "url": "https://about.fb.com/news/feed/",
+      "tier": "official",
+      "topics": [
+        "paid-social",
+        "social-organic",
+        "ai-regulation"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "pinterest-newsroom",
+      "name": "Pinterest Newsroom",
+      "url": "https://newsroom.pinterest.com/en/feed/rss.xml",
+      "tier": "official",
+      "topics": [
+        "social-organic",
+        "paid-social"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "tier": "official",
+      "topics": [
+        "ai-search",
+        "ai-marketing-tools"
+      ],
+      "cadence_hours": 24,
+      "keywords": [
+        "search",
+        "shopping",
+        "ads",
+        "advertis",
+        "merchant",
+        "browse",
+        "agent",
+        "apps"
+      ]
+    },
+    {
+      "id": "apple-developer-news",
+      "name": "Apple Developer News",
+      "url": "https://developer.apple.com/news/rss/news.rss",
+      "tier": "official",
+      "topics": [
+        "app-stores"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "stripe-blog",
+      "name": "Stripe blog",
+      "url": "https://stripe.com/blog/feed.rss",
+      "tier": "official",
+      "topics": [
+        "ecommerce",
+        "pricing"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare blog (crawlers, bots, AI access)",
+      "url": "https://blog.cloudflare.com/rss/",
+      "tier": "official",
+      "topics": [
+        "ai-search",
+        "cro-ux"
+      ],
+      "cadence_hours": 72,
+      "keywords": [
+        "crawl",
+        "bot",
+        "ai",
+        "pay per crawl",
+        "content signals",
+        "robots"
+      ]
+    },
+    {
+      "id": "iab-tech-lab",
+      "name": "IAB Tech Lab",
+      "url": "https://iabtechlab.com/feed/",
+      "tier": "official",
+      "topics": [
+        "privacy-law",
+        "analytics-measurement"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "w3c-wai",
+      "name": "W3C Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/feed.xml",
+      "tier": "official",
+      "topics": [
+        "cro-ux"
+      ],
+      "cadence_hours": 168
+    },
+    {
+      "id": "edpb",
+      "name": "European Data Protection Board news",
+      "url": "https://www.edpb.europa.eu/feed/news_en",
+      "tier": "official",
+      "topics": [
+        "privacy-law",
+        "ai-regulation"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "cnil",
+      "name": "CNIL (France) news",
+      "url": "https://www.cnil.fr/fr/rss.xml",
+      "tier": "official",
+      "topics": [
+        "privacy-law"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "ftc-consumer-protection",
+      "name": "FTC consumer protection press releases",
+      "url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+      "tier": "official",
+      "topics": [
+        "ai-regulation",
+        "email",
+        "privacy-law"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "arxiv-cs-ir",
+      "name": "arXiv cs.IR (search, recommender and retrieval research)",
+      "url": "https://rss.arxiv.org/rss/cs.IR",
+      "tier": "research",
+      "topics": [
+        "research",
+        "ai-search"
+      ],
+      "cadence_hours": 24,
+      "keywords": [
+        "advertis",
+        "search engine",
+        "generative engine",
+        "llm search",
+        "recommend",
+        "ranking",
+        "click",
+        "conversion",
+        "e-commerce",
+        "citation"
+      ]
+    },
+    {
+      "id": "arxiv-econ-gn",
+      "name": "arXiv econ.GN (marketing and consumer economics)",
+      "url": "https://rss.arxiv.org/rss/econ.GN",
+      "tier": "research",
+      "topics": [
+        "research",
+        "pricing"
+      ],
+      "cadence_hours": 48,
+      "keywords": [
+        "advertis",
+        "pricing",
+        "consumer",
+        "marketing",
+        "platform",
+        "promotion",
+        "discount"
+      ]
+    },
+    {
+      "id": "nngroup",
+      "name": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/feed/rss/",
+      "tier": "research",
+      "topics": [
+        "cro-ux",
+        "research"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "litmus",
+      "name": "Litmus blog (email)",
+      "url": "https://www.litmus.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "email"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "seroundtable",
+      "name": "Search Engine Roundtable",
+      "url": "https://www.seroundtable.com/index.xml",
+      "tier": "industry",
+      "topics": [
+        "search",
+        "ai-search",
+        "paid-search"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "searchenginejournal",
+      "name": "Search Engine Journal",
+      "url": "https://www.searchenginejournal.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "search",
+        "ai-search",
+        "paid-search",
+        "social-organic"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "hubspot-marketing",
+      "name": "HubSpot Marketing blog",
+      "url": "https://blog.hubspot.com/marketing/rss.xml",
+      "tier": "industry",
+      "topics": [
+        "content",
+        "social-organic",
+        "email"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "mckinsey-insights",
+      "name": "McKinsey Insights & Publications",
+      "url": "https://www.mckinsey.com/insights/rss",
+      "tier": "research",
+      "topics": [
+        "management-canon",
+        "canon-marketing",
+        "canon-sales",
+        "canon-brand",
+        "consulting"
+      ],
+      "cadence_hours": 48,
+      "keywords": [
+        "marketing",
+        "growth",
+        "customer",
+        "consumer",
+        "pricing",
+        "brand",
+        "sales",
+        "commercial",
+        "strategy",
+        "digital",
+        "personaliz",
+        "b2b",
+        "ceo",
+        "cmo",
+        "transformation",
+        "operating model",
+        "agentic",
+        "generative ai",
+        "loyalty",
+        "innovation"
+      ]
+    },
+    {
+      "id": "mit-smr",
+      "name": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/feed/",
+      "tier": "research",
+      "topics": [
+        "management-canon",
+        "canon-marketing",
+        "canon-sales",
+        "canon-brand",
+        "consulting"
+      ],
+      "cadence_hours": 72,
+      "keywords": [
+        "marketing",
+        "growth",
+        "customer",
+        "consumer",
+        "pricing",
+        "brand",
+        "sales",
+        "commercial",
+        "strategy",
+        "digital",
+        "personaliz",
+        "b2b",
+        "ceo",
+        "cmo",
+        "transformation",
+        "operating model",
+        "agentic",
+        "generative ai",
+        "loyalty",
+        "innovation"
+      ]
+    },
+    {
+      "id": "google-ai-blog",
+      "name": "Google AI blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "tier": "official",
+      "topics": [
+        "ai-marketing-tools",
+        "ai-tech",
+        "ai-search"
+      ],
+      "cadence_hours": 24,
+      "keywords": [
+        "marketing",
+        "advertis",
+        "ads",
+        "seo",
+        "search",
+        "content",
+        "creative",
+        "email",
+        "crm",
+        "sales",
+        "agent",
+        "commerce",
+        "customer",
+        "brand",
+        "video",
+        "image",
+        "copy",
+        "campaign",
+        "analytics",
+        "personaliz"
+      ]
+    },
+    {
+      "id": "salesforce-news",
+      "name": "Salesforce newsroom",
+      "url": "https://www.salesforce.com/news/feed/",
+      "tier": "official",
+      "topics": [
+        "ai-marketing-tools",
+        "b2b-sales"
+      ],
+      "cadence_hours": 24,
+      "keywords": [
+        "marketing",
+        "advertis",
+        "ads",
+        "seo",
+        "search",
+        "content",
+        "creative",
+        "email",
+        "crm",
+        "sales",
+        "agent",
+        "commerce",
+        "customer",
+        "brand",
+        "video",
+        "image",
+        "copy",
+        "campaign",
+        "analytics",
+        "personaliz"
+      ]
+    },
+    {
+      "id": "huggingface-blog",
+      "name": "Hugging Face blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "tier": "research",
+      "topics": [
+        "ai-marketing-tools",
+        "ai-tech"
+      ],
+      "cadence_hours": 48,
+      "keywords": [
+        "marketing",
+        "advertis",
+        "ads",
+        "seo",
+        "search",
+        "content",
+        "creative",
+        "email",
+        "crm",
+        "sales",
+        "agent",
+        "commerce",
+        "customer",
+        "brand",
+        "video",
+        "image",
+        "copy",
+        "campaign",
+        "analytics",
+        "personaliz"
+      ]
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt (new AI marketing tools; leads only)",
+      "url": "https://www.producthunt.com/feed",
+      "tier": "industry",
+      "topics": [
+        "ai-marketing-tools"
+      ],
+      "cadence_hours": 24,
+      "keywords": [
+        "marketing",
+        "advertis",
+        "ads",
+        "seo",
+        "search",
+        "content",
+        "creative",
+        "email",
+        "crm",
+        "sales",
+        "agent",
+        "commerce",
+        "customer",
+        "brand",
+        "video",
+        "image",
+        "copy",
+        "campaign",
+        "analytics",
+        "personaliz"
+      ]
+    },
+    {
+      "id": "marketing-ai-institute",
+      "name": "Marketing AI Institute (leads only)",
+      "url": "https://www.marketingaiinstitute.com/blog/rss.xml",
+      "tier": "industry",
+      "topics": [
+        "ai-marketing-tools",
+        "canon-marketing"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "martech-org",
+      "name": "MarTech (leads only)",
+      "url": "https://martech.org/feed/",
+      "tier": "industry",
+      "topics": [
+        "ai-marketing-tools",
+        "analytics-measurement"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "iab",
+      "name": "IAB (Interactive Advertising Bureau)",
+      "url": "https://www.iab.com/feed/",
+      "tier": "official",
+      "topics": [
+        "video-ctv",
+        "retail-media",
+        "analytics-measurement"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "iab-europe",
+      "name": "IAB Europe",
+      "url": "https://iabeurope.eu/feed/",
+      "tier": "official",
+      "topics": [
+        "video-ctv",
+        "privacy-law",
+        "retail-media"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "uk-cma",
+      "name": "UK Competition and Markets Authority",
+      "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority.atom",
+      "tier": "official",
+      "topics": [
+        "ai-regulation",
+        "partnerships",
+        "plg",
+        "pricing"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "adexchanger",
+      "name": "AdExchanger (programmatic, CTV and retail media)",
+      "url": "https://www.adexchanger.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "video-ctv",
+        "retail-media",
+        "analytics-measurement"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "digiday",
+      "name": "Digiday",
+      "url": "https://digiday.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "retail-media",
+        "video-ctv",
+        "partnerships",
+        "paid-social"
+      ],
+      "cadence_hours": 24
+    },
+    {
+      "id": "streamtv-insider",
+      "name": "StreamTV Insider (streaming and CTV advertising)",
+      "url": "https://www.streamtvinsider.com/rss.xml",
+      "tier": "industry",
+      "topics": [
+        "video-ctv"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "marketing-week",
+      "name": "Marketing Week (effectiveness and brand)",
+      "url": "https://www.marketingweek.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "brand-science",
+        "canon-brand",
+        "research"
+      ],
+      "cadence_hours": 48
+    },
+    {
+      "id": "lennys-newsletter",
+      "name": "Lenny's Newsletter (product-led growth)",
+      "url": "https://www.lennysnewsletter.com/feed",
+      "tier": "industry",
+      "topics": [
+        "plg",
+        "pricing"
+      ],
+      "cadence_hours": 72
+    },
+    {
+      "id": "partnerize",
+      "name": "Partnerize (partnerships and affiliate)",
+      "url": "https://partnerize.com/feed/",
+      "tier": "industry",
+      "topics": [
+        "partnerships"
+      ],
+      "cadence_hours": 72
+    }
+  ]
+}

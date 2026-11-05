@@ -1,0 +1,12 @@
+{
+  "task_id": "G07",
+  "agent": "om-tracking-engineer",
+  "status": "done",
+  "output": ["research/tracking-implementation.md"],
+  "summary": "Wrote the install guide for GA4, Search Console, server-side trial_started and subscription_started (Measurement Protocol), first-touch UTM cookie, UK/EU consent mode and a 20-row verification checklist. Nothing installed. The stack is not in owner-decisions.md, so it uses the free-mode default (gtag + MP, no GTM) and lists the blocking decisions.",
+  "alerts": [
+    {"level": "decision", "title": "Tracking cannot be installed until owner decisions #1, #2, #5, #9 and #12 are answered", "detail": "Domain, EU scope, card-for-trial, GA4/Search Console/payments accounts and whether a free signup counts as a conversion are open. owner-decisions.md has no stack line, so the guide assumes plain gtag plus GA4 Measurement Protocol. Confirm or name another stack."},
+    {"level": "info", "title": "Consent legal wording needs the lawyer", "detail": "Region list, default-granted for US/CA/AU, and basic vs advanced consent mode are policy choices for the owner and the reviewer in decision #8. Facts used: K-0f5c3b780a, K-1aab001f7d, K-71e291eb75, K-f512726fdf."}
+  ],
+  "new_tasks": []
+}

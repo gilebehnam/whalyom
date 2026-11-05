@@ -1,0 +1,10 @@
+{
+  "task_id": "O4",
+  "agent": "om-review-miner",
+  "status": "done",
+  "output": ["research/reviews.md"],
+  "summary": "Partial review mining: G2 and Trustpilot fetches were blocked and search returned only summaries, so reviews.md has indicative ratings and paraphrased, second-hand loved/pain themes for Bonsai, HoneyBook, Proposify and PandaDoc, with no verbatim quotes. Verbatim collection and PandaDoc/Proposify pain points are pending.",
+  "new_tasks": [
+    {"title": "Collect verbatim competitor review quotes", "agent": "om-review-miner", "brief": "Get verbatim quotes with URL, role and date for Bonsai, HoneyBook, Proposify, PandaDoc from a fetchable source or owner export (G2, Capterra, Reddit, app stores). Append to research/reviews.md.", "depends_on": [], "priority": 3}
+  ]
+}

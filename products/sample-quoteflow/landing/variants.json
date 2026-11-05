@@ -1,0 +1,452 @@
+{
+  "product": "sample-quoteflow",
+  "updated_at": "2026-11-02T23:43:27.519Z",
+  "owner": "om-bandit-cro",
+  "note": "Proposal only. Agents never write experiments.json; om-experiment-manager records this through runs/<task-id>.json and the single writer.",
+  "experiments": [
+    {
+      "id": "LP-QF-hero-saas",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/saas/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/saas/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/saas/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/saas/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/saas/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/saas/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP-QF-hero-editorial",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/editorial/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/editorial/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/editorial/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/editorial/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/editorial/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/editorial/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP-QF-hero-bold",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/bold/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/bold/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/bold/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/bold/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/bold/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/bold/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP-QF-hero-minimal",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/minimal/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/minimal/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/minimal/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/minimal/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/minimal/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/minimal/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP-QF-hero-product",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/product/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/product/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/product/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/product/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/product/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/product/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP-QF-hero-night",
+      "hypothesis": "Leading with the one-link outcome, or with the pain of rewriting proposals, gets more lead form submits than leading with the brief-to-proposal job.",
+      "metric": "lead_submit_rate",
+      "method": "thompson-bandit",
+      "min_sample_per_arm": null,
+      "event": {
+        "lead": "satellite /collect type \"lead\" with field variant",
+        "view": "pageview path"
+      },
+      "arms": [
+        {
+          "id": "control",
+          "file": "landing/dist/night/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/night/",
+          "headline": "Turn a client brief into a priced proposal",
+          "cta": "Start the 14-day Pro trial",
+          "hypothesis": "control",
+          "claims_cited": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "b",
+          "file": "landing/dist/night/b/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/night/b/",
+          "headline": "Proposal, signature and deposit request in one link",
+          "cta": "Start my 14-day trial",
+          "hypothesis": "Leading with the one-link outcome (proposal, signature, deposit request) lifts lead submits over the brief-to-proposal headline.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        },
+        {
+          "id": "c",
+          "file": "landing/dist/night/c/index.html",
+          "url": "http://localhost:4321/site/sample-quoteflow/landing/night/c/",
+          "headline": "Stop rewriting proposals for every client",
+          "cta": "Get my trial invite",
+          "hypothesis": "Naming the pain of rewriting proposals lifts lead submits for freelancers who already use templates.",
+          "claims_cited": [
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "C10",
+            "C11"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "K1",
+  "agent": "om-knowledge-keeper",
+  "status": "done",
+  "output": [
+    "products/sample-quoteflow/research/pricing-intel.md",
+    "products/sample-quoteflow/research/competitors.md",
+    "products/sample-quoteflow/runs/K1.json"
+  ],
+  "summary": "All four vendor pricing pages loaded on 2026-11-03 (the T5 blocks did not reproduce). pricing-intel.md now holds the single competitor price table: 13 rows, 10 verified and 3 in conflict (Proposify Build annual $39 vs $41, Proposify Grow annual shows $65 for both monthly and annual, PandaDoc Business trial 14 days vs not stated), plus a Proposify plan-name and send-limit mismatch listed in section 2b. competitors.md has no price figures and points to that table; claims.md is untouched and C16 stays needs-proof.",
+  "approvals": [],
+  "experiments": [],
+  "new_tasks": [
+    {
+      "title": "Hand re-check the four conflict items in pricing-intel.md section 2b (Proposify Build and Grow annual, Proposify plan names and send limits, PandaDoc Business trial)",
+      "agent": "om-pricing-intel",
+      "brief": "Open proposify.com/pricing and pandadoc.com/pricing in a browser (not a text summary). On Proposify, toggle monthly and annual and record every cell for Build, Grow and Scale, including the Grow annual cell, and map the send-limit table (Basic, Team, Business, Enterprise) to the pricing plans. On PandaDoc, check the Business trial on the page, the FAQ and the sign-up flow. Also toggle monthly billing on HoneyBook (honeybook.com/pricing) and PandaDoc Starter and Business to fill the monthly-price cells that are blank today. Record each value with the page date and a screenshot path. Update the status column in research/pricing-intel.md section 2a and section 2b. Do not publish or change any price. Stay within the workspace budget (free mode, no spend).",
+      "depends_on": [],
+      "priority": 3
+    }
+  ]
+}

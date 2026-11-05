@@ -1,0 +1,13 @@
+{
+  "task_id": "G06",
+  "agent": "om-legal-pages",
+  "status": "done",
+  "output": ["outbox/site/privacy.md"],
+  "summary": "Drafted a short privacy policy marked DRAFT needing lawyer review, using only verified claims and the L1 to L5 escalation. Unknowns (entity, address, hosting, processors, retention, EU scope, signing records) are left as bracketed placeholders.",
+  "approvals": [
+    {"type": "publish", "channel": "site", "title": "Privacy policy draft", "file": "outbox/site/privacy.md"}
+  ],
+  "alerts": [
+    {"level": "decision", "title": "Privacy draft cannot be finalised until L1 to L5 are answered", "detail": "Entity and address, EU scope, deposit flow, billing processor and e-signature records are placeholders. A lawyer must review before any publication."}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "G01",
+  "agent": "om-chief-of-staff",
+  "status": "done",
+  "output": ["reports/owner-decisions.md"],
+  "summary": "Owner decision pack written: all 16 lines from plan.md section 12 (the brief said 13) as answer-ready questions, each with its answer-by date and the plan tasks it unblocks. It carries the Fri 2026-11-13 go/no-go date and marks questions 0, 4 and 10b as hard blockers. No decisions were made for the owner."
+}

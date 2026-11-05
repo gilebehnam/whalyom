@@ -1,0 +1,15 @@
+{
+  "_about": "Which Claude model the agents run on (tools/lib/ai-cost.mjs). tier: max | standard | economy | minimal. economy = department heads on Sonnet, everyone else on Haiku, the guards in keep stay on Sonnet. After a change run: node tools/build-agents.mjs. overrides: {\"om-agent-name\": \"haiku|sonnet|opus\"} for single agents.",
+  "tier": "minimal",
+  "keep": [
+    "om-compliance-guard",
+    "om-red-team",
+    "om-fact-verifier",
+    "om-bug-hunter",
+    "om-editor",
+    "om-claim-substantiator"
+  ],
+  "overrides": {
+    "om-compliance-guard": "sonnet"
+  }
+}

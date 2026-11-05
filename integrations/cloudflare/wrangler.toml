@@ -1,0 +1,29 @@
+# Whalyom collector Worker for {{DOMAIN}}.
+# 1. npx wrangler kv namespace create WHALYOM_KV      -> paste the id below
+# 2. npx wrangler secret put WHALYOM_SECRET           -> paste the value of {{SECRET_ENV}} from the hub's .env
+# 3. npx wrangler deploy
+name = "whalyom-{{SLUG}}"
+main = "worker.mjs"
+compatibility_date = "2025-01-01"
+workers_dev = false
+
+routes = [
+  { pattern = "{{DOMAIN}}/whalyom.js", zone_name = "{{ZONE}}" },
+  { pattern = "{{DOMAIN}}/collect", zone_name = "{{ZONE}}" },
+  { pattern = "{{DOMAIN}}/_whalyom/*", zone_name = "{{ZONE}}" },
+]
+
+[vars]
+WHALYOM_SITE_ID = "{{SLUG}}"
+WHALYOM_ORIGINS = "{{ORIGINS}}"
+
+[[kv_namespaces]]
+binding = "WHALYOM_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Prefer D1 (strongly consistent replay/de-dupe checks)? Create it, run the schema in
+# whalyom-core.mjs (d1Store), and uncomment:
+# [[d1_databases]]
+# binding = "WHALYOM_DB"
+# database_name = "whalyom-{{SLUG}}"
+# database_id = "REPLACE_WITH_D1_ID"

@@ -1,0 +1,16 @@
+{
+  "task_id": "T3",
+  "agent": "om-competitor-intel",
+  "status": "done",
+  "output": ["research/competitors.md"],
+  "summary": "Checked Bonsai, HoneyBook, Proposify and PandaDoc pricing and features on their own pricing pages on 2026-11-03 and rewrote research/competitors.md with sourced tables. Key findings: HoneyBook serves UK, CA and AU, so the UK/AU gap hypothesis is false, and 'cheaper than' (C16) cannot be claimed.",
+  "new_tasks": [
+    {
+      "title": "Mine G2/Capterra/Reddit reviews for the four competitors",
+      "agent": "om-review-miner",
+      "brief": "No review quotes exist yet. Collect dated, URL-sourced complaints about Bonsai, HoneyBook, Proposify, PandaDoc for the alternative pages.",
+      "depends_on": ["T3"],
+      "priority": 3
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "G03",
+  "agent": "om-competitor-intel",
+  "status": "done",
+  "output": ["research/competitors.md"],
+  "summary": "Added a dated (2026-11-03) feature matrix for Bonsai, HoneyBook, Proposify and PandaDoc covering templates, e-signature, deposits/payments and client portal. Bonsai and Proposify rest on homepages only because their feature pages returned 404.",
+  "new_tasks": [
+    {"title": "Draft Quoteflow vs PandaDoc page", "agent": "om-comparison-pages", "brief": "Use research/competitors.md feature matrix (G03) and pricing-intel.md verified rows only. No 'cheaper' or speed claims, no deposit-processing claim. Draft to outbox/, test product, publish nothing.", "depends_on": ["G03"], "priority": 3}
+  ],
+  "alerts": [
+    {"level": "info", "title": "Feature pages partly unreachable", "detail": "Bonsai /features and Proposify /features returned 404; both read from homepage. Bonsai and HoneyBook e-signature unconfirmed, so no 'lacks e-signature' wording. Hand-check before publish."}
+  ]
+}

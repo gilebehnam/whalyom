@@ -1,0 +1,13 @@
+{
+  "task_id": "G04",
+  "agent": "om-community-scout",
+  "status": "done",
+  "output": ["research/communities.md"],
+  "summary": "Added a dated top-5 self-promotion rules table to communities.md. Reddit blocks the fetch tool and IH/PH guideline URLs failed, so verdicts come from web search (Product Hunt from official pages; Reddit and IH secondary and unverified at source; r/SideProject no source found).",
+  "new_tasks": [
+    {"title": "Draft value-first replies for the top community", "agent": "om-reddit", "brief": "Top community is r/freelance, where self-promotion is reported as not allowed (unverified at source). Draft value-only replies with no Quoteflow mention and no links, to outbox/. Nothing is posted. A human must read the live r/freelance rules first.", "depends_on": ["G04"], "priority": 3}
+  ],
+  "alerts": [
+    {"level": "warning", "title": "Reddit rules not verified at source", "detail": "reddit.com is blocked for the fetch tool. Someone with a browser must read the sidebar/rules of r/freelance, r/webdev and r/SideProject before any post."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "O13",
+  "agent": "om-community-scout",
+  "status": "done",
+  "output": ["research/communities.md"],
+  "summary": "Ranked 11 communities (r/freelance, r/webdev, r/SideProject, Indie Hackers, directories, etc.) by ICP fit and tool openness, with recalled self-promotion rules and an engagement protocol. Rules are from memory and flagged VERIFY; no live site, member counts or private group names yet.",
+  "new_tasks": []
+}

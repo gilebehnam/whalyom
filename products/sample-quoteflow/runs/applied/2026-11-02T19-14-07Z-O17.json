@@ -1,0 +1,10 @@
+{
+  "task_id": "O17",
+  "agent": "om-risk-officer",
+  "status": "done",
+  "output": ["research/risks.md"],
+  "summary": "Pre-mortem risk register: 10 Tigers (4 launch-blocking), 4 Paper Tigers, 4 Elephants, with guardrails per channel and a go/no-go checklist. Site checks and owner decisions (EU scope, payments, legal pages) are listed as pending.",
+  "new_tasks": [
+    {"title": "Resolve legal and payments gaps before launch", "agent": "om-cmo", "brief": "Escalate to the owner: confirm EU scope, payment flow and processor, ToS, privacy and refund policy, e-signature wording (research/risks.md T3, T4).", "depends_on": [], "priority": 2}
+  ]
+}

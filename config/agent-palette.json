@@ -1,0 +1,3947 @@
+{
+ "about": "580 agent colors: 20 families x 10 base tones (ids 0-199) plus 5 half-step extension tones (ids 200-299) 4 more (ids 300-379) 5 more (ids 380-479) and 5 more (ids 480-579), OKLCH. Assigned by tools/roster.mjs: original agents in department order on the base tones, wave-2 agents on the first extension tones of their department's family, wave-3 and wave-4 agents on the free tones nearest their department's family, each wave limited to the tones that existed when it arrived.",
+ "families": [
+  {
+   "name": "coral",
+   "hue": 30
+  },
+  {
+   "name": "terracotta",
+   "hue": 42
+  },
+  {
+   "name": "persimmon",
+   "hue": 52
+  },
+  {
+   "name": "apricot",
+   "hue": 65
+  },
+  {
+   "name": "ochre",
+   "hue": 82
+  },
+  {
+   "name": "brass",
+   "hue": 95
+  },
+  {
+   "name": "olive",
+   "hue": 112
+  },
+  {
+   "name": "sage",
+   "hue": 140
+  },
+  {
+   "name": "moss",
+   "hue": 155
+  },
+  {
+   "name": "eucalyptus",
+   "hue": 175
+  },
+  {
+   "name": "teal",
+   "hue": 195
+  },
+  {
+   "name": "harbor",
+   "hue": 220
+  },
+  {
+   "name": "slate",
+   "hue": 245
+  },
+  {
+   "name": "indigo",
+   "hue": 270
+  },
+  {
+   "name": "heather",
+   "hue": 295
+  },
+  {
+   "name": "plum",
+   "hue": 320
+  },
+  {
+   "name": "mauve",
+   "hue": 340
+  },
+  {
+   "name": "rose",
+   "hue": 8
+  },
+  {
+   "name": "oxblood",
+   "hue": 18
+  },
+  {
+   "name": "bone",
+   "hue": 70
+  }
+ ],
+ "colors": [
+  {
+   "id": 0,
+   "family": "coral",
+   "tone": 0,
+   "hex": "#703c39"
+  },
+  {
+   "id": 1,
+   "family": "coral",
+   "tone": 1,
+   "hex": "#83453f"
+  },
+  {
+   "id": 2,
+   "family": "coral",
+   "tone": 2,
+   "hex": "#964e47"
+  },
+  {
+   "id": 3,
+   "family": "coral",
+   "tone": 3,
+   "hex": "#a8594f"
+  },
+  {
+   "id": 4,
+   "family": "coral",
+   "tone": 4,
+   "hex": "#b86559"
+  },
+  {
+   "id": 5,
+   "family": "coral",
+   "tone": 5,
+   "hex": "#c77364"
+  },
+  {
+   "id": 6,
+   "family": "coral",
+   "tone": 6,
+   "hex": "#d48272"
+  },
+  {
+   "id": 7,
+   "family": "coral",
+   "tone": 7,
+   "hex": "#e09281"
+  },
+  {
+   "id": 8,
+   "family": "coral",
+   "tone": 8,
+   "hex": "#e9a393"
+  },
+  {
+   "id": 9,
+   "family": "coral",
+   "tone": 9,
+   "hex": "#f1b5a5"
+  },
+  {
+   "id": 10,
+   "family": "terracotta",
+   "tone": 0,
+   "hex": "#6f3e2f"
+  },
+  {
+   "id": 11,
+   "family": "terracotta",
+   "tone": 1,
+   "hex": "#824734"
+  },
+  {
+   "id": 12,
+   "family": "terracotta",
+   "tone": 2,
+   "hex": "#95513a"
+  },
+  {
+   "id": 13,
+   "family": "terracotta",
+   "tone": 3,
+   "hex": "#a65c41"
+  },
+  {
+   "id": 14,
+   "family": "terracotta",
+   "tone": 4,
+   "hex": "#b7684a"
+  },
+  {
+   "id": 15,
+   "family": "terracotta",
+   "tone": 5,
+   "hex": "#c57656"
+  },
+  {
+   "id": 16,
+   "family": "terracotta",
+   "tone": 6,
+   "hex": "#d28564"
+  },
+  {
+   "id": 17,
+   "family": "terracotta",
+   "tone": 7,
+   "hex": "#dd9575"
+  },
+  {
+   "id": 18,
+   "family": "terracotta",
+   "tone": 8,
+   "hex": "#e7a688"
+  },
+  {
+   "id": 19,
+   "family": "terracotta",
+   "tone": 9,
+   "hex": "#efb89d"
+  },
+  {
+   "id": 20,
+   "family": "persimmon",
+   "tone": 0,
+   "hex": "#6e3f28"
+  },
+  {
+   "id": 21,
+   "family": "persimmon",
+   "tone": 1,
+   "hex": "#80492b"
+  },
+  {
+   "id": 22,
+   "family": "persimmon",
+   "tone": 2,
+   "hex": "#92532f"
+  },
+  {
+   "id": 23,
+   "family": "persimmon",
+   "tone": 3,
+   "hex": "#a45f36"
+  },
+  {
+   "id": 24,
+   "family": "persimmon",
+   "tone": 4,
+   "hex": "#b36c3f"
+  },
+  {
+   "id": 25,
+   "family": "persimmon",
+   "tone": 5,
+   "hex": "#c27a4b"
+  },
+  {
+   "id": 26,
+   "family": "persimmon",
+   "tone": 6,
+   "hex": "#ce895a"
+  },
+  {
+   "id": 27,
+   "family": "persimmon",
+   "tone": 7,
+   "hex": "#d9996c"
+  },
+  {
+   "id": 28,
+   "family": "persimmon",
+   "tone": 8,
+   "hex": "#e3a981"
+  },
+  {
+   "id": 29,
+   "family": "persimmon",
+   "tone": 9,
+   "hex": "#ebba97"
+  },
+  {
+   "id": 30,
+   "family": "apricot",
+   "tone": 0,
+   "hex": "#6a4220"
+  },
+  {
+   "id": 31,
+   "family": "apricot",
+   "tone": 1,
+   "hex": "#7c4d20"
+  },
+  {
+   "id": 32,
+   "family": "apricot",
+   "tone": 2,
+   "hex": "#8d5822"
+  },
+  {
+   "id": 33,
+   "family": "apricot",
+   "tone": 3,
+   "hex": "#9e6428"
+  },
+  {
+   "id": 34,
+   "family": "apricot",
+   "tone": 4,
+   "hex": "#ad7131"
+  },
+  {
+   "id": 35,
+   "family": "apricot",
+   "tone": 5,
+   "hex": "#bb7f3f"
+  },
+  {
+   "id": 36,
+   "family": "apricot",
+   "tone": 6,
+   "hex": "#c78e50"
+  },
+  {
+   "id": 37,
+   "family": "apricot",
+   "tone": 7,
+   "hex": "#d29e64"
+  },
+  {
+   "id": 38,
+   "family": "apricot",
+   "tone": 8,
+   "hex": "#dcae7a"
+  },
+  {
+   "id": 39,
+   "family": "apricot",
+   "tone": 9,
+   "hex": "#e5be91"
+  },
+  {
+   "id": 40,
+   "family": "ochre",
+   "tone": 0,
+   "hex": "#644717"
+  },
+  {
+   "id": 41,
+   "family": "ochre",
+   "tone": 1,
+   "hex": "#745215"
+  },
+  {
+   "id": 42,
+   "family": "ochre",
+   "tone": 2,
+   "hex": "#845e15"
+  },
+  {
+   "id": 43,
+   "family": "ochre",
+   "tone": 3,
+   "hex": "#936b1a"
+  },
+  {
+   "id": 44,
+   "family": "ochre",
+   "tone": 4,
+   "hex": "#a17925"
+  },
+  {
+   "id": 45,
+   "family": "ochre",
+   "tone": 5,
+   "hex": "#ae8735"
+  },
+  {
+   "id": 46,
+   "family": "ochre",
+   "tone": 6,
+   "hex": "#ba9548"
+  },
+  {
+   "id": 47,
+   "family": "ochre",
+   "tone": 7,
+   "hex": "#c6a55e"
+  },
+  {
+   "id": 48,
+   "family": "ochre",
+   "tone": 8,
+   "hex": "#d0b475"
+  },
+  {
+   "id": 49,
+   "family": "ochre",
+   "tone": 9,
+   "hex": "#dac38e"
+  },
+  {
+   "id": 50,
+   "family": "brass",
+   "tone": 0,
+   "hex": "#5d4b15"
+  },
+  {
+   "id": 51,
+   "family": "brass",
+   "tone": 1,
+   "hex": "#6c5712"
+  },
+  {
+   "id": 52,
+   "family": "brass",
+   "tone": 2,
+   "hex": "#7a6412"
+  },
+  {
+   "id": 53,
+   "family": "brass",
+   "tone": 3,
+   "hex": "#887118"
+  },
+  {
+   "id": 54,
+   "family": "brass",
+   "tone": 4,
+   "hex": "#957f24"
+  },
+  {
+   "id": 55,
+   "family": "brass",
+   "tone": 5,
+   "hex": "#a28d35"
+  },
+  {
+   "id": 56,
+   "family": "brass",
+   "tone": 6,
+   "hex": "#ae9b49"
+  },
+  {
+   "id": 57,
+   "family": "brass",
+   "tone": 7,
+   "hex": "#b9aa5f"
+  },
+  {
+   "id": 58,
+   "family": "brass",
+   "tone": 8,
+   "hex": "#c5b977"
+  },
+  {
+   "id": 59,
+   "family": "brass",
+   "tone": 9,
+   "hex": "#d0c890"
+  },
+  {
+   "id": 60,
+   "family": "olive",
+   "tone": 0,
+   "hex": "#524f19"
+  },
+  {
+   "id": 61,
+   "family": "olive",
+   "tone": 1,
+   "hex": "#5e5d19"
+  },
+  {
+   "id": 62,
+   "family": "olive",
+   "tone": 2,
+   "hex": "#6b6a1c"
+  },
+  {
+   "id": 63,
+   "family": "olive",
+   "tone": 3,
+   "hex": "#777823"
+  },
+  {
+   "id": 64,
+   "family": "olive",
+   "tone": 4,
+   "hex": "#83862f"
+  },
+  {
+   "id": 65,
+   "family": "olive",
+   "tone": 5,
+   "hex": "#8f943f"
+  },
+  {
+   "id": 66,
+   "family": "olive",
+   "tone": 6,
+   "hex": "#9ba352"
+  },
+  {
+   "id": 67,
+   "family": "olive",
+   "tone": 7,
+   "hex": "#a7b167"
+  },
+  {
+   "id": 68,
+   "family": "olive",
+   "tone": 8,
+   "hex": "#b4bf7e"
+  },
+  {
+   "id": 69,
+   "family": "olive",
+   "tone": 9,
+   "hex": "#c1cd96"
+  },
+  {
+   "id": 70,
+   "family": "sage",
+   "tone": 0,
+   "hex": "#3b562b"
+  },
+  {
+   "id": 71,
+   "family": "sage",
+   "tone": 1,
+   "hex": "#436431"
+  },
+  {
+   "id": 72,
+   "family": "sage",
+   "tone": 2,
+   "hex": "#4a7339"
+  },
+  {
+   "id": 73,
+   "family": "sage",
+   "tone": 3,
+   "hex": "#528142"
+  },
+  {
+   "id": 74,
+   "family": "sage",
+   "tone": 4,
+   "hex": "#5c904f"
+  },
+  {
+   "id": 75,
+   "family": "sage",
+   "tone": 5,
+   "hex": "#689e5d"
+  },
+  {
+   "id": 76,
+   "family": "sage",
+   "tone": 6,
+   "hex": "#75ac6e"
+  },
+  {
+   "id": 77,
+   "family": "sage",
+   "tone": 7,
+   "hex": "#84b981"
+  },
+  {
+   "id": 78,
+   "family": "sage",
+   "tone": 8,
+   "hex": "#95c694"
+  },
+  {
+   "id": 79,
+   "family": "sage",
+   "tone": 9,
+   "hex": "#a8d3a9"
+  },
+  {
+   "id": 80,
+   "family": "moss",
+   "tone": 0,
+   "hex": "#2d5837"
+  },
+  {
+   "id": 81,
+   "family": "moss",
+   "tone": 1,
+   "hex": "#30673f"
+  },
+  {
+   "id": 82,
+   "family": "moss",
+   "tone": 2,
+   "hex": "#347649"
+  },
+  {
+   "id": 83,
+   "family": "moss",
+   "tone": 3,
+   "hex": "#3a8555"
+  },
+  {
+   "id": 84,
+   "family": "moss",
+   "tone": 4,
+   "hex": "#439362"
+  },
+  {
+   "id": 85,
+   "family": "moss",
+   "tone": 5,
+   "hex": "#4fa171"
+  },
+  {
+   "id": 86,
+   "family": "moss",
+   "tone": 6,
+   "hex": "#5faf81"
+  },
+  {
+   "id": 87,
+   "family": "moss",
+   "tone": 7,
+   "hex": "#71bc92"
+  },
+  {
+   "id": 88,
+   "family": "moss",
+   "tone": 8,
+   "hex": "#86c9a3"
+  },
+  {
+   "id": 89,
+   "family": "moss",
+   "tone": 9,
+   "hex": "#9bd5b6"
+  },
+  {
+   "id": 90,
+   "family": "eucalyptus",
+   "tone": 0,
+   "hex": "#165a46"
+  },
+  {
+   "id": 91,
+   "family": "eucalyptus",
+   "tone": 1,
+   "hex": "#0e6953"
+  },
+  {
+   "id": 92,
+   "family": "eucalyptus",
+   "tone": 2,
+   "hex": "#057860"
+  },
+  {
+   "id": 93,
+   "family": "eucalyptus",
+   "tone": 3,
+   "hex": "#04876d"
+  },
+  {
+   "id": 94,
+   "family": "eucalyptus",
+   "tone": 4,
+   "hex": "#15957c"
+  },
+  {
+   "id": 95,
+   "family": "eucalyptus",
+   "tone": 5,
+   "hex": "#2ba38b"
+  },
+  {
+   "id": 96,
+   "family": "eucalyptus",
+   "tone": 6,
+   "hex": "#43b19a"
+  },
+  {
+   "id": 97,
+   "family": "eucalyptus",
+   "tone": 7,
+   "hex": "#5bbea9"
+  },
+  {
+   "id": 98,
+   "family": "eucalyptus",
+   "tone": 8,
+   "hex": "#75cab9"
+  },
+  {
+   "id": 99,
+   "family": "eucalyptus",
+   "tone": 9,
+   "hex": "#8fd6c8"
+  },
+  {
+   "id": 100,
+   "family": "teal",
+   "tone": 0,
+   "hex": "#0b5955"
+  },
+  {
+   "id": 101,
+   "family": "teal",
+   "tone": 1,
+   "hex": "#0c6764"
+  },
+  {
+   "id": 102,
+   "family": "teal",
+   "tone": 2,
+   "hex": "#007673"
+  },
+  {
+   "id": 103,
+   "family": "teal",
+   "tone": 3,
+   "hex": "#158382"
+  },
+  {
+   "id": 104,
+   "family": "teal",
+   "tone": 4,
+   "hex": "#129292"
+  },
+  {
+   "id": 105,
+   "family": "teal",
+   "tone": 5,
+   "hex": "#04a2a3"
+  },
+  {
+   "id": 106,
+   "family": "teal",
+   "tone": 6,
+   "hex": "#32afb1"
+  },
+  {
+   "id": 107,
+   "family": "teal",
+   "tone": 7,
+   "hex": "#51bcbf"
+  },
+  {
+   "id": 108,
+   "family": "teal",
+   "tone": 8,
+   "hex": "#6ec9cd"
+  },
+  {
+   "id": 109,
+   "family": "teal",
+   "tone": 9,
+   "hex": "#8ad5d9"
+  },
+  {
+   "id": 110,
+   "family": "harbor",
+   "tone": 0,
+   "hex": "#005766"
+  },
+  {
+   "id": 111,
+   "family": "harbor",
+   "tone": 1,
+   "hex": "#026476"
+  },
+  {
+   "id": 112,
+   "family": "harbor",
+   "tone": 2,
+   "hex": "#0e7287"
+  },
+  {
+   "id": 113,
+   "family": "harbor",
+   "tone": 3,
+   "hex": "#148098"
+  },
+  {
+   "id": 114,
+   "family": "harbor",
+   "tone": 4,
+   "hex": "#168eab"
+  },
+  {
+   "id": 115,
+   "family": "harbor",
+   "tone": 5,
+   "hex": "#249cbc"
+  },
+  {
+   "id": 116,
+   "family": "harbor",
+   "tone": 6,
+   "hex": "#40aaca"
+  },
+  {
+   "id": 117,
+   "family": "harbor",
+   "tone": 7,
+   "hex": "#5bb7d6"
+  },
+  {
+   "id": 118,
+   "family": "harbor",
+   "tone": 8,
+   "hex": "#76c4e1"
+  },
+  {
+   "id": 119,
+   "family": "harbor",
+   "tone": 9,
+   "hex": "#91d0ea"
+  },
+  {
+   "id": 120,
+   "family": "slate",
+   "tone": 0,
+   "hex": "#215271"
+  },
+  {
+   "id": 121,
+   "family": "slate",
+   "tone": 1,
+   "hex": "#245f85"
+  },
+  {
+   "id": 122,
+   "family": "slate",
+   "tone": 2,
+   "hex": "#296c99"
+  },
+  {
+   "id": 123,
+   "family": "slate",
+   "tone": 3,
+   "hex": "#3379ac"
+  },
+  {
+   "id": 124,
+   "family": "slate",
+   "tone": 4,
+   "hex": "#4086bd"
+  },
+  {
+   "id": 125,
+   "family": "slate",
+   "tone": 5,
+   "hex": "#5094cc"
+  },
+  {
+   "id": 126,
+   "family": "slate",
+   "tone": 6,
+   "hex": "#62a1d9"
+  },
+  {
+   "id": 127,
+   "family": "slate",
+   "tone": 7,
+   "hex": "#76afe4"
+  },
+  {
+   "id": 128,
+   "family": "slate",
+   "tone": 8,
+   "hex": "#8cbced"
+  },
+  {
+   "id": 129,
+   "family": "slate",
+   "tone": 9,
+   "hex": "#a2caf5"
+  },
+  {
+   "id": 130,
+   "family": "indigo",
+   "tone": 0,
+   "hex": "#394c76"
+  },
+  {
+   "id": 131,
+   "family": "indigo",
+   "tone": 1,
+   "hex": "#42578a"
+  },
+  {
+   "id": 132,
+   "family": "indigo",
+   "tone": 2,
+   "hex": "#4d639e"
+  },
+  {
+   "id": 133,
+   "family": "indigo",
+   "tone": 3,
+   "hex": "#5970b1"
+  },
+  {
+   "id": 134,
+   "family": "indigo",
+   "tone": 4,
+   "hex": "#667cc2"
+  },
+  {
+   "id": 135,
+   "family": "indigo",
+   "tone": 5,
+   "hex": "#7489d1"
+  },
+  {
+   "id": 136,
+   "family": "indigo",
+   "tone": 6,
+   "hex": "#8497dd"
+  },
+  {
+   "id": 137,
+   "family": "indigo",
+   "tone": 7,
+   "hex": "#95a5e7"
+  },
+  {
+   "id": 138,
+   "family": "indigo",
+   "tone": 8,
+   "hex": "#a6b4f0"
+  },
+  {
+   "id": 139,
+   "family": "indigo",
+   "tone": 9,
+   "hex": "#b8c2f6"
+  },
+  {
+   "id": 140,
+   "family": "heather",
+   "tone": 0,
+   "hex": "#4c4673"
+  },
+  {
+   "id": 141,
+   "family": "heather",
+   "tone": 1,
+   "hex": "#5a5086"
+  },
+  {
+   "id": 142,
+   "family": "heather",
+   "tone": 2,
+   "hex": "#685b99"
+  },
+  {
+   "id": 143,
+   "family": "heather",
+   "tone": 3,
+   "hex": "#7666ab"
+  },
+  {
+   "id": 144,
+   "family": "heather",
+   "tone": 4,
+   "hex": "#8472bb"
+  },
+  {
+   "id": 145,
+   "family": "heather",
+   "tone": 5,
+   "hex": "#937fc9"
+  },
+  {
+   "id": 146,
+   "family": "heather",
+   "tone": 6,
+   "hex": "#a28dd5"
+  },
+  {
+   "id": 147,
+   "family": "heather",
+   "tone": 7,
+   "hex": "#b19cdf"
+  },
+  {
+   "id": 148,
+   "family": "heather",
+   "tone": 8,
+   "hex": "#bfabe8"
+  },
+  {
+   "id": 149,
+   "family": "heather",
+   "tone": 9,
+   "hex": "#cdbbef"
+  },
+  {
+   "id": 150,
+   "family": "plum",
+   "tone": 0,
+   "hex": "#5c4069"
+  },
+  {
+   "id": 151,
+   "family": "plum",
+   "tone": 1,
+   "hex": "#6c497a"
+  },
+  {
+   "id": 152,
+   "family": "plum",
+   "tone": 2,
+   "hex": "#7d538b"
+  },
+  {
+   "id": 153,
+   "family": "plum",
+   "tone": 3,
+   "hex": "#8d5e9b"
+  },
+  {
+   "id": 154,
+   "family": "plum",
+   "tone": 4,
+   "hex": "#9d6aa9"
+  },
+  {
+   "id": 155,
+   "family": "plum",
+   "tone": 5,
+   "hex": "#ac77b6"
+  },
+  {
+   "id": 156,
+   "family": "plum",
+   "tone": 6,
+   "hex": "#ba85c2"
+  },
+  {
+   "id": 157,
+   "family": "plum",
+   "tone": 7,
+   "hex": "#c794cd"
+  },
+  {
+   "id": 158,
+   "family": "plum",
+   "tone": 8,
+   "hex": "#d4a5d7"
+  },
+  {
+   "id": 159,
+   "family": "plum",
+   "tone": 9,
+   "hex": "#dfb6e0"
+  },
+  {
+   "id": 160,
+   "family": "mauve",
+   "tone": 0,
+   "hex": "#663d5d"
+  },
+  {
+   "id": 161,
+   "family": "mauve",
+   "tone": 1,
+   "hex": "#77466c"
+  },
+  {
+   "id": 162,
+   "family": "mauve",
+   "tone": 2,
+   "hex": "#894f7a"
+  },
+  {
+   "id": 163,
+   "family": "mauve",
+   "tone": 3,
+   "hex": "#9a5988"
+  },
+  {
+   "id": 164,
+   "family": "mauve",
+   "tone": 4,
+   "hex": "#ab6595"
+  },
+  {
+   "id": 165,
+   "family": "mauve",
+   "tone": 5,
+   "hex": "#ba72a2"
+  },
+  {
+   "id": 166,
+   "family": "mauve",
+   "tone": 6,
+   "hex": "#c881ae"
+  },
+  {
+   "id": 167,
+   "family": "mauve",
+   "tone": 7,
+   "hex": "#d590b9"
+  },
+  {
+   "id": 168,
+   "family": "mauve",
+   "tone": 8,
+   "hex": "#e0a1c5"
+  },
+  {
+   "id": 169,
+   "family": "mauve",
+   "tone": 9,
+   "hex": "#eab3d0"
+  },
+  {
+   "id": 170,
+   "family": "rose",
+   "tone": 0,
+   "hex": "#6e3b49"
+  },
+  {
+   "id": 171,
+   "family": "rose",
+   "tone": 1,
+   "hex": "#814354"
+  },
+  {
+   "id": 172,
+   "family": "rose",
+   "tone": 2,
+   "hex": "#944c5e"
+  },
+  {
+   "id": 173,
+   "family": "rose",
+   "tone": 3,
+   "hex": "#a65769"
+  },
+  {
+   "id": 174,
+   "family": "rose",
+   "tone": 4,
+   "hex": "#b76374"
+  },
+  {
+   "id": 175,
+   "family": "rose",
+   "tone": 5,
+   "hex": "#c67080"
+  },
+  {
+   "id": 176,
+   "family": "rose",
+   "tone": 6,
+   "hex": "#d37f8d"
+  },
+  {
+   "id": 177,
+   "family": "rose",
+   "tone": 7,
+   "hex": "#df8f9a"
+  },
+  {
+   "id": 178,
+   "family": "rose",
+   "tone": 8,
+   "hex": "#e9a1a8"
+  },
+  {
+   "id": 179,
+   "family": "rose",
+   "tone": 9,
+   "hex": "#f2b3b8"
+  },
+  {
+   "id": 180,
+   "family": "oxblood",
+   "tone": 0,
+   "hex": "#703b42"
+  },
+  {
+   "id": 181,
+   "family": "oxblood",
+   "tone": 1,
+   "hex": "#83434b"
+  },
+  {
+   "id": 182,
+   "family": "oxblood",
+   "tone": 2,
+   "hex": "#964d54"
+  },
+  {
+   "id": 183,
+   "family": "oxblood",
+   "tone": 3,
+   "hex": "#a8575d"
+  },
+  {
+   "id": 184,
+   "family": "oxblood",
+   "tone": 4,
+   "hex": "#b86368"
+  },
+  {
+   "id": 185,
+   "family": "oxblood",
+   "tone": 5,
+   "hex": "#c77173"
+  },
+  {
+   "id": 186,
+   "family": "oxblood",
+   "tone": 6,
+   "hex": "#d58080"
+  },
+  {
+   "id": 187,
+   "family": "oxblood",
+   "tone": 7,
+   "hex": "#e0908f"
+  },
+  {
+   "id": 188,
+   "family": "oxblood",
+   "tone": 8,
+   "hex": "#eaa19e"
+  },
+  {
+   "id": 189,
+   "family": "oxblood",
+   "tone": 9,
+   "hex": "#f2b3af"
+  },
+  {
+   "id": 190,
+   "family": "bone",
+   "tone": 0,
+   "hex": "#554b42"
+  },
+  {
+   "id": 191,
+   "family": "bone",
+   "tone": 1,
+   "hex": "#62574d"
+  },
+  {
+   "id": 192,
+   "family": "bone",
+   "tone": 2,
+   "hex": "#706458"
+  },
+  {
+   "id": 193,
+   "family": "bone",
+   "tone": 3,
+   "hex": "#7e7063"
+  },
+  {
+   "id": 194,
+   "family": "bone",
+   "tone": 4,
+   "hex": "#8c7e6f"
+  },
+  {
+   "id": 195,
+   "family": "bone",
+   "tone": 5,
+   "hex": "#9a8b7a"
+  },
+  {
+   "id": 196,
+   "family": "bone",
+   "tone": 6,
+   "hex": "#a89986"
+  },
+  {
+   "id": 197,
+   "family": "bone",
+   "tone": 7,
+   "hex": "#b7a692"
+  },
+  {
+   "id": 198,
+   "family": "bone",
+   "tone": 8,
+   "hex": "#c6b59f"
+  },
+  {
+   "id": 199,
+   "family": "bone",
+   "tone": 9,
+   "hex": "#d4c3ab"
+  },
+  {
+   "id": 200,
+   "family": "coral",
+   "tone": 0.5,
+   "hex": "#7a403c",
+   "extension": true
+  },
+  {
+   "id": 201,
+   "family": "coral",
+   "tone": 2.5,
+   "hex": "#9f534b",
+   "extension": true
+  },
+  {
+   "id": 202,
+   "family": "coral",
+   "tone": 4.5,
+   "hex": "#c06c5f",
+   "extension": true
+  },
+  {
+   "id": 203,
+   "family": "coral",
+   "tone": 6.5,
+   "hex": "#da8a79",
+   "extension": true
+  },
+  {
+   "id": 204,
+   "family": "coral",
+   "tone": 8.5,
+   "hex": "#eeac9c",
+   "extension": true
+  },
+  {
+   "id": 205,
+   "family": "terracotta",
+   "tone": 0.5,
+   "hex": "#794232",
+   "extension": true
+  },
+  {
+   "id": 206,
+   "family": "terracotta",
+   "tone": 2.5,
+   "hex": "#9e563d",
+   "extension": true
+  },
+  {
+   "id": 207,
+   "family": "terracotta",
+   "tone": 4.5,
+   "hex": "#be6f50",
+   "extension": true
+  },
+  {
+   "id": 208,
+   "family": "terracotta",
+   "tone": 6.5,
+   "hex": "#d88d6d",
+   "extension": true
+  },
+  {
+   "id": 209,
+   "family": "terracotta",
+   "tone": 8.5,
+   "hex": "#ebaf92",
+   "extension": true
+  },
+  {
+   "id": 210,
+   "family": "persimmon",
+   "tone": 0.5,
+   "hex": "#77442a",
+   "extension": true
+  },
+  {
+   "id": 211,
+   "family": "persimmon",
+   "tone": 2.5,
+   "hex": "#9b5932",
+   "extension": true
+  },
+  {
+   "id": 212,
+   "family": "persimmon",
+   "tone": 4.5,
+   "hex": "#bb7244",
+   "extension": true
+  },
+  {
+   "id": 213,
+   "family": "persimmon",
+   "tone": 6.5,
+   "hex": "#d49163",
+   "extension": true
+  },
+  {
+   "id": 214,
+   "family": "persimmon",
+   "tone": 8.5,
+   "hex": "#e7b28c",
+   "extension": true
+  },
+  {
+   "id": 215,
+   "family": "apricot",
+   "tone": 0.5,
+   "hex": "#734820",
+   "extension": true
+  },
+  {
+   "id": 216,
+   "family": "apricot",
+   "tone": 2.5,
+   "hex": "#965e25",
+   "extension": true
+  },
+  {
+   "id": 217,
+   "family": "apricot",
+   "tone": 4.5,
+   "hex": "#b47837",
+   "extension": true
+  },
+  {
+   "id": 218,
+   "family": "apricot",
+   "tone": 6.5,
+   "hex": "#cd9659",
+   "extension": true
+  },
+  {
+   "id": 219,
+   "family": "apricot",
+   "tone": 8.5,
+   "hex": "#e1b685",
+   "extension": true
+  },
+  {
+   "id": 220,
+   "family": "ochre",
+   "tone": 0.5,
+   "hex": "#6c4d16",
+   "extension": true
+  },
+  {
+   "id": 221,
+   "family": "ochre",
+   "tone": 2.5,
+   "hex": "#8b6516",
+   "extension": true
+  },
+  {
+   "id": 222,
+   "family": "ochre",
+   "tone": 4.5,
+   "hex": "#a8802c",
+   "extension": true
+  },
+  {
+   "id": 223,
+   "family": "ochre",
+   "tone": 6.5,
+   "hex": "#c09d53",
+   "extension": true
+  },
+  {
+   "id": 224,
+   "family": "ochre",
+   "tone": 8.5,
+   "hex": "#d5bc82",
+   "extension": true
+  },
+  {
+   "id": 225,
+   "family": "brass",
+   "tone": 0.5,
+   "hex": "#645114",
+   "extension": true
+  },
+  {
+   "id": 226,
+   "family": "brass",
+   "tone": 2.5,
+   "hex": "#816a14",
+   "extension": true
+  },
+  {
+   "id": 227,
+   "family": "brass",
+   "tone": 4.5,
+   "hex": "#9c862c",
+   "extension": true
+  },
+  {
+   "id": 228,
+   "family": "brass",
+   "tone": 6.5,
+   "hex": "#b4a354",
+   "extension": true
+  },
+  {
+   "id": 229,
+   "family": "brass",
+   "tone": 8.5,
+   "hex": "#cac083",
+   "extension": true
+  },
+  {
+   "id": 230,
+   "family": "olive",
+   "tone": 0.5,
+   "hex": "#585619",
+   "extension": true
+  },
+  {
+   "id": 231,
+   "family": "olive",
+   "tone": 2.5,
+   "hex": "#71711f",
+   "extension": true
+  },
+  {
+   "id": 232,
+   "family": "olive",
+   "tone": 4.5,
+   "hex": "#898d36",
+   "extension": true
+  },
+  {
+   "id": 233,
+   "family": "olive",
+   "tone": 6.5,
+   "hex": "#a1aa5c",
+   "extension": true
+  },
+  {
+   "id": 234,
+   "family": "olive",
+   "tone": 8.5,
+   "hex": "#bbc68a",
+   "extension": true
+  },
+  {
+   "id": 235,
+   "family": "sage",
+   "tone": 0.5,
+   "hex": "#3f5d2e",
+   "extension": true
+  },
+  {
+   "id": 236,
+   "family": "sage",
+   "tone": 2.5,
+   "hex": "#4e7a3d",
+   "extension": true
+  },
+  {
+   "id": 237,
+   "family": "sage",
+   "tone": 4.5,
+   "hex": "#629756",
+   "extension": true
+  },
+  {
+   "id": 238,
+   "family": "sage",
+   "tone": 6.5,
+   "hex": "#7cb377",
+   "extension": true
+  },
+  {
+   "id": 239,
+   "family": "sage",
+   "tone": 8.5,
+   "hex": "#9ecd9f",
+   "extension": true
+  },
+  {
+   "id": 240,
+   "family": "moss",
+   "tone": 0.5,
+   "hex": "#2e603b",
+   "extension": true
+  },
+  {
+   "id": 241,
+   "family": "moss",
+   "tone": 2.5,
+   "hex": "#377d4f",
+   "extension": true
+  },
+  {
+   "id": 242,
+   "family": "moss",
+   "tone": 4.5,
+   "hex": "#499a69",
+   "extension": true
+  },
+  {
+   "id": 243,
+   "family": "moss",
+   "tone": 6.5,
+   "hex": "#68b689",
+   "extension": true
+  },
+  {
+   "id": 244,
+   "family": "moss",
+   "tone": 8.5,
+   "hex": "#90cfad",
+   "extension": true
+  },
+  {
+   "id": 245,
+   "family": "eucalyptus",
+   "tone": 0.5,
+   "hex": "#12614c",
+   "extension": true
+  },
+  {
+   "id": 246,
+   "family": "eucalyptus",
+   "tone": 2.5,
+   "hex": "#037f66",
+   "extension": true
+  },
+  {
+   "id": 247,
+   "family": "eucalyptus",
+   "tone": 4.5,
+   "hex": "#209c83",
+   "extension": true
+  },
+  {
+   "id": 248,
+   "family": "eucalyptus",
+   "tone": 6.5,
+   "hex": "#4fb7a1",
+   "extension": true
+  },
+  {
+   "id": 249,
+   "family": "eucalyptus",
+   "tone": 8.5,
+   "hex": "#82d0c0",
+   "extension": true
+  },
+  {
+   "id": 250,
+   "family": "teal",
+   "tone": 0.5,
+   "hex": "#02605d",
+   "extension": true
+  },
+  {
+   "id": 251,
+   "family": "teal",
+   "tone": 2.5,
+   "hex": "#137c7a",
+   "extension": true
+  },
+  {
+   "id": 252,
+   "family": "teal",
+   "tone": 4.5,
+   "hex": "#099a9a",
+   "extension": true
+  },
+  {
+   "id": 253,
+   "family": "teal",
+   "tone": 6.5,
+   "hex": "#42b6b9",
+   "extension": true
+  },
+  {
+   "id": 254,
+   "family": "teal",
+   "tone": 8.5,
+   "hex": "#7ccfd3",
+   "extension": true
+  },
+  {
+   "id": 255,
+   "family": "harbor",
+   "tone": 0.5,
+   "hex": "#085d6d",
+   "extension": true
+  },
+  {
+   "id": 256,
+   "family": "harbor",
+   "tone": 2.5,
+   "hex": "#0f7990",
+   "extension": true
+  },
+  {
+   "id": 257,
+   "family": "harbor",
+   "tone": 4.5,
+   "hex": "#1396b5",
+   "extension": true
+  },
+  {
+   "id": 258,
+   "family": "harbor",
+   "tone": 6.5,
+   "hex": "#4eb0d0",
+   "extension": true
+  },
+  {
+   "id": 259,
+   "family": "harbor",
+   "tone": 8.5,
+   "hex": "#84cae6",
+   "extension": true
+  },
+  {
+   "id": 260,
+   "family": "slate",
+   "tone": 0.5,
+   "hex": "#22587b",
+   "extension": true
+  },
+  {
+   "id": 261,
+   "family": "slate",
+   "tone": 2.5,
+   "hex": "#2d72a3",
+   "extension": true
+  },
+  {
+   "id": 262,
+   "family": "slate",
+   "tone": 4.5,
+   "hex": "#478dc5",
+   "extension": true
+  },
+  {
+   "id": 263,
+   "family": "slate",
+   "tone": 6.5,
+   "hex": "#6ca8df",
+   "extension": true
+  },
+  {
+   "id": 264,
+   "family": "slate",
+   "tone": 8.5,
+   "hex": "#97c3f1",
+   "extension": true
+  },
+  {
+   "id": 265,
+   "family": "indigo",
+   "tone": 0.5,
+   "hex": "#3d5280",
+   "extension": true
+  },
+  {
+   "id": 266,
+   "family": "indigo",
+   "tone": 2.5,
+   "hex": "#5369a8",
+   "extension": true
+  },
+  {
+   "id": 267,
+   "family": "indigo",
+   "tone": 4.5,
+   "hex": "#6d83c9",
+   "extension": true
+  },
+  {
+   "id": 268,
+   "family": "indigo",
+   "tone": 6.5,
+   "hex": "#8c9ee2",
+   "extension": true
+  },
+  {
+   "id": 269,
+   "family": "indigo",
+   "tone": 8.5,
+   "hex": "#afbbf3",
+   "extension": true
+  },
+  {
+   "id": 270,
+   "family": "heather",
+   "tone": 0.5,
+   "hex": "#534b7d",
+   "extension": true
+  },
+  {
+   "id": 271,
+   "family": "heather",
+   "tone": 2.5,
+   "hex": "#6f60a2",
+   "extension": true
+  },
+  {
+   "id": 272,
+   "family": "heather",
+   "tone": 4.5,
+   "hex": "#8c79c2",
+   "extension": true
+  },
+  {
+   "id": 273,
+   "family": "heather",
+   "tone": 6.5,
+   "hex": "#a995da",
+   "extension": true
+  },
+  {
+   "id": 274,
+   "family": "heather",
+   "tone": 8.5,
+   "hex": "#c6b3ec",
+   "extension": true
+  },
+  {
+   "id": 275,
+   "family": "plum",
+   "tone": 0.5,
+   "hex": "#644572",
+   "extension": true
+  },
+  {
+   "id": 276,
+   "family": "plum",
+   "tone": 2.5,
+   "hex": "#855993",
+   "extension": true
+  },
+  {
+   "id": 277,
+   "family": "plum",
+   "tone": 4.5,
+   "hex": "#a470b0",
+   "extension": true
+  },
+  {
+   "id": 278,
+   "family": "plum",
+   "tone": 6.5,
+   "hex": "#c18dc8",
+   "extension": true
+  },
+  {
+   "id": 279,
+   "family": "plum",
+   "tone": 8.5,
+   "hex": "#daaddc",
+   "extension": true
+  },
+  {
+   "id": 280,
+   "family": "mauve",
+   "tone": 0.5,
+   "hex": "#6f4165",
+   "extension": true
+  },
+  {
+   "id": 281,
+   "family": "mauve",
+   "tone": 2.5,
+   "hex": "#925481",
+   "extension": true
+  },
+  {
+   "id": 282,
+   "family": "mauve",
+   "tone": 4.5,
+   "hex": "#b36b9c",
+   "extension": true
+  },
+  {
+   "id": 283,
+   "family": "mauve",
+   "tone": 6.5,
+   "hex": "#cf88b4",
+   "extension": true
+  },
+  {
+   "id": 284,
+   "family": "mauve",
+   "tone": 8.5,
+   "hex": "#e5aacb",
+   "extension": true
+  },
+  {
+   "id": 285,
+   "family": "rose",
+   "tone": 0.5,
+   "hex": "#783f4f",
+   "extension": true
+  },
+  {
+   "id": 286,
+   "family": "rose",
+   "tone": 2.5,
+   "hex": "#9d5164",
+   "extension": true
+  },
+  {
+   "id": 287,
+   "family": "rose",
+   "tone": 4.5,
+   "hex": "#be697a",
+   "extension": true
+  },
+  {
+   "id": 288,
+   "family": "rose",
+   "tone": 6.5,
+   "hex": "#da8793",
+   "extension": true
+  },
+  {
+   "id": 289,
+   "family": "rose",
+   "tone": 8.5,
+   "hex": "#eea9b0",
+   "extension": true
+  },
+  {
+   "id": 290,
+   "family": "oxblood",
+   "tone": 0.5,
+   "hex": "#793f46",
+   "extension": true
+  },
+  {
+   "id": 291,
+   "family": "oxblood",
+   "tone": 2.5,
+   "hex": "#9f5259",
+   "extension": true
+  },
+  {
+   "id": 292,
+   "family": "oxblood",
+   "tone": 4.5,
+   "hex": "#c06a6e",
+   "extension": true
+  },
+  {
+   "id": 293,
+   "family": "oxblood",
+   "tone": 6.5,
+   "hex": "#db8887",
+   "extension": true
+  },
+  {
+   "id": 294,
+   "family": "oxblood",
+   "tone": 8.5,
+   "hex": "#eeaaa6",
+   "extension": true
+  },
+  {
+   "id": 295,
+   "family": "bone",
+   "tone": 0.5,
+   "hex": "#5c5147",
+   "extension": true
+  },
+  {
+   "id": 296,
+   "family": "bone",
+   "tone": 2.5,
+   "hex": "#776a5d",
+   "extension": true
+  },
+  {
+   "id": 297,
+   "family": "bone",
+   "tone": 4.5,
+   "hex": "#938474",
+   "extension": true
+  },
+  {
+   "id": 298,
+   "family": "bone",
+   "tone": 6.5,
+   "hex": "#af9f8c",
+   "extension": true
+  },
+  {
+   "id": 299,
+   "family": "bone",
+   "tone": 8.5,
+   "hex": "#cdbca5",
+   "extension": true
+  },
+  {
+   "id": 300,
+   "family": "coral",
+   "tone": 1.5,
+   "hex": "#8d4943",
+   "extension": true
+  },
+  {
+   "id": 301,
+   "family": "coral",
+   "tone": 3.5,
+   "hex": "#b05f54",
+   "extension": true
+  },
+  {
+   "id": 302,
+   "family": "coral",
+   "tone": 5.5,
+   "hex": "#ce7a6b",
+   "extension": true
+  },
+  {
+   "id": 303,
+   "family": "coral",
+   "tone": 7.5,
+   "hex": "#e59b8a",
+   "extension": true
+  },
+  {
+   "id": 304,
+   "family": "terracotta",
+   "tone": 1.5,
+   "hex": "#8c4b37",
+   "extension": true
+  },
+  {
+   "id": 305,
+   "family": "terracotta",
+   "tone": 3.5,
+   "hex": "#af6245",
+   "extension": true
+  },
+  {
+   "id": 306,
+   "family": "terracotta",
+   "tone": 5.5,
+   "hex": "#cc7e5d",
+   "extension": true
+  },
+  {
+   "id": 307,
+   "family": "terracotta",
+   "tone": 7.5,
+   "hex": "#e29e7e",
+   "extension": true
+  },
+  {
+   "id": 308,
+   "family": "persimmon",
+   "tone": 1.5,
+   "hex": "#8a4e2d",
+   "extension": true
+  },
+  {
+   "id": 309,
+   "family": "persimmon",
+   "tone": 3.5,
+   "hex": "#ac653a",
+   "extension": true
+  },
+  {
+   "id": 310,
+   "family": "persimmon",
+   "tone": 5.5,
+   "hex": "#c88152",
+   "extension": true
+  },
+  {
+   "id": 311,
+   "family": "persimmon",
+   "tone": 7.5,
+   "hex": "#dea176",
+   "extension": true
+  },
+  {
+   "id": 312,
+   "family": "apricot",
+   "tone": 1.5,
+   "hex": "#855221",
+   "extension": true
+  },
+  {
+   "id": 313,
+   "family": "apricot",
+   "tone": 3.5,
+   "hex": "#a66a2c",
+   "extension": true
+  },
+  {
+   "id": 314,
+   "family": "apricot",
+   "tone": 5.5,
+   "hex": "#c18647",
+   "extension": true
+  },
+  {
+   "id": 315,
+   "family": "apricot",
+   "tone": 7.5,
+   "hex": "#d7a66e",
+   "extension": true
+  },
+  {
+   "id": 316,
+   "family": "ochre",
+   "tone": 1.5,
+   "hex": "#7c5814",
+   "extension": true
+  },
+  {
+   "id": 317,
+   "family": "ochre",
+   "tone": 3.5,
+   "hex": "#9a721f",
+   "extension": true
+  },
+  {
+   "id": 318,
+   "family": "ochre",
+   "tone": 5.5,
+   "hex": "#b48e3e",
+   "extension": true
+  },
+  {
+   "id": 319,
+   "family": "ochre",
+   "tone": 7.5,
+   "hex": "#cbac69",
+   "extension": true
+  },
+  {
+   "id": 320,
+   "family": "brass",
+   "tone": 1.5,
+   "hex": "#735d12",
+   "extension": true
+  },
+  {
+   "id": 321,
+   "family": "brass",
+   "tone": 3.5,
+   "hex": "#8f781d",
+   "extension": true
+  },
+  {
+   "id": 322,
+   "family": "brass",
+   "tone": 5.5,
+   "hex": "#a8943e",
+   "extension": true
+  },
+  {
+   "id": 323,
+   "family": "brass",
+   "tone": 7.5,
+   "hex": "#bfb16b",
+   "extension": true
+  },
+  {
+   "id": 324,
+   "family": "olive",
+   "tone": 1.5,
+   "hex": "#65631a",
+   "extension": true
+  },
+  {
+   "id": 325,
+   "family": "olive",
+   "tone": 3.5,
+   "hex": "#7d7f28",
+   "extension": true
+  },
+  {
+   "id": 326,
+   "family": "olive",
+   "tone": 5.5,
+   "hex": "#959b48",
+   "extension": true
+  },
+  {
+   "id": 327,
+   "family": "olive",
+   "tone": 7.5,
+   "hex": "#adb872",
+   "extension": true
+  },
+  {
+   "id": 328,
+   "family": "sage",
+   "tone": 1.5,
+   "hex": "#466c35",
+   "extension": true
+  },
+  {
+   "id": 329,
+   "family": "sage",
+   "tone": 3.5,
+   "hex": "#578948",
+   "extension": true
+  },
+  {
+   "id": 330,
+   "family": "sage",
+   "tone": 5.5,
+   "hex": "#6ea566",
+   "extension": true
+  },
+  {
+   "id": 331,
+   "family": "sage",
+   "tone": 7.5,
+   "hex": "#8dc08a",
+   "extension": true
+  },
+  {
+   "id": 332,
+   "family": "moss",
+   "tone": 1.5,
+   "hex": "#326e44",
+   "extension": true
+  },
+  {
+   "id": 333,
+   "family": "moss",
+   "tone": 3.5,
+   "hex": "#3e8c5b",
+   "extension": true
+  },
+  {
+   "id": 334,
+   "family": "moss",
+   "tone": 5.5,
+   "hex": "#57a879",
+   "extension": true
+  },
+  {
+   "id": 335,
+   "family": "moss",
+   "tone": 7.5,
+   "hex": "#7bc39b",
+   "extension": true
+  },
+  {
+   "id": 336,
+   "family": "eucalyptus",
+   "tone": 1.5,
+   "hex": "#097059",
+   "extension": true
+  },
+  {
+   "id": 337,
+   "family": "eucalyptus",
+   "tone": 3.5,
+   "hex": "#0b8e74",
+   "extension": true
+  },
+  {
+   "id": 338,
+   "family": "eucalyptus",
+   "tone": 5.5,
+   "hex": "#37aa92",
+   "extension": true
+  },
+  {
+   "id": 339,
+   "family": "eucalyptus",
+   "tone": 7.5,
+   "hex": "#68c4b1",
+   "extension": true
+  },
+  {
+   "id": 340,
+   "family": "teal",
+   "tone": 1.5,
+   "hex": "#056e6b",
+   "extension": true
+  },
+  {
+   "id": 341,
+   "family": "teal",
+   "tone": 3.5,
+   "hex": "#058b8a",
+   "extension": true
+  },
+  {
+   "id": 342,
+   "family": "teal",
+   "tone": 5.5,
+   "hex": "#20a9aa",
+   "extension": true
+  },
+  {
+   "id": 343,
+   "family": "teal",
+   "tone": 7.5,
+   "hex": "#60c2c6",
+   "extension": true
+  },
+  {
+   "id": 344,
+   "family": "harbor",
+   "tone": 1.5,
+   "hex": "#0f6b7e",
+   "extension": true
+  },
+  {
+   "id": 345,
+   "family": "harbor",
+   "tone": 3.5,
+   "hex": "#0787a3",
+   "extension": true
+  },
+  {
+   "id": 346,
+   "family": "harbor",
+   "tone": 5.5,
+   "hex": "#33a3c3",
+   "extension": true
+  },
+  {
+   "id": 347,
+   "family": "harbor",
+   "tone": 7.5,
+   "hex": "#69bddc",
+   "extension": true
+  },
+  {
+   "id": 348,
+   "family": "slate",
+   "tone": 1.5,
+   "hex": "#26658f",
+   "extension": true
+  },
+  {
+   "id": 349,
+   "family": "slate",
+   "tone": 3.5,
+   "hex": "#3980b4",
+   "extension": true
+  },
+  {
+   "id": 350,
+   "family": "slate",
+   "tone": 5.5,
+   "hex": "#599ad3",
+   "extension": true
+  },
+  {
+   "id": 351,
+   "family": "slate",
+   "tone": 7.5,
+   "hex": "#81b6e9",
+   "extension": true
+  },
+  {
+   "id": 352,
+   "family": "indigo",
+   "tone": 1.5,
+   "hex": "#475d94",
+   "extension": true
+  },
+  {
+   "id": 353,
+   "family": "indigo",
+   "tone": 3.5,
+   "hex": "#5f76ba",
+   "extension": true
+  },
+  {
+   "id": 354,
+   "family": "indigo",
+   "tone": 5.5,
+   "hex": "#7c90d7",
+   "extension": true
+  },
+  {
+   "id": 355,
+   "family": "indigo",
+   "tone": 7.5,
+   "hex": "#9dacec",
+   "extension": true
+  },
+  {
+   "id": 356,
+   "family": "heather",
+   "tone": 1.5,
+   "hex": "#615590",
+   "extension": true
+  },
+  {
+   "id": 357,
+   "family": "heather",
+   "tone": 3.5,
+   "hex": "#7d6cb3",
+   "extension": true
+  },
+  {
+   "id": 358,
+   "family": "heather",
+   "tone": 5.5,
+   "hex": "#9b86cf",
+   "extension": true
+  },
+  {
+   "id": 359,
+   "family": "heather",
+   "tone": 7.5,
+   "hex": "#b8a4e4",
+   "extension": true
+  },
+  {
+   "id": 360,
+   "family": "plum",
+   "tone": 1.5,
+   "hex": "#744e83",
+   "extension": true
+  },
+  {
+   "id": 361,
+   "family": "plum",
+   "tone": 3.5,
+   "hex": "#9564a2",
+   "extension": true
+  },
+  {
+   "id": 362,
+   "family": "plum",
+   "tone": 5.5,
+   "hex": "#b37ebd",
+   "extension": true
+  },
+  {
+   "id": 363,
+   "family": "plum",
+   "tone": 7.5,
+   "hex": "#ce9cd2",
+   "extension": true
+  },
+  {
+   "id": 364,
+   "family": "mauve",
+   "tone": 1.5,
+   "hex": "#804a73",
+   "extension": true
+  },
+  {
+   "id": 365,
+   "family": "mauve",
+   "tone": 3.5,
+   "hex": "#a35f8f",
+   "extension": true
+  },
+  {
+   "id": 366,
+   "family": "mauve",
+   "tone": 5.5,
+   "hex": "#c179a8",
+   "extension": true
+  },
+  {
+   "id": 367,
+   "family": "mauve",
+   "tone": 7.5,
+   "hex": "#db99bf",
+   "extension": true
+  },
+  {
+   "id": 368,
+   "family": "rose",
+   "tone": 1.5,
+   "hex": "#8b4859",
+   "extension": true
+  },
+  {
+   "id": 369,
+   "family": "rose",
+   "tone": 3.5,
+   "hex": "#ae5c6f",
+   "extension": true
+  },
+  {
+   "id": 370,
+   "family": "rose",
+   "tone": 5.5,
+   "hex": "#cd7786",
+   "extension": true
+  },
+  {
+   "id": 371,
+   "family": "rose",
+   "tone": 7.5,
+   "hex": "#e498a1",
+   "extension": true
+  },
+  {
+   "id": 372,
+   "family": "oxblood",
+   "tone": 1.5,
+   "hex": "#8c484f",
+   "extension": true
+  },
+  {
+   "id": 373,
+   "family": "oxblood",
+   "tone": 3.5,
+   "hex": "#b05d63",
+   "extension": true
+  },
+  {
+   "id": 374,
+   "family": "oxblood",
+   "tone": 5.5,
+   "hex": "#ce787a",
+   "extension": true
+  },
+  {
+   "id": 375,
+   "family": "oxblood",
+   "tone": 7.5,
+   "hex": "#e59996",
+   "extension": true
+  },
+  {
+   "id": 376,
+   "family": "bone",
+   "tone": 1.5,
+   "hex": "#695d52",
+   "extension": true
+  },
+  {
+   "id": 377,
+   "family": "bone",
+   "tone": 3.5,
+   "hex": "#847769",
+   "extension": true
+  },
+  {
+   "id": 378,
+   "family": "bone",
+   "tone": 5.5,
+   "hex": "#a19280",
+   "extension": true
+  },
+  {
+   "id": 379,
+   "family": "bone",
+   "tone": 7.5,
+   "hex": "#bead98",
+   "extension": true
+  },
+  {
+   "id": 380,
+   "family": "coral",
+   "tone": 0.25,
+   "hex": "#753e3a",
+   "extension": true
+  },
+  {
+   "id": 381,
+   "family": "coral",
+   "tone": 2.25,
+   "hex": "#9b5149",
+   "extension": true
+  },
+  {
+   "id": 382,
+   "family": "coral",
+   "tone": 4.25,
+   "hex": "#bc685c",
+   "extension": true
+  },
+  {
+   "id": 383,
+   "family": "coral",
+   "tone": 6.25,
+   "hex": "#d78676",
+   "extension": true
+  },
+  {
+   "id": 384,
+   "family": "coral",
+   "tone": 8.25,
+   "hex": "#eba897",
+   "extension": true
+  },
+  {
+   "id": 385,
+   "family": "terracotta",
+   "tone": 0.25,
+   "hex": "#744031",
+   "extension": true
+  },
+  {
+   "id": 386,
+   "family": "terracotta",
+   "tone": 2.25,
+   "hex": "#99533c",
+   "extension": true
+  },
+  {
+   "id": 387,
+   "family": "terracotta",
+   "tone": 4.25,
+   "hex": "#ba6c4d",
+   "extension": true
+  },
+  {
+   "id": 388,
+   "family": "terracotta",
+   "tone": 6.25,
+   "hex": "#d58968",
+   "extension": true
+  },
+  {
+   "id": 389,
+   "family": "terracotta",
+   "tone": 8.25,
+   "hex": "#e9ab8d",
+   "extension": true
+  },
+  {
+   "id": 390,
+   "family": "persimmon",
+   "tone": 0.25,
+   "hex": "#734229",
+   "extension": true
+  },
+  {
+   "id": 391,
+   "family": "persimmon",
+   "tone": 2.25,
+   "hex": "#975631",
+   "extension": true
+  },
+  {
+   "id": 392,
+   "family": "persimmon",
+   "tone": 4.25,
+   "hex": "#b76f41",
+   "extension": true
+  },
+  {
+   "id": 393,
+   "family": "persimmon",
+   "tone": 6.25,
+   "hex": "#d18d5f",
+   "extension": true
+  },
+  {
+   "id": 394,
+   "family": "persimmon",
+   "tone": 8.25,
+   "hex": "#e5ad86",
+   "extension": true
+  },
+  {
+   "id": 395,
+   "family": "apricot",
+   "tone": 0.25,
+   "hex": "#6f4520",
+   "extension": true
+  },
+  {
+   "id": 396,
+   "family": "apricot",
+   "tone": 2.25,
+   "hex": "#925b23",
+   "extension": true
+  },
+  {
+   "id": 397,
+   "family": "apricot",
+   "tone": 4.25,
+   "hex": "#b17434",
+   "extension": true
+  },
+  {
+   "id": 398,
+   "family": "apricot",
+   "tone": 6.25,
+   "hex": "#ca9254",
+   "extension": true
+  },
+  {
+   "id": 399,
+   "family": "apricot",
+   "tone": 8.25,
+   "hex": "#deb27f",
+   "extension": true
+  },
+  {
+   "id": 400,
+   "family": "ochre",
+   "tone": 0.25,
+   "hex": "#684a17",
+   "extension": true
+  },
+  {
+   "id": 401,
+   "family": "ochre",
+   "tone": 2.25,
+   "hex": "#886215",
+   "extension": true
+  },
+  {
+   "id": 402,
+   "family": "ochre",
+   "tone": 4.25,
+   "hex": "#a47c28",
+   "extension": true
+  },
+  {
+   "id": 403,
+   "family": "ochre",
+   "tone": 6.25,
+   "hex": "#bd994d",
+   "extension": true
+  },
+  {
+   "id": 404,
+   "family": "ochre",
+   "tone": 8.25,
+   "hex": "#d3b87c",
+   "extension": true
+  },
+  {
+   "id": 405,
+   "family": "brass",
+   "tone": 0.25,
+   "hex": "#614e14",
+   "extension": true
+  },
+  {
+   "id": 406,
+   "family": "brass",
+   "tone": 2.25,
+   "hex": "#7e6713",
+   "extension": true
+  },
+  {
+   "id": 407,
+   "family": "brass",
+   "tone": 4.25,
+   "hex": "#998228",
+   "extension": true
+  },
+  {
+   "id": 408,
+   "family": "brass",
+   "tone": 6.25,
+   "hex": "#b19f4e",
+   "extension": true
+  },
+  {
+   "id": 409,
+   "family": "brass",
+   "tone": 8.25,
+   "hex": "#c8bd7d",
+   "extension": true
+  },
+  {
+   "id": 410,
+   "family": "olive",
+   "tone": 0.25,
+   "hex": "#555319",
+   "extension": true
+  },
+  {
+   "id": 411,
+   "family": "olive",
+   "tone": 2.25,
+   "hex": "#6e6e1d",
+   "extension": true
+  },
+  {
+   "id": 412,
+   "family": "olive",
+   "tone": 4.25,
+   "hex": "#868a33",
+   "extension": true
+  },
+  {
+   "id": 413,
+   "family": "olive",
+   "tone": 6.25,
+   "hex": "#9ea657",
+   "extension": true
+  },
+  {
+   "id": 414,
+   "family": "olive",
+   "tone": 8.25,
+   "hex": "#b7c284",
+   "extension": true
+  },
+  {
+   "id": 415,
+   "family": "sage",
+   "tone": 0.25,
+   "hex": "#3d592c",
+   "extension": true
+  },
+  {
+   "id": 416,
+   "family": "sage",
+   "tone": 2.25,
+   "hex": "#4c763b",
+   "extension": true
+  },
+  {
+   "id": 417,
+   "family": "sage",
+   "tone": 4.25,
+   "hex": "#5f9352",
+   "extension": true
+  },
+  {
+   "id": 418,
+   "family": "sage",
+   "tone": 6.25,
+   "hex": "#79af73",
+   "extension": true
+  },
+  {
+   "id": 419,
+   "family": "sage",
+   "tone": 8.25,
+   "hex": "#9aca99",
+   "extension": true
+  },
+  {
+   "id": 420,
+   "family": "moss",
+   "tone": 0.25,
+   "hex": "#2e5c39",
+   "extension": true
+  },
+  {
+   "id": 421,
+   "family": "moss",
+   "tone": 2.25,
+   "hex": "#357a4c",
+   "extension": true
+  },
+  {
+   "id": 422,
+   "family": "moss",
+   "tone": 4.25,
+   "hex": "#469766",
+   "extension": true
+  },
+  {
+   "id": 423,
+   "family": "moss",
+   "tone": 6.25,
+   "hex": "#63b285",
+   "extension": true
+  },
+  {
+   "id": 424,
+   "family": "moss",
+   "tone": 8.25,
+   "hex": "#8bcca8",
+   "extension": true
+  },
+  {
+   "id": 425,
+   "family": "eucalyptus",
+   "tone": 0.25,
+   "hex": "#145e49",
+   "extension": true
+  },
+  {
+   "id": 426,
+   "family": "eucalyptus",
+   "tone": 2.25,
+   "hex": "#037c63",
+   "extension": true
+  },
+  {
+   "id": 427,
+   "family": "eucalyptus",
+   "tone": 4.25,
+   "hex": "#1b997f",
+   "extension": true
+  },
+  {
+   "id": 428,
+   "family": "eucalyptus",
+   "tone": 6.25,
+   "hex": "#49b49e",
+   "extension": true
+  },
+  {
+   "id": 429,
+   "family": "eucalyptus",
+   "tone": 8.25,
+   "hex": "#7bcdbc",
+   "extension": true
+  },
+  {
+   "id": 430,
+   "family": "teal",
+   "tone": 0.25,
+   "hex": "#075d59",
+   "extension": true
+  },
+  {
+   "id": 431,
+   "family": "teal",
+   "tone": 2.25,
+   "hex": "#137876",
+   "extension": true
+  },
+  {
+   "id": 432,
+   "family": "teal",
+   "tone": 4.25,
+   "hex": "#189696",
+   "extension": true
+  },
+  {
+   "id": 433,
+   "family": "teal",
+   "tone": 6.25,
+   "hex": "#3ab2b5",
+   "extension": true
+  },
+  {
+   "id": 434,
+   "family": "teal",
+   "tone": 8.25,
+   "hex": "#75ccd0",
+   "extension": true
+  },
+  {
+   "id": 435,
+   "family": "harbor",
+   "tone": 0.25,
+   "hex": "#0c5a69",
+   "extension": true
+  },
+  {
+   "id": 436,
+   "family": "harbor",
+   "tone": 2.25,
+   "hex": "#0e758b",
+   "extension": true
+  },
+  {
+   "id": 437,
+   "family": "harbor",
+   "tone": 4.25,
+   "hex": "#0792b1",
+   "extension": true
+  },
+  {
+   "id": 438,
+   "family": "harbor",
+   "tone": 6.25,
+   "hex": "#47adcd",
+   "extension": true
+  },
+  {
+   "id": 439,
+   "family": "harbor",
+   "tone": 8.25,
+   "hex": "#7dc7e3",
+   "extension": true
+  },
+  {
+   "id": 440,
+   "family": "slate",
+   "tone": 0.25,
+   "hex": "#215576",
+   "extension": true
+  },
+  {
+   "id": 441,
+   "family": "slate",
+   "tone": 2.25,
+   "hex": "#2b6f9e",
+   "extension": true
+  },
+  {
+   "id": 442,
+   "family": "slate",
+   "tone": 4.25,
+   "hex": "#438ac1",
+   "extension": true
+  },
+  {
+   "id": 443,
+   "family": "slate",
+   "tone": 6.25,
+   "hex": "#67a5dc",
+   "extension": true
+  },
+  {
+   "id": 444,
+   "family": "slate",
+   "tone": 8.25,
+   "hex": "#91c0ef",
+   "extension": true
+  },
+  {
+   "id": 445,
+   "family": "indigo",
+   "tone": 0.25,
+   "hex": "#3b4f7b",
+   "extension": true
+  },
+  {
+   "id": 446,
+   "family": "indigo",
+   "tone": 2.25,
+   "hex": "#5066a3",
+   "extension": true
+  },
+  {
+   "id": 447,
+   "family": "indigo",
+   "tone": 4.25,
+   "hex": "#6980c6",
+   "extension": true
+  },
+  {
+   "id": 448,
+   "family": "indigo",
+   "tone": 6.25,
+   "hex": "#889be0",
+   "extension": true
+  },
+  {
+   "id": 449,
+   "family": "indigo",
+   "tone": 8.25,
+   "hex": "#aab7f1",
+   "extension": true
+  },
+  {
+   "id": 450,
+   "family": "heather",
+   "tone": 0.25,
+   "hex": "#504878",
+   "extension": true
+  },
+  {
+   "id": 451,
+   "family": "heather",
+   "tone": 2.25,
+   "hex": "#6b5e9e",
+   "extension": true
+  },
+  {
+   "id": 452,
+   "family": "heather",
+   "tone": 4.25,
+   "hex": "#8875bf",
+   "extension": true
+  },
+  {
+   "id": 453,
+   "family": "heather",
+   "tone": 6.25,
+   "hex": "#a691d8",
+   "extension": true
+  },
+  {
+   "id": 454,
+   "family": "heather",
+   "tone": 8.25,
+   "hex": "#c2afea",
+   "extension": true
+  },
+  {
+   "id": 455,
+   "family": "plum",
+   "tone": 0.25,
+   "hex": "#60426d",
+   "extension": true
+  },
+  {
+   "id": 456,
+   "family": "plum",
+   "tone": 2.25,
+   "hex": "#81568f",
+   "extension": true
+  },
+  {
+   "id": 457,
+   "family": "plum",
+   "tone": 4.25,
+   "hex": "#a06dad",
+   "extension": true
+  },
+  {
+   "id": 458,
+   "family": "plum",
+   "tone": 6.25,
+   "hex": "#bd89c5",
+   "extension": true
+  },
+  {
+   "id": 459,
+   "family": "plum",
+   "tone": 8.25,
+   "hex": "#d7a9d9",
+   "extension": true
+  },
+  {
+   "id": 460,
+   "family": "mauve",
+   "tone": 0.25,
+   "hex": "#6a3f61",
+   "extension": true
+  },
+  {
+   "id": 461,
+   "family": "mauve",
+   "tone": 2.25,
+   "hex": "#8e517e",
+   "extension": true
+  },
+  {
+   "id": 462,
+   "family": "mauve",
+   "tone": 4.25,
+   "hex": "#af6899",
+   "extension": true
+  },
+  {
+   "id": 463,
+   "family": "mauve",
+   "tone": 6.25,
+   "hex": "#cb84b1",
+   "extension": true
+  },
+  {
+   "id": 464,
+   "family": "mauve",
+   "tone": 8.25,
+   "hex": "#e3a6c8",
+   "extension": true
+  },
+  {
+   "id": 465,
+   "family": "rose",
+   "tone": 0.25,
+   "hex": "#733d4c",
+   "extension": true
+  },
+  {
+   "id": 466,
+   "family": "rose",
+   "tone": 2.25,
+   "hex": "#984f61",
+   "extension": true
+  },
+  {
+   "id": 467,
+   "family": "rose",
+   "tone": 4.25,
+   "hex": "#bb6677",
+   "extension": true
+  },
+  {
+   "id": 468,
+   "family": "rose",
+   "tone": 6.25,
+   "hex": "#d78390",
+   "extension": true
+  },
+  {
+   "id": 469,
+   "family": "rose",
+   "tone": 8.25,
+   "hex": "#eba5ac",
+   "extension": true
+  },
+  {
+   "id": 470,
+   "family": "oxblood",
+   "tone": 0.25,
+   "hex": "#743d44",
+   "extension": true
+  },
+  {
+   "id": 471,
+   "family": "oxblood",
+   "tone": 2.25,
+   "hex": "#9a4f56",
+   "extension": true
+  },
+  {
+   "id": 472,
+   "family": "oxblood",
+   "tone": 4.25,
+   "hex": "#bc666b",
+   "extension": true
+  },
+  {
+   "id": 473,
+   "family": "oxblood",
+   "tone": 6.25,
+   "hex": "#d88484",
+   "extension": true
+  },
+  {
+   "id": 474,
+   "family": "oxblood",
+   "tone": 8.25,
+   "hex": "#eca6a2",
+   "extension": true
+  },
+  {
+   "id": 475,
+   "family": "bone",
+   "tone": 0.25,
+   "hex": "#584e45",
+   "extension": true
+  },
+  {
+   "id": 476,
+   "family": "bone",
+   "tone": 2.25,
+   "hex": "#73675b",
+   "extension": true
+  },
+  {
+   "id": 477,
+   "family": "bone",
+   "tone": 4.25,
+   "hex": "#8f8171",
+   "extension": true
+  },
+  {
+   "id": 478,
+   "family": "bone",
+   "tone": 6.25,
+   "hex": "#ac9c89",
+   "extension": true
+  },
+  {
+   "id": 479,
+   "family": "bone",
+   "tone": 8.25,
+   "hex": "#c9b8a2",
+   "extension": true
+  },
+  {
+   "id": 480,
+   "family": "coral",
+   "tone": 0.75,
+   "hex": "#7f423e",
+   "extension": true
+  },
+  {
+   "id": 481,
+   "family": "coral",
+   "tone": 2.75,
+   "hex": "#a4564d",
+   "extension": true
+  },
+  {
+   "id": 482,
+   "family": "coral",
+   "tone": 4.75,
+   "hex": "#c46f61",
+   "extension": true
+  },
+  {
+   "id": 483,
+   "family": "coral",
+   "tone": 6.75,
+   "hex": "#dd8e7d",
+   "extension": true
+  },
+  {
+   "id": 484,
+   "family": "coral",
+   "tone": 8.75,
+   "hex": "#f0b1a0",
+   "extension": true
+  },
+  {
+   "id": 485,
+   "family": "terracotta",
+   "tone": 0.75,
+   "hex": "#7e4433",
+   "extension": true
+  },
+  {
+   "id": 486,
+   "family": "terracotta",
+   "tone": 2.75,
+   "hex": "#a2593f",
+   "extension": true
+  },
+  {
+   "id": 487,
+   "family": "terracotta",
+   "tone": 4.75,
+   "hex": "#c27353",
+   "extension": true
+  },
+  {
+   "id": 488,
+   "family": "terracotta",
+   "tone": 6.75,
+   "hex": "#da9171",
+   "extension": true
+  },
+  {
+   "id": 489,
+   "family": "terracotta",
+   "tone": 8.75,
+   "hex": "#edb397",
+   "extension": true
+  },
+  {
+   "id": 490,
+   "family": "persimmon",
+   "tone": 0.75,
+   "hex": "#7c472a",
+   "extension": true
+  },
+  {
+   "id": 491,
+   "family": "persimmon",
+   "tone": 2.75,
+   "hex": "#9f5c34",
+   "extension": true
+  },
+  {
+   "id": 492,
+   "family": "persimmon",
+   "tone": 4.75,
+   "hex": "#be7648",
+   "extension": true
+  },
+  {
+   "id": 493,
+   "family": "persimmon",
+   "tone": 6.75,
+   "hex": "#d79568",
+   "extension": true
+  },
+  {
+   "id": 494,
+   "family": "persimmon",
+   "tone": 8.75,
+   "hex": "#e9b691",
+   "extension": true
+  },
+  {
+   "id": 495,
+   "family": "apricot",
+   "tone": 0.75,
+   "hex": "#784a20",
+   "extension": true
+  },
+  {
+   "id": 496,
+   "family": "apricot",
+   "tone": 2.75,
+   "hex": "#9a6126",
+   "extension": true
+  },
+  {
+   "id": 497,
+   "family": "apricot",
+   "tone": 4.75,
+   "hex": "#b77b3b",
+   "extension": true
+  },
+  {
+   "id": 498,
+   "family": "apricot",
+   "tone": 6.75,
+   "hex": "#d09a5e",
+   "extension": true
+  },
+  {
+   "id": 499,
+   "family": "apricot",
+   "tone": 8.75,
+   "hex": "#e3ba8b",
+   "extension": true
+  },
+  {
+   "id": 500,
+   "family": "ochre",
+   "tone": 0.75,
+   "hex": "#704f16",
+   "extension": true
+  },
+  {
+   "id": 501,
+   "family": "ochre",
+   "tone": 2.75,
+   "hex": "#8f6818",
+   "extension": true
+  },
+  {
+   "id": 502,
+   "family": "ochre",
+   "tone": 4.75,
+   "hex": "#ab8330",
+   "extension": true
+  },
+  {
+   "id": 503,
+   "family": "ochre",
+   "tone": 6.75,
+   "hex": "#c3a158",
+   "extension": true
+  },
+  {
+   "id": 504,
+   "family": "ochre",
+   "tone": 8.75,
+   "hex": "#d8c088",
+   "extension": true
+  },
+  {
+   "id": 505,
+   "family": "brass",
+   "tone": 0.75,
+   "hex": "#685413",
+   "extension": true
+  },
+  {
+   "id": 506,
+   "family": "brass",
+   "tone": 2.75,
+   "hex": "#856e16",
+   "extension": true
+  },
+  {
+   "id": 507,
+   "family": "brass",
+   "tone": 4.75,
+   "hex": "#9f8930",
+   "extension": true
+  },
+  {
+   "id": 508,
+   "family": "brass",
+   "tone": 6.75,
+   "hex": "#b7a659",
+   "extension": true
+  },
+  {
+   "id": 509,
+   "family": "brass",
+   "tone": 8.75,
+   "hex": "#cdc489",
+   "extension": true
+  },
+  {
+   "id": 510,
+   "family": "olive",
+   "tone": 0.75,
+   "hex": "#5b5919",
+   "extension": true
+  },
+  {
+   "id": 511,
+   "family": "olive",
+   "tone": 2.75,
+   "hex": "#747521",
+   "extension": true
+  },
+  {
+   "id": 512,
+   "family": "olive",
+   "tone": 4.75,
+   "hex": "#8c913b",
+   "extension": true
+  },
+  {
+   "id": 513,
+   "family": "olive",
+   "tone": 6.75,
+   "hex": "#a4ad62",
+   "extension": true
+  },
+  {
+   "id": 514,
+   "family": "olive",
+   "tone": 8.75,
+   "hex": "#bec990",
+   "extension": true
+  },
+  {
+   "id": 515,
+   "family": "sage",
+   "tone": 0.75,
+   "hex": "#41612f",
+   "extension": true
+  },
+  {
+   "id": 516,
+   "family": "sage",
+   "tone": 2.75,
+   "hex": "#507e40",
+   "extension": true
+  },
+  {
+   "id": 517,
+   "family": "sage",
+   "tone": 4.75,
+   "hex": "#659b5a",
+   "extension": true
+  },
+  {
+   "id": 518,
+   "family": "sage",
+   "tone": 6.75,
+   "hex": "#80b67c",
+   "extension": true
+  },
+  {
+   "id": 519,
+   "family": "sage",
+   "tone": 8.75,
+   "hex": "#a3d0a4",
+   "extension": true
+  },
+  {
+   "id": 520,
+   "family": "moss",
+   "tone": 0.75,
+   "hex": "#2f633d",
+   "extension": true
+  },
+  {
+   "id": 521,
+   "family": "moss",
+   "tone": 2.75,
+   "hex": "#388152",
+   "extension": true
+  },
+  {
+   "id": 522,
+   "family": "moss",
+   "tone": 4.75,
+   "hex": "#4c9e6d",
+   "extension": true
+  },
+  {
+   "id": 523,
+   "family": "moss",
+   "tone": 6.75,
+   "hex": "#6cb98d",
+   "extension": true
+  },
+  {
+   "id": 524,
+   "family": "moss",
+   "tone": 8.75,
+   "hex": "#96d2b1",
+   "extension": true
+  },
+  {
+   "id": 525,
+   "family": "eucalyptus",
+   "tone": 0.75,
+   "hex": "#106550",
+   "extension": true
+  },
+  {
+   "id": 526,
+   "family": "eucalyptus",
+   "tone": 2.75,
+   "hex": "#03836a",
+   "extension": true
+  },
+  {
+   "id": 527,
+   "family": "eucalyptus",
+   "tone": 4.75,
+   "hex": "#25a087",
+   "extension": true
+  },
+  {
+   "id": 528,
+   "family": "eucalyptus",
+   "tone": 6.75,
+   "hex": "#55baa5",
+   "extension": true
+  },
+  {
+   "id": 529,
+   "family": "eucalyptus",
+   "tone": 8.75,
+   "hex": "#89d3c4",
+   "extension": true
+  },
+  {
+   "id": 530,
+   "family": "teal",
+   "tone": 0.75,
+   "hex": "#0f6360",
+   "extension": true
+  },
+  {
+   "id": 531,
+   "family": "teal",
+   "tone": 2.75,
+   "hex": "#14807e",
+   "extension": true
+  },
+  {
+   "id": 532,
+   "family": "teal",
+   "tone": 4.75,
+   "hex": "#149e9e",
+   "extension": true
+  },
+  {
+   "id": 533,
+   "family": "teal",
+   "tone": 6.75,
+   "hex": "#49b9bc",
+   "extension": true
+  },
+  {
+   "id": 534,
+   "family": "teal",
+   "tone": 8.75,
+   "hex": "#83d2d6",
+   "extension": true
+  },
+  {
+   "id": 535,
+   "family": "harbor",
+   "tone": 0.75,
+   "hex": "#056172",
+   "extension": true
+  },
+  {
+   "id": 536,
+   "family": "harbor",
+   "tone": 2.75,
+   "hex": "#117c94",
+   "extension": true
+  },
+  {
+   "id": 537,
+   "family": "harbor",
+   "tone": 4.75,
+   "hex": "#1c99b8",
+   "extension": true
+  },
+  {
+   "id": 538,
+   "family": "harbor",
+   "tone": 6.75,
+   "hex": "#55b4d3",
+   "extension": true
+  },
+  {
+   "id": 539,
+   "family": "harbor",
+   "tone": 8.75,
+   "hex": "#8acde8",
+   "extension": true
+  },
+  {
+   "id": 540,
+   "family": "slate",
+   "tone": 0.75,
+   "hex": "#235c80",
+   "extension": true
+  },
+  {
+   "id": 541,
+   "family": "slate",
+   "tone": 2.75,
+   "hex": "#3076a7",
+   "extension": true
+  },
+  {
+   "id": 542,
+   "family": "slate",
+   "tone": 4.75,
+   "hex": "#4b90c8",
+   "extension": true
+  },
+  {
+   "id": 543,
+   "family": "slate",
+   "tone": 6.75,
+   "hex": "#71abe2",
+   "extension": true
+  },
+  {
+   "id": 544,
+   "family": "slate",
+   "tone": 8.75,
+   "hex": "#9cc7f3",
+   "extension": true
+  },
+  {
+   "id": 545,
+   "family": "indigo",
+   "tone": 0.75,
+   "hex": "#405585",
+   "extension": true
+  },
+  {
+   "id": 546,
+   "family": "indigo",
+   "tone": 2.75,
+   "hex": "#566cac",
+   "extension": true
+  },
+  {
+   "id": 547,
+   "family": "indigo",
+   "tone": 4.75,
+   "hex": "#7186cd",
+   "extension": true
+  },
+  {
+   "id": 548,
+   "family": "indigo",
+   "tone": 6.75,
+   "hex": "#90a2e5",
+   "extension": true
+  },
+  {
+   "id": 549,
+   "family": "indigo",
+   "tone": 8.75,
+   "hex": "#b3bff5",
+   "extension": true
+  },
+  {
+   "id": 550,
+   "family": "heather",
+   "tone": 0.75,
+   "hex": "#564d81",
+   "extension": true
+  },
+  {
+   "id": 551,
+   "family": "heather",
+   "tone": 2.75,
+   "hex": "#7263a7",
+   "extension": true
+  },
+  {
+   "id": 552,
+   "family": "heather",
+   "tone": 4.75,
+   "hex": "#907cc6",
+   "extension": true
+  },
+  {
+   "id": 553,
+   "family": "heather",
+   "tone": 6.75,
+   "hex": "#ad98dd",
+   "extension": true
+  },
+  {
+   "id": 554,
+   "family": "heather",
+   "tone": 8.75,
+   "hex": "#cab7ed",
+   "extension": true
+  },
+  {
+   "id": 555,
+   "family": "plum",
+   "tone": 0.75,
+   "hex": "#684776",
+   "extension": true
+  },
+  {
+   "id": 556,
+   "family": "plum",
+   "tone": 2.75,
+   "hex": "#895b97",
+   "extension": true
+  },
+  {
+   "id": 557,
+   "family": "plum",
+   "tone": 4.75,
+   "hex": "#a873b3",
+   "extension": true
+  },
+  {
+   "id": 558,
+   "family": "plum",
+   "tone": 6.75,
+   "hex": "#c490cb",
+   "extension": true
+  },
+  {
+   "id": 559,
+   "family": "plum",
+   "tone": 8.75,
+   "hex": "#dcb1de",
+   "extension": true
+  },
+  {
+   "id": 560,
+   "family": "mauve",
+   "tone": 0.75,
+   "hex": "#734368",
+   "extension": true
+  },
+  {
+   "id": 561,
+   "family": "mauve",
+   "tone": 2.75,
+   "hex": "#965785",
+   "extension": true
+  },
+  {
+   "id": 562,
+   "family": "mauve",
+   "tone": 4.75,
+   "hex": "#b66f9f",
+   "extension": true
+  },
+  {
+   "id": 563,
+   "family": "mauve",
+   "tone": 6.75,
+   "hex": "#d28cb7",
+   "extension": true
+  },
+  {
+   "id": 564,
+   "family": "mauve",
+   "tone": 8.75,
+   "hex": "#e7aece",
+   "extension": true
+  },
+  {
+   "id": 565,
+   "family": "rose",
+   "tone": 0.75,
+   "hex": "#7c4151",
+   "extension": true
+  },
+  {
+   "id": 566,
+   "family": "rose",
+   "tone": 2.75,
+   "hex": "#a15466",
+   "extension": true
+  },
+  {
+   "id": 567,
+   "family": "rose",
+   "tone": 4.75,
+   "hex": "#c26d7d",
+   "extension": true
+  },
+  {
+   "id": 568,
+   "family": "rose",
+   "tone": 6.75,
+   "hex": "#dc8b97",
+   "extension": true
+  },
+  {
+   "id": 569,
+   "family": "rose",
+   "tone": 8.75,
+   "hex": "#f0aeb4",
+   "extension": true
+  },
+  {
+   "id": 570,
+   "family": "oxblood",
+   "tone": 0.75,
+   "hex": "#7e4148",
+   "extension": true
+  },
+  {
+   "id": 571,
+   "family": "oxblood",
+   "tone": 2.75,
+   "hex": "#a3545b",
+   "extension": true
+  },
+  {
+   "id": 572,
+   "family": "oxblood",
+   "tone": 4.75,
+   "hex": "#c46d70",
+   "extension": true
+  },
+  {
+   "id": 573,
+   "family": "oxblood",
+   "tone": 6.75,
+   "hex": "#de8c8b",
+   "extension": true
+  },
+  {
+   "id": 574,
+   "family": "oxblood",
+   "tone": 8.75,
+   "hex": "#f0afab",
+   "extension": true
+  },
+  {
+   "id": 575,
+   "family": "bone",
+   "tone": 0.75,
+   "hex": "#5f544a",
+   "extension": true
+  },
+  {
+   "id": 576,
+   "family": "bone",
+   "tone": 2.75,
+   "hex": "#7a6d60",
+   "extension": true
+  },
+  {
+   "id": 577,
+   "family": "bone",
+   "tone": 4.75,
+   "hex": "#968877",
+   "extension": true
+  },
+  {
+   "id": 578,
+   "family": "bone",
+   "tone": 6.75,
+   "hex": "#b3a38f",
+   "extension": true
+  },
+  {
+   "id": 579,
+   "family": "bone",
+   "tone": 8.75,
+   "hex": "#d1bfa8",
+   "extension": true
+  }
+ ]
+}

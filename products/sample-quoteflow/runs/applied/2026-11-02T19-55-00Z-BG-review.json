@@ -1,0 +1,7 @@
+{
+  "task_id": "BG-review",
+  "agent": "om-brand-guardian",
+  "status": "done",
+  "output": ["reports/review-om-brand-guardian.md"],
+  "summary": "Reviewed A1-A3 for voice and terminology. A1 and A2 pass with no edits; A3 is blocked by unresolved OWNER TO CONFIRM placeholders on the Pro card and Free FAQ."
+}

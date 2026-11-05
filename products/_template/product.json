@@ -1,0 +1,89 @@
+{
+  "name": "",
+  "slug": "",
+  "domain": "",
+  "stage": "onboarding",
+  "market": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "EU"
+  ],
+  "language": "en",
+  "model": "b2b-saas",
+  "goals": {
+    "primary": "",
+    "north_star": "revenue",
+    "target_30d": null
+  },
+  "budget": {
+    "mode": "free",
+    "monthly_cap": 0,
+    "daily_cap": 0,
+    "spent_this_month": 0,
+    "currency": "USD",
+    "approval_over": 0
+  },
+  "channels": {
+    "enabled": [
+      "seo",
+      "content",
+      "geo",
+      "directories",
+      "communities",
+      "social",
+      "email",
+      "cro"
+    ],
+    "paid": []
+  },
+  "accounts": {
+    "analytics": null,
+    "search_console": null,
+    "email_provider": null,
+    "payments": null,
+    "ads": {}
+  },
+  "preset": "saas",
+  "growth_stage": "zero",
+  "autonomy": {
+    "level": "supervised",
+    "auto_spend_per_day": 0,
+    "always_auto": [],
+    "never_auto": [
+      "price",
+      "call"
+    ],
+    "earned": {
+      "streak": 10
+    },
+    "notes": "manual | supervised | autopilot | full. See tools/policy.mjs. Compliance must pass before anything runs on its own; spend never passes the caps. earned: a type|channel the owner approved unchanged the last streak times (min 5) may run on its own (tools/lib/earned.mjs); price and anything in never_auto never earn it, one rejection resets it, and spend still needs auto_spend_per_day and the caps. Set earned to false to turn it off."
+  },
+  "owner_approval": {
+    "publish": true,
+    "send_email": true,
+    "spend": true,
+    "price_change": true
+  },
+  "creative": {
+    "monthly_cap": 0,
+    "daily_cap": 0,
+    "notes": "AI image/video generation (tools/creative-gen.mjs). 0 refuses all paid generation; only the owner raises it."
+  },
+  "social_inbox": {
+    "pull": true,
+    "dms": true,
+    "media": 10,
+    "posts": 10,
+    "max_age_days": 7,
+    "max_drafts": 25,
+    "notes": "tools/social-inbox.mjs: reads comments and DMs, writes reply drafts for approval only."
+  },
+  "voice": {
+    "enabled": false,
+    "record": false,
+    "notes": "tools/connectors/voice.mjs: off by default. Calls need consent, calling hours, caps, a paid budget and an owner approval each; never auto-approved."
+  },
+  "created_at": null
+}

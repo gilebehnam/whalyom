@@ -1,0 +1,12 @@
+{
+  "slug": "sample-quoteflow",
+  "currency": "USD",
+  "monthly_cap": 0,
+  "daily_cap": 0,
+  "spent_this_month": 0,
+  "left": 0,
+  "allocation_mode": "none",
+  "results": {},
+  "proposed_split": {},
+  "at": "2026-11-03T22:04:21.113Z"
+}

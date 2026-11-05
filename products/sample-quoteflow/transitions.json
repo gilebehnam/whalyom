@@ -1,0 +1,66 @@
+[
+  {
+    "id": "X1",
+    "at": "2026-11-02T22:26:48.668Z",
+    "product": "sample-quoteflow",
+    "from_agent": "om-community-scout",
+    "to_agent": "om-reddit",
+    "from_layer": 2,
+    "to_layer": 4,
+    "source_task": "G04",
+    "task_id": "T20261108",
+    "status": "fired",
+    "payload": {
+      "brief": "Top community is r/freelance, where self-promotion is reported as not allowed (unverified at source). Draft value-only replies with no Quoteflow mention and no links, to outbox/. Nothing is posted. A human must read the live r/freelance rules first.",
+      "outputs": []
+    }
+  },
+  {
+    "id": "X2",
+    "at": "2026-11-02T22:27:12.582Z",
+    "product": "sample-quoteflow",
+    "from_agent": "om-competitor-intel",
+    "to_agent": "om-comparison-pages",
+    "from_layer": 2,
+    "to_layer": 4,
+    "source_task": "G03",
+    "task_id": "T20261109",
+    "status": "fired",
+    "payload": {
+      "brief": "Use research/competitors.md feature matrix (G03) and pricing-intel.md verified rows only. No 'cheaper' or speed claims, no deposit-processing claim. Draft to outbox/, test product, publish nothing.",
+      "outputs": []
+    }
+  },
+  {
+    "id": "X3",
+    "at": "2026-11-03T21:55:52Z",
+    "product": "sample-quoteflow",
+    "from_agent": "om-cro",
+    "to_agent": "om-landing-builder",
+    "from_layer": 5,
+    "to_layer": 4,
+    "source_task": "G09",
+    "task_id": "T20261110",
+    "status": "fired",
+    "payload": {
+      "brief": "Inputs: research/cro-signup-review.md section 2, reports/owner-decisions.md answers for decisions 4, 5, 12 and post-trial behaviour. Apply the ranked changes; keep A and B differing only in the element under test (E-O8-1). Draft to outbox/landing/; publish approval needed. Do not start before decisi",
+      "outputs": []
+    }
+  },
+  {
+    "id": "X4",
+    "at": "2026-11-03T21:55:52Z",
+    "product": "sample-quoteflow",
+    "from_agent": "om-video-producer",
+    "to_agent": "om-product-analyst",
+    "from_layer": 4,
+    "to_layer": 3,
+    "source_task": "G14",
+    "task_id": "T20261111",
+    "status": "fired",
+    "payload": {
+      "brief": "After the owner records the take and fills the evidence log in content/demo-script.md section 7, decide the wording C12 may take (a stated time for this flow, not 'in minutes' in general) and update claims.md.",
+      "outputs": []
+    }
+  }
+]

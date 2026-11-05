@@ -1,0 +1,23 @@
+{
+  "name": "whalyom",
+  "version": "0.1.0",
+  "description": "Your entire marketing department inside Claude Code: AI agents, skills, commands, rules and a verified knowledge base.",
+  "license": "MIT",
+  "type": "module",
+  "repository": "github:gilebehnam/whalyom",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"tools/test/*.test.mjs\"",
+    "mcp": "node tools/mcp/whalyom-core.mjs",
+    "command-center": "node tools/server.mjs",
+    "commands": "node tools/commands.mjs --check",
+    "rules": "node tools/rules.mjs --check",
+    "stats": "node tools/stats.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  }
+}

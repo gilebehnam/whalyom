@@ -1,0 +1,23 @@
+{
+  "task_id": "O7",
+  "agent": "om-product-analyst",
+  "status": "done",
+  "output": ["profile.md", "claims.md"],
+  "summary": "Built profile.md (category, problem, ICP, 6-part value proposition, positioning, pricing, proposed voice, proof) and claims.md (C1-C11 verified from the owner brief; C12-C19 needs-proof, including 'in minutes', EU, currency/VAT, payment processing, competitor price comparisons, integrations, social proof, no-card trial). No domain, so research/site-inventory.md is missing and all site-based checks are pending; the product is a fictional test and nothing may be published.",
+  "new_tasks": [
+    {
+      "title": "Verify competitor pricing and features on their own pages",
+      "agent": "om-competitor-intel",
+      "brief": "Fetch current public pricing and feature pages for Bonsai, HoneyBook, Proposify and PandaDoc, with URL and date. Replace UNVERIFIED rows in research/competitors.md. This is needed before claims.md C16 (price comparison) or any alternative/versus page can be drafted.",
+      "depends_on": [],
+      "priority": 3
+    },
+    {
+      "title": "Seed keyword list from profile and competitor gaps",
+      "agent": "om-keyword-researcher",
+      "brief": "Use profile.md (sections 4-5) and the gap list in research/competitors.md: niche proposal templates, price options in proposals, asking for a deposit, alternative/versus terms. Markets US, UK, CA, AU. Write the results to research/keywords.md.",
+      "depends_on": [],
+      "priority": 3
+    }
+  ]
+}

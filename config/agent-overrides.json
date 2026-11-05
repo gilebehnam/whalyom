@@ -1,0 +1,4 @@
+{
+  "about": "Rules and skills the evolution loop added to agents. Written only by node tools/evolve.mjs (apply, rollback); tools/roster.mjs merges it into every agent at build time. Each entry keeps the proposal id it came from.",
+  "agents": {}
+}

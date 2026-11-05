@@ -1,0 +1,76 @@
+{
+  "_about": "Business presets: the channel mix, KPIs and agents that fit each kind of business. tools/new-product.mjs --preset <key> copies one into product.json; om-cmo reads it when planning. Edit freely per business.",
+  "presets": {
+    "saas": {
+      "label": "SaaS / web app",
+      "north_star": "MRR",
+      "funnel": ["visit", "signup", "activated", "trial_to_paid", "retained_90d"],
+      "channels": ["seo", "content", "geo", "directories", "communities", "launch", "email", "cro", "comparison_pages", "integrations", "affiliates", "search_ads"],
+      "paid_first": ["google_search", "microsoft_search", "reddit"],
+      "focus_pods": ["seo", "conversion", "lifecycle", "distribution", "partners"]
+    },
+    "ecommerce": {
+      "label": "Online store / D2C",
+      "north_star": "revenue",
+      "funnel": ["visit", "add_to_cart", "checkout", "purchase", "repeat_purchase"],
+      "channels": ["seo", "shopping_feed", "social", "influencers", "ugc", "email", "sms", "cro", "reviews", "marketplaces"],
+      "paid_first": ["meta", "google_shopping_pmax", "tiktok"],
+      "focus_pods": ["creative", "platforms", "lifecycle", "conversion", "paid"]
+    },
+    "local_service": {
+      "label": "Local service business",
+      "north_star": "booked_jobs",
+      "funnel": ["profile_view", "call_or_form", "quote", "booked", "review_left"],
+      "channels": ["local_seo", "google_business_profile", "reviews", "directories", "referrals", "social"],
+      "paid_first": ["google_local_services", "google_search", "meta_local"],
+      "focus_pods": ["seo", "distribution", "lifecycle"]
+    },
+    "b2b_services": {
+      "label": "B2B services / agency / consulting",
+      "north_star": "pipeline_value",
+      "funnel": ["visit", "lead", "qualified", "proposal", "won"],
+      "channels": ["linkedin", "thought_leadership", "case_studies", "cold_outbound", "webinars", "podcasts", "partners", "seo"],
+      "paid_first": ["linkedin", "google_search"],
+      "focus_pods": ["content", "sales", "authority", "partners"]
+    },
+    "info_product": {
+      "label": "Course, coaching or digital download",
+      "north_star": "revenue",
+      "funnel": ["visit", "lead_magnet", "nurture", "purchase", "upsell"],
+      "channels": ["youtube", "short_video", "newsletter", "lead_magnets", "webinars", "affiliates", "communities"],
+      "paid_first": ["meta", "youtube"],
+      "focus_pods": ["platforms", "content", "lifecycle", "creative"]
+    },
+    "mobile_app": {
+      "label": "Mobile app",
+      "north_star": "paying_users",
+      "funnel": ["store_view", "install", "activated", "subscribed", "retained_30d"],
+      "channels": ["aso", "short_video", "ugc", "influencers", "communities", "referrals", "review_prompts"],
+      "paid_first": ["apple_search_ads", "tiktok", "meta_app_install"],
+      "focus_pods": ["distribution", "platforms", "creative", "lifecycle"]
+    },
+    "marketplace": {
+      "label": "Marketplace / platform (two-sided)",
+      "north_star": "gmv",
+      "funnel": ["visit", "signup_supply", "signup_demand", "first_transaction", "repeat"],
+      "channels": ["programmatic_seo", "supply_outreach", "communities", "referrals", "pr", "partners"],
+      "paid_first": ["google_search", "meta"],
+      "focus_pods": ["seo", "partners", "sales", "authority"]
+    },
+    "creator_media": {
+      "label": "Creator, newsletter or media brand",
+      "north_star": "audience_revenue",
+      "funnel": ["view", "follow", "subscribe", "paid_member", "sponsor_revenue"],
+      "channels": ["youtube", "short_video", "newsletter", "x", "linkedin", "podcast", "collaborations"],
+      "paid_first": ["newsletter_swaps", "meta"],
+      "focus_pods": ["platforms", "content", "creative", "partners"]
+    }
+  },
+  "stages": [
+    { "key": "zero", "label": "Zero: no audience", "exit": "first 10 paying customers or 100 qualified leads", "focus": ["positioning", "offer", "tracking", "beta", "communities", "directories", "launch"], "agents": ["om-positioning-strategist", "om-icp-builder", "om-tracking-engineer", "om-cro", "om-launch-platforms", "om-directory-submitter", "om-community-scout"] },
+    { "key": "traction", "label": "Traction: first customers", "exit": "repeatable channel with CAC under target, ~$10k monthly revenue", "focus": ["seo_foundation", "content", "email_nurture", "referrals", "first_paid_tests"], "agents": ["om-content-strategist", "om-writer", "om-email-nurture", "om-referral-affiliate", "om-google-ads", "om-experiment-manager"] },
+    { "key": "growth", "label": "Growth: to $1M a year", "exit": "$1M annual run rate, two or more channels each above 20% of new revenue", "focus": ["programmatic_seo", "paid_scale", "partnerships", "lifecycle", "sales"], "agents": ["om-programmatic-seo", "om-budget-allocator", "om-partner-scout", "om-lifecycle-architect", "om-sdr", "om-retargeting"] },
+    { "key": "scale", "label": "Scale: $1M to $10M+", "exit": "$10M annual run rate, brand demand growing quarter on quarter", "focus": ["brand", "international", "pr", "marketplaces", "retention", "multi_product"], "agents": ["om-creative-director", "om-market-entry", "om-localizer", "om-pr-outreach", "om-marketplace-lister", "om-churn-preventer"] },
+    { "key": "leader", "label": "Category leader", "exit": "most-cited brand in the category across search, AI answers and press", "focus": ["category_design", "thought_leadership", "data_reports", "events", "ai_answer_share"], "agents": ["om-thought-leader", "om-data-storyteller", "om-share-of-voice", "om-ai-answer-monitor", "om-webinar-producer"] }
+  ]
+}

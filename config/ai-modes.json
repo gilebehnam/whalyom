@@ -1,0 +1,147 @@
+{
+  "_about": "Whalyom's three operating modes (tools/ai-modes.mjs). The mode sets which Claude model each agent runs on, how many reviewers check each draft, which workflows run how often, whether every lead or only hot leads get an AI reply, and a hard monthly AI budget in USD. All AI work runs on Claude Platform through WHALYOM_ANTHROPIC_API_KEY (never the Claude Code subscription). Change with: node tools/ai-modes.mjs set <economy|balanced|aggressive>. cost_per_agent_run is the planning estimate per agent run (Claude Platform list prices, prompt caching on); tune it from your real Platform usage.",
+  "mode": "economy",
+  "leads_per_month": 50,
+  "cost_per_agent_run": {
+    "haiku": 0.02,
+    "sonnet": 0.27,
+    "opus": 0.55
+  },
+  "modes": {
+    "economy": {
+      "label": "Economy",
+      "tier": "minimal",
+      "overrides": {
+        "om-compliance-guard": "sonnet"
+      },
+      "reviewers": 1,
+      "reply": "hot",
+      "monthly_budget_usd": 6,
+      "flows": {
+        "om-free-growth": {
+          "per_month": 2,
+          "args": {
+            "max_channels": 3
+          }
+        },
+        "om-weekly-retro": {
+          "per_month": 1
+        },
+        "om-knowledge-refresh": {
+          "per_month": 1,
+          "args": {
+            "maxItems": 20
+          }
+        }
+      }
+    },
+    "balanced": {
+      "label": "Balanced",
+      "tier": "minimal",
+      "overrides": {
+        "om-compliance-guard": "sonnet",
+        "om-speed-to-lead": "sonnet",
+        "om-writer": "sonnet",
+        "om-community-lead-hunter": "sonnet",
+        "om-landing-copywriter": "sonnet"
+      },
+      "reviewers": 1,
+      "reply": "warm",
+      "monthly_budget_usd": 33,
+      "flows": {
+        "om-free-growth": {
+          "per_month": 4,
+          "args": {
+            "max_channels": 5
+          }
+        },
+        "om-seo-sprint": {
+          "per_month": 2,
+          "args": {
+            "articles": 2
+          }
+        },
+        "om-weekly-retro": {
+          "per_month": 2
+        },
+        "om-knowledge-refresh": {
+          "per_month": 2,
+          "args": {
+            "maxItems": 30
+          }
+        },
+        "om-evolve": {
+          "per_month": 1,
+          "args": {
+            "maxAgents": 3,
+            "maxNew": 0
+          }
+        }
+      }
+    },
+    "aggressive": {
+      "label": "Aggressive",
+      "tier": "economy",
+      "overrides": {
+        "om-compliance-guard": "sonnet",
+        "om-speed-to-lead": "sonnet",
+        "om-writer": "sonnet",
+        "om-community-lead-hunter": "sonnet",
+        "om-landing-copywriter": "sonnet",
+        "om-ad-creative": "sonnet",
+        "om-email-nurture": "sonnet",
+        "om-sdr": "sonnet",
+        "om-follow-up": "sonnet",
+        "om-checkout-finisher": "sonnet"
+      },
+      "reviewers": 1,
+      "reply": "all",
+      "monthly_budget_usd": 91,
+      "flows": {
+        "om-free-growth": {
+          "per_month": 8,
+          "args": {
+            "max_channels": 8
+          }
+        },
+        "om-seo-sprint": {
+          "per_month": 4,
+          "args": {
+            "articles": 3
+          }
+        },
+        "om-content-engine": {
+          "per_month": 2
+        },
+        "om-cro-loop": {
+          "per_month": 2
+        },
+        "om-competitor-watch": {
+          "per_month": 2
+        },
+        "om-weekly-retro": {
+          "per_month": 4
+        },
+        "om-knowledge-refresh": {
+          "per_month": 4,
+          "args": {
+            "maxItems": 40
+          }
+        },
+        "om-evolve": {
+          "per_month": 2,
+          "args": {
+            "maxAgents": 5,
+            "maxNew": 1
+          }
+        },
+        "om-product-evolution": {
+          "per_month": 1,
+          "args": {
+            "maxItems": 2
+          }
+        }
+      }
+    }
+  }
+}

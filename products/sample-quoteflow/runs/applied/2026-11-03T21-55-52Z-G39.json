@@ -1,0 +1,10 @@
+{
+  "task_id": "G39",
+  "agent": "om-forecaster",
+  "status": "done",
+  "output": ["metrics/trial-window-forecast.md"],
+  "summary": "Owner has not answered decisions 0 and 14, so every input is an assumption. On the plan's dates, paid by Dec 2 is about 1-3 at 10% (PH Nov 17) and under 2 if PH moves to Dec 8; only 1 of 9 cases reaches 5 paid at 10%. Recommendation: keep the $95 MRR goal in the next window, not Day 30.",
+  "alerts": [
+    {"level": "decision", "title": "G39: keep $95 MRR out of Day 30", "detail": "At 10% trial-to-paid, 5 paid needs about 50 trials started by Nov 18; the mid case gives about 32 (3.2 paid). Confirm decision 13 (goal moves to Dec 3 - Jan 1). Re-run the forecast once you answer decisions 0 (go-live date) and 14 (warm-network ICP count), both due Fri Nov 6."}
+  ]
+}

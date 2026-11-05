@@ -1,0 +1,7 @@
+{
+  "task_id": "G35-review",
+  "agent": "om-compliance-guard",
+  "status": "done",
+  "output": ["reports/review-om-compliance-guard.md", "outbox/landing/home-a.md", "outbox/landing/home-b.md", "content/demo-script.md"],
+  "summary": "Reviewed A1-A5: A1 fix, A2 pass, A3 block, A4 block, A5 fix (upload held until video exists). Small outcome-framing edits applied."
+}

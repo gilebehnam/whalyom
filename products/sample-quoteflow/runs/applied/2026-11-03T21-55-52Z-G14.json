@@ -1,0 +1,19 @@
+{
+  "task_id": "G14",
+  "agent": "om-video-producer",
+  "status": "done",
+  "output": ["content/demo-script.md"],
+  "summary": "Wrote a 75-second (60-90 s range) demo script with a 9-shot list, voiceover, captions plan and a stopwatch overlay rule (clock starts at brief paste, stops at deposit request, one uncut take) to produce evidence for C12. Uses only C2-C7 and C10; no speed claim in the narration.",
+  "approvals": [
+    {"type": "publish", "title": "Demo video (after recording): upload and use on landing page / Product Hunt kit", "file": "content/demo-script.md"}
+  ],
+  "experiments": [
+    {"id": "E-G14-1", "hypothesis": "A timed demo video on the landing page raises the trial-signup rate versus the same page without it", "metric": "trial signup rate per visitor; video play rate; watch-through to 0:60", "status": "planned"}
+  ],
+  "new_tasks": [
+    {"title": "Update C12 in claims.md from the recorded stopwatch time", "agent": "om-product-analyst", "brief": "After the owner records the take and fills the evidence log in content/demo-script.md section 7, decide the wording C12 may take (a stated time for this flow, not 'in minutes' in general) and update claims.md.", "depends_on": ["G14"], "priority": 3}
+  ],
+  "alerts": [
+    {"level": "decision", "title": "Demo needs a working app or prototype to record", "detail": "product.json is paused with no domain and brief.md calls the product fictional. The owner must provide a clickable prototype or keep the script as a spec. Also confirm how the deposit step works (C15); the script shows a request only."}
+  ]
+}

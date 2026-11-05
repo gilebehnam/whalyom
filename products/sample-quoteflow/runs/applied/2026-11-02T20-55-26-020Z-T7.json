@@ -1,0 +1,7 @@
+{
+  "task_id": "T7",
+  "agent": "om-cmo",
+  "status": "done",
+  "output": ["reports/legal-payments-escalation.md"],
+  "summary": "Owner escalation for five legal and payments decisions (EU scope, deposit flow and processor, subscription billing and refund policy, legal-page route, e-signature records and wording), mapped to G01 lines 2, 3, 6, 8, 9 with Nov 6 and Nov 13 deadlines, interim wording rules and default fallbacks. plan.md not changed; follow-up work is already covered by G06, G13 and G35."
+}

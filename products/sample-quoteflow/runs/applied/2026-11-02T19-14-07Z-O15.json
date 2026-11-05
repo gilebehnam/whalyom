@@ -1,0 +1,25 @@
+{
+  "task_id": "O15",
+  "agent": "om-pricing-intel",
+  "status": "done",
+  "output": ["products/sample-quoteflow/research/pricing-intel.md"],
+  "summary": "Built a competitor pricing comparison (Bonsai, HoneyBook, Proposify, PandaDoc) against the verified Quoteflow price points. Competitor prices come from search summaries and are UNVERIFIED; they must be checked on each vendor's pricing page before any comparison copy. No domain, so live-site checks are pending. No price change or outbound action proposed.",
+  "approvals": [],
+  "experiments": [
+    {
+      "id": "E-O15-1",
+      "hypothesis": "The 3-proposal free cap or the 14-day Pro trial, not price alone, drives trial signups from the pricing page.",
+      "metric": "Trial signups per 1,000 pricing-page visitors",
+      "status": "planned"
+    }
+  ],
+  "new_tasks": [
+    {
+      "title": "Verify competitor pricing on each vendor's own pricing page",
+      "agent": "om-pricing-intel",
+      "brief": "Open the Bonsai, HoneyBook, Proposify and PandaDoc pricing pages. Record date, plan names, monthly and annual prices, proposal and seat limits, trial length and card requirement, and UK/CA/AU currency. Resolve the older vs newer HoneyBook and Bonsai price sets. Update research/pricing-intel.md and mark rows verified or not found.",
+      "depends_on": [],
+      "priority": 2
+    }
+  ]
+}

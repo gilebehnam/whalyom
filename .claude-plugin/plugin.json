@@ -1,0 +1,25 @@
+{
+  "name": "whalyom",
+  "displayName": "Whalyom",
+  "version": "0.1.0",
+  "description": "Your entire marketing department inside Claude Code: 489 AI agents in 22 departments, 492 skills, 38 commands, 26 rules and a verified knowledge base. Nothing goes out without your approval.",
+  "author": {
+    "name": "Whalyom"
+  },
+  "homepage": "https://github.com/gilebehnam/whalyom",
+  "repository": "https://github.com/gilebehnam/whalyom",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "growth",
+    "seo",
+    "ads",
+    "content",
+    "agents",
+    "automation",
+    "crm"
+  ],
+  "agents": "./.claude/agents/",
+  "commands": "./.claude/commands/",
+  "skills": "./.claude/skills/"
+}

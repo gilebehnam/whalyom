@@ -1,0 +1,19 @@
+{
+  "task_id": "G05",
+  "agent": "om-landing-builder",
+  "status": "done",
+  "output": [
+    "outbox/landing/home-a.md",
+    "outbox/landing/home-b.md",
+    "outbox/landing/pricing.md"
+  ],
+  "summary": "Drafted home variant A (one-link flow), home variant B (price options) and a pricing page with Free, Pro, Team, the 14-day trial and a Team section. Only C1-C11 are used; no 'in minutes', comparisons or social proof. Pro contents, currency and post-trial behaviour are open owner questions, marked in the files.",
+  "approvals": [
+    {"type": "publish", "title": "Home page variant A (one-link flow)", "file": "outbox/landing/home-a.md"},
+    {"type": "publish", "title": "Home page variant B (price options)", "file": "outbox/landing/home-b.md"},
+    {"type": "publish", "title": "Pricing page with Team section", "file": "outbox/landing/pricing.md"}
+  ],
+  "experiments": [
+    {"id": "E-O8-1", "hypothesis": "Variant A (one-link flow) gets more trial signups than variant B (price options)", "metric": "trial signup rate per variant", "status": "planned"}
+  ]
+}

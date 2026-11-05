@@ -1,0 +1,51 @@
+{
+  "enabledPlugins": {
+    "claude-seo@agricidaniel-claude-seo": true,
+    "claude-blog@agricidaniel-blog": true,
+    "marketing-skills@marketingskills": true,
+    "n8n-mcp-skills@n8n-mcp-skills": true,
+    "gr@gingiris-skills": true,
+    "gr-seo-patrol@gingiris-skills": true,
+    "gr-ph-launch@gingiris-skills": true,
+    "gr-oss-marketing@gingiris-skills": true,
+    "gr-b2b-growth@gingiris-skills": true,
+    "gr-aso@gingiris-skills": true,
+    "gr-competitor@gingiris-skills": true,
+    "gr-social-distill@gingiris-skills": true,
+    "gr-geo-cite@gingiris-skills": true,
+    "gr-backlinks@gingiris-skills": true,
+    "gr-user-interview@gingiris-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "agricidaniel-claude-seo": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-seo"
+      }
+    },
+    "agricidaniel-blog": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-blog"
+      }
+    },
+    "marketingskills": {
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills"
+      }
+    },
+    "n8n-mcp-skills": {
+      "source": {
+        "source": "github",
+        "repo": "czlonkowski/n8n-skills"
+      }
+    },
+    "gingiris-skills": {
+      "source": {
+        "source": "github",
+        "repo": "gingiris-1031/gingiris-skills"
+      }
+    }
+  }
+}

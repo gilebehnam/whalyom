@@ -1,0 +1,10 @@
+{
+  "task_id": "O3",
+  "agent": "om-voc-miner",
+  "status": "done",
+  "started_at": "2026-11-02T19:14:07Z",
+  "finished_at": "2026-11-02T19:20:00Z",
+  "output": ["research/voc.md"],
+  "notes": "Partial: no verbatim quotes obtainable (search returned summaries; Reddit mirror blocked). Missing inputs: research/competitors.md, filled profile.md, verified claims. Live-site work skipped, no domain.",
+  "experiments": []
+}

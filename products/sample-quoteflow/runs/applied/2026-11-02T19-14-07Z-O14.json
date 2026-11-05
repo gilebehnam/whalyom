@@ -1,0 +1,10 @@
+{
+  "task_id": "O14",
+  "agent": "om-serp-analyst",
+  "status": "done",
+  "output": ["research/serp.md"],
+  "summary": "SERP brief for 20 target queries. 4 queries partially observed via WebSearch (no rank order or features), 16 estimated; all difficulty scores Estimated. Best new-site openings: deposit and good-better-best guides, niche template pages, UK/AU angle.",
+  "new_tasks": [
+    {"title": "Live SERP feature check for top 20 queries", "agent": "om-serp-analyst", "brief": "Re-run research/serp.md with Firecrawl/Tavily connectors or screenshots to verify top-10 order, AI Overviews, PAA, snippets; add UK/CA/AU locales. Needs a session with Bash.", "depends_on": [], "priority": 3}
+  ]
+}

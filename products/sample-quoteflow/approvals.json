@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A1",
+    "type": "publish",
+    "title": "Home page variant A (one-link flow)",
+    "file": "outbox/landing/home-a.md",
+    "agent": "om-landing-builder",
+    "task_id": "G05",
+    "status": "pending",
+    "compliance": "fix",
+    "created_at": "2026-11-02T19:55:00Z",
+    "review_notes": "compliance-guard: fix (C1-C11 only; replaced outcome heading in section 1 with a plain list; removed unverified implied-replacement line; live site needs real signup URL and privacy/cookie notice). qa-tester: fix (removed parenthetical builder note; title 58, meta 143; add real URLs with UTMs to both CTAs, secondary link and Full plan details before build). brand-guardian: pass. Global: brief says Quoteflow is fictional, so nothing may go live."
+  },
+  {
+    "id": "A2",
+    "type": "publish",
+    "title": "Home page variant B (price options)",
+    "file": "outbox/landing/home-b.md",
+    "agent": "om-landing-builder",
+    "task_id": "G05",
+    "status": "pending",
+    "compliance": "pass",
+    "created_at": "2026-11-02T19:55:00Z",
+    "review_notes": "compliance-guard: pass (removed leftover outcome line; C1-C11 only; number of price options stays unstated). qa-tester: pass (title 55, meta 154; same pre-build URL/UTM items as A1). brand-guardian: pass. Global: brief says Quoteflow is fictional, so nothing may go live. | Reset to pending: auto-approval was made while the product was paused with no domain (policy fixed 2026-11-03)."
+  },
+  {
+    "id": "A3",
+    "type": "publish",
+    "title": "Pricing page with Team section",
+    "file": "outbox/landing/pricing.md",
+    "agent": "om-landing-builder",
+    "task_id": "G05",
+    "status": "pending",
+    "compliance": "block",
+    "created_at": "2026-11-02T19:55:00Z",
+    "review_notes": "compliance-guard: block. qa-tester: block. brand-guardian: block. Unfilled [OWNER TO CONFIRM] placeholders in the Pro card and FAQ; owner decision on Pro vs Free (price change) open; Pro trial to Team path unconfirmed. Unblock: owner answers, placeholders removed, rerun checks. Global: brief says Quoteflow is fictional, so nothing may go live."
+  },
+  {
+    "id": "A4",
+    "type": "publish",
+    "title": "Privacy policy draft",
+    "file": "outbox/site/privacy.md",
+    "agent": "om-legal-pages",
+    "task_id": "G06",
+    "status": "pending",
+    "compliance": "block",
+    "created_at": "2026-11-02T22:26:48.668Z",
+    "review_notes": "compliance-guard: block. qa-tester: block. brand-guardian: block. Lawyer-review draft with bracketed unknowns (entity, address, contact, date, processors, hosting, retention, cookies, EU scope L1-L5) and a flagged no-sale statement; strip draft banner and Reviewer notes only after lawyer sign-off. Unblock: owner answers L1-L5, lawyer sign-off, placeholders filled. Global: brief says Quoteflow is fictional, so nothing may go live."
+  },
+  {
+    "id": "A5",
+    "type": "publish",
+    "title": "Demo video (after recording): upload and use on landing page / Product Hunt kit",
+    "file": "content/demo-script.md",
+    "agent": "om-video-producer",
+    "task_id": "G14",
+    "status": "pending",
+    "compliance": "fix",
+    "created_at": "2026-11-03T21:55:52Z",
+    "review_notes": "compliance-guard: fix (C2-C7, C10 only; removed two outcome lines; C12 only with stopwatch evidence; disclose fictional client). qa-tester: fix (dropped Three tools hook; no option count in shot 4; shot 1 too long for 6 s). brand-guardian: fix (hook uses then a signature to match e-signature). Upload on hold: no video recorded yet, needs working app, domain, owner decision on C15; rerun checks on recorded video, description and captions. Global: brief says Quoteflow is fictional, so nothing may go live."
+  }
+]

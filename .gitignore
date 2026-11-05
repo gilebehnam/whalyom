@@ -1,0 +1,49 @@
+# Local tool state
+.claude-flow/
+.claude/settings.local.json
+node_modules/
+
+# Generated, rebuilt by tools/*.mjs
+state/dbcheck/
+dashboard/index.doc.json
+
+# Secrets never go in the repo: connector credentials live in the Claude account or environment
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credentials*.json
+
+# Local plugin state (ruflo)
+.claude/proven-config.json
+.claude/.proven-config-version
+!.env.example
+
+# Attached sites: clones and satellite installers (contain secrets)
+sites/
+dist/
+
+# Lead personal data (emails, names) stays on this computer
+products/*/leads.jsonl
+**/leads.jsonl
+products/*/edge/
+
+# Runtime logs, locks and local inboxes (may hold prompts, page text or personal data)
+state/*.log
+state/inbox-*.json
+state/hub.pid
+state/scheduler.json
+products/*/.execute.lock
+
+# Whalyom Cloud tenants (other companies: account state, API key hashes, contact emails)
+tenants/
+
+# Self-heal backups: local copies of edited files (may include workspace data), never committed
+state/self-heal/backup/
+
+# Online app accounts (users, encrypted site access, orders)
+accounts/
+state/preview-accounts/
+# Licensed fonts (fontiran.com): never committed; copy them to the server by hand (deploy/CLOUD.md).
+assets/fonts/private/

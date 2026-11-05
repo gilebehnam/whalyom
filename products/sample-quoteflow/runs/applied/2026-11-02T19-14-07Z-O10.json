@@ -1,0 +1,24 @@
+{
+  "task_id": "O10",
+  "agent": "om-jtbd-analyst",
+  "status": "done",
+  "output": ["research/jtbd.md"],
+  "summary": "JTBD analysis from brief, profile, claims, voc and icp: core job, functional/social/emotional jobs, ranked pains, four forces, triggers, alternatives, messaging angles. All buyer insight is hypothesis (no customers, no verbatim VoC, no domain).",
+  "experiments": [
+    {
+      "id": "E-JTBD-1",
+      "hypothesis": "Landing variants led by the push force (time lost rewriting proposals), the pull force (one link: scope, price options, signature, deposit request) and the anxiety force (free plan and trial) will differ in trial-signup rate.",
+      "metric": "trial signups per landing visit, by variant",
+      "status": "planned"
+    }
+  ],
+  "new_tasks": [
+    {
+      "title": "Switch-interview script and recruiting plan",
+      "agent": "om-icp-builder",
+      "brief": "Turn research/jtbd.md section 11 into a switch-interview script and a recruiting plan for 10-15 prospects. Drafts go to outbox/ for approval. No outreach without approval.",
+      "depends_on": [],
+      "priority": 3
+    }
+  ]
+}

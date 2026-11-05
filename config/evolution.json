@@ -1,0 +1,46 @@
+{
+  "about": "How Whalyom improves and updates itself. Owner-only file: the evolution loop reads it and never edits it. mode \"auto-safe\": verified knowledge, briefs and benchmarked agent rules apply automatically inside the limits below; \"propose\": everything waits for the owner (node tools/evolve.mjs apply <id> --owner). External skills and connectors always wait for the owner. Protected paths can never be changed by the loop. New agents (kind new-agent) ship only within agents.new_agents: web tools only, sonnet or haiku, installed skills only, backed by active knowledge facts and a passed red team, and each one rolls back with evolve.mjs rollback <id>.",
+  "mode": "auto-safe",
+  "knowledge": {
+    "auto_apply": true,
+    "require_verification": true,
+    "default_review_days": 90,
+    "max_item_age_days": 45,
+    "brief_facts_per_department": 30,
+    "refresh_every_hours": 24
+  },
+  "agents": {
+    "auto_apply": true,
+    "min_bench_gain": 0.02,
+    "knowledge_rules_need_bench": false,
+    "max_rules_per_agent": 12,
+    "max_changes_per_cycle": 10,
+    "max_rule_length": 400,
+    "new_agents": {
+      "auto_apply": true,
+      "max_per_cycle": 3,
+      "max_total": 80,
+      "models": [
+        "sonnet",
+        "haiku"
+      ],
+      "needs_red_team": true,
+      "needs_knowledge": true
+    }
+  },
+  "external_skills": {
+    "auto_install": false
+  },
+  "protected": [
+    "CLAUDE.md",
+    "config/evolution.json",
+    "tools/policy.mjs",
+    "tools/execute.mjs",
+    "tools/budget.mjs",
+    "tools/killswitch.mjs",
+    "tools/apply-results.mjs",
+    "tools/connectors/",
+    "tools/satellite/",
+    ".env"
+  ]
+}

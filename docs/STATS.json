@@ -1,0 +1,18 @@
+{
+  "agents": 489,
+  "agents_total": 509,
+  "mega_agents": 24,
+  "micro_agents": 51,
+  "departments": 22,
+  "pods": 27,
+  "layers": 6,
+  "skills": 492,
+  "own_skills": 52,
+  "workflows": 22,
+  "commands": 38,
+  "rules": 26,
+  "knowledge_notes": 1152,
+  "knowledge_topics": 28,
+  "knowledge_sources": 46,
+  "engine_tools": 71
+}

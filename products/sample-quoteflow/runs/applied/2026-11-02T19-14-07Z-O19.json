@@ -1,0 +1,16 @@
+{
+  "task_id": "O19",
+  "agent": "om-red-team",
+  "status": "done",
+  "output": ["reports/red-team.md"],
+  "summary": "Red-teamed plan.md. Top risks: (1) $95 MRR by Day 30 is not reachable because only trials from about Nov 12-18 can convert, and the Day-14 and activation kill triggers fire at the wrong time; (2) PH launch with no evidence of a working, beta-tested app or validated demand, and too much owner work in one week; (3) the free 3-proposal cap may cover the beachhead (2-6 briefs a month) while Pro adds nothing defined, so trials end in a downgrade. Proposed changes: an activation-based Day-30 goal, a beta gate before PH, and Pro-vs-Free as a hard blocker. Note: O19 was not present in tasks.json (empty).",
+  "experiments": [
+    {"id": "E-O19-1", "hypothesis": "The median beachhead freelancer sends more than 3 proposals a month, so the free cap pushes users toward Pro.", "metric": "median self-reported proposals sent per month across G33 interviews (last 2 months)", "status": "planned"},
+    {"id": "E-O19-2", "hypothesis": "A closed beta of 5-10 warm-network users can each send one real proposal (signature plus deposit request) before any public launch.", "metric": "count of beta users with proposal_sent to a real client before the go/no-go date", "status": "planned"}
+  ],
+  "new_tasks": [
+    {"title": "Revise plan.md after red team: goal, gates and trigger timing", "agent": "om-cmo", "brief": "Inputs: reports/red-team.md, plan.md, reports/owner-decisions.md once it exists. Change the Day-30 primary goal to activated trials (closed cohorts) and report MRR without a target. Add go/no-go lines for a working app tested by 5 beta users and an interview gate (G33). Re-time the '<10 trials' trigger to 7 days after launch and the activation trigger to the beta cohort. Make Pro-vs-Free (decision 4) a blocker for G05 pricing and G11. Output: plan.md (revised).", "depends_on": [], "priority": 1},
+    {"title": "Add proposal-volume and willingness-to-pay questions to the interview kit", "agent": "om-persona-interviewer", "brief": "Inputs: reports/red-team.md Risk 3 and Risk 2, research/icp.md. Add: proposals sent in each of the last 2 months; current tools for proposal, signature and deposit; what they would pay for beyond more proposals; past paid proposal tools. Add a tally sheet and the kill criteria from the red team (median <=3 per month; fewer than 3 of 10 describe the gap as current pain). Output: research/interview-kit.md (section added).", "depends_on": [], "priority": 2},
+    {"title": "Add three red-team questions to the owner decision pack", "agent": "om-chief-of-staff", "brief": "Inputs: reports/red-team.md 'Recommended next step', plan.md §12. Add to reports/owner-decisions.md as top items: (a) does a working app exist that can send a real proposal with signature and deposit request today, (b) owner hours per week for build, support and replies, (c) what Pro adds over Free (marked as blocker for pricing page and trial emails). Do not decide for the owner.", "depends_on": [], "priority": 1}
+  ]
+}

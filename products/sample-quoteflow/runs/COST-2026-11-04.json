@@ -1,0 +1,15 @@
+{
+  "task_id": "COST-2026-11-04",
+  "agent": "om-cost-optimizer",
+  "status": "done",
+  "output": ["reports/cost.md"],
+  "summary": "Refreshed reports/cost.md with live counts (95 tasks, 44 done, 51 todo), $0 spend (free mode), and an updated cancel and merge list: cancel T2, T45, T46, T44, T47; merge T43 into G25 and T1 into G33/T40; defer T4; keep T6 as the install step. Model changes: T42 and G22 to haiku, G23 to sonnet; G08 is already haiku.",
+  "experiments": [
+    {"id": "E-COST-1", "hypothesis": "Haiku copies competitor review quotes from source as accurately as sonnet (T42 task), so the cheaper model can be used for quote extraction.", "metric": "Share of 10 quotes per arm matching the source word for word with URL, role and date present. Min sample 10 per arm. Stop 2026-11-20. Keep haiku if at least 9 of 10 match and none is invented.", "status": "planned"}
+  ],
+  "new_tasks": [],
+  "alerts": [
+    {"level": "decision", "title": "Apply the cancel and merge list to the open queue", "detail": "T2, T45, T46, T44 and T47 duplicate done work. T43 and T1 merge into G25 and G33/T40. T4 waits for a live tool. This cuts about 8 of 51 open tasks. The earlier list also wrongly suggested merging T6, which is the real install step, and T3 and T5 are already done. Owner or om-cmo to confirm via T20261104."}
+  ],
+  "approvals_note": "No spend or outbound action. No approvals listed."
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "T5",
+  "agent": "om-pricing-intel",
+  "status": "done",
+  "output": [
+    "products/sample-quoteflow/research/pricing-intel.md"
+  ],
+  "summary": "Checked vendor pricing pages on 2026-11-03. HoneyBook (USD live page: Starter $29, Essentials $49, Premium $109 per month billed yearly; 30-day trial, no card, no free plan) and PandaDoc (Free, Starter $19 and Business $49 per seat billed annually; Starter 14-day trial, no card) are verified. Bonsai and Proposify were not reachable from this environment, so those rows are marked not found, and their search-snippet prices are kept as unverified. The HoneyBook older/newer price sets are resolved to the live set; the Bonsai sets remain unresolved. UK/CA/AU currency was not shown on any verified page.",
+  "approvals": [],
+  "experiments": [],
+  "new_tasks": []
+}

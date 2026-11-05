@@ -1,0 +1,7 @@
+{
+  "task_id": "T39",
+  "agent": "om-cmo",
+  "status": "done",
+  "output": ["plan.md"],
+  "summary": "plan.md is now revision 3. It confirms activated trials (closed cohorts) as the Day-30 goal with MRR reported and no target, adds go/no-go lines GN-1 to GN-6 in section 8a (working app, 5 beta users end to end, the G33 interview gate, Pro vs Free as a blocker for the G05 pricing page and G11), re-times the '<10 trials' trigger to 7 days after launch, and changes the activation trigger to a count on the beta cohort. It also flags that the section 13b dependency edits are not yet in tasks.json and that 57 tasks are open against the 40 cap, with a list of duplicates to merge in section 13d. reports/owner-decisions.md does not exist yet, so every owner decision is still open."
+}

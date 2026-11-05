@@ -1,0 +1,18 @@
+{
+  "task_id": "G09",
+  "agent": "om-cro",
+  "status": "done",
+  "output": ["research/cro-signup-review.md"],
+  "summary": "Reviewed home A/B and pricing drafts against icp.md objections and tracking.md, and wrote 12 ranked changes plus a signup and trial-start spec (steps 0-4 with owner-decision branches). Top blockers: empty Pro card, unanswered card/post-trial question, no product proof; live-page audit is pending the domain.",
+  "experiments": [
+    {"id": "E-G09-1", "hypothesis": "On the winning home variant, a real product visual (client-link screenshot or clip) above the fold raises sign-up per visitor.", "metric": "sign_up per unique visitor; cta_click rate", "status": "planned"},
+    {"id": "E-G09-2", "hypothesis": "Showing trial-end terms and the card statement on the signup screen raises pro sign_up to trial_started.", "metric": "trial_started per sign_up with plan=pro", "status": "planned"}
+  ],
+  "new_tasks": [
+    {"title": "Revise home A/B and pricing after owner answers (CRO changes 1, 2, 4, 5, 6, 10)", "agent": "om-landing-builder", "brief": "Inputs: research/cro-signup-review.md section 2, reports/owner-decisions.md answers for decisions 4, 5, 12 and post-trial behaviour. Apply the ranked changes; keep A and B differing only in the element under test (E-O8-1). Draft to outbox/landing/; publish approval needed. Do not start before decision 4 is answered.", "depends_on": ["G09"], "priority": 2}
+  ],
+  "alerts": [
+    {"level": "decision", "title": "Four owner answers gate the pricing and signup pages", "detail": "Pro contents (decision 4), card required at trial (decision 5), whether a free signup counts as a conversion (decision 12) and what happens when the trial ends. Without them the pricing page cannot ship and the CTA hierarchy cannot be set. Answer by Fri 2026-11-06."},
+    {"level": "info", "title": "UK subscription rules may apply to the trial", "detail": "K-d61ac4930b: draft UK rules, expected from 1 Jan 2027 but not yet confirmed, require pre-contract info, reminders after trials and online cancellation. Spec builds these in cheaply; lawyer to decide applicability."}
+  ]
+}

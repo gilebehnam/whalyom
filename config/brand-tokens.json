@@ -1,0 +1,32 @@
+{
+  "name": "Whalyom",
+  "expansion": "Whalya Online and Digital Marketing Automation",
+  "category": "Autonomous AI Marketing, Branding & Revenue Engine (AIME)",
+  "slogans": {
+    "primary": "Your Entire Marketing Department. Zero Payroll.",
+    "autonomy": "Hundreds of AI Marketing Employees. Working 24/7. Zero Human Friction.",
+    "ocean": "Rule the Digital Ocean Without a Crew.",
+    "revenue": "Drop Any Product In. Watch Revenue Multiply on Full Autopilot.",
+    "dual_budget": "Infinite Organic Hustle at $0. Instant Algorithmic Scale at Any Budget."
+  },
+  "colors": {
+    "ocean-abyss": "#050B14",
+    "leviathan-navy": "#0A192F",
+    "electric-cyan": "#00F0FF",
+    "synapse-violet": "#8B5CF6",
+    "bioluminescent-emerald": "#10B981",
+    "solar-amber": "#F59E0B",
+    "crimson-pulse": "#EF4444",
+    "signal-pure": "#F8FAFC"
+  },
+  "color_roles": {
+    "ocean-abyss": "3D viewport background",
+    "leviathan-navy": "glass panels",
+    "electric-cyan": "active agents, primary actions",
+    "synapse-violet": "AI transitions, supervisor directives",
+    "bioluminescent-emerald": "conversions, revenue, done",
+    "solar-amber": "budget moves, experiments, Needs You Know decisions",
+    "crimson-pulse": "errors, self-debugging, kill-switch",
+    "signal-pure": "text"
+  }
+}
