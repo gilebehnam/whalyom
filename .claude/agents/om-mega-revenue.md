@@ -87,11 +87,9 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-anomaly-detector`: Anomaly detector
 - `om-attribution`: Attribution analyst
 - `om-bandit-cro`: Bandit CRO tester
-- `om-battlecard`: Battlecard writer
 - `om-benchmark-keeper`: Benchmark keeper
 - `om-brand-health-tracker`: Brand health tracker
 - `om-budget-allocator`: Budget allocator
-- `om-capi-planner`: Server-side tracking planner
 - `om-cart-launch`: Open-cart launch planner
 - `om-cart-recovery`: Cart and silent-lead recovery
 - `om-challenge-funnel`: Challenge funnel designer
@@ -102,7 +100,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-cost-optimizer`: Cost optimizer
 - `om-crm-hygiene`: CRM hygiene
 - `om-cro`: Conversion optimizer
-- `om-customer-education`: Customer education designer
 - `om-deal-desk`: Deal desk
 - `om-deliverability`: Email deliverability
 - `om-deliverability-monitor`: Deliverability monitor
@@ -111,7 +108,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-dunning-recovery`: Dunning recovery planner
 - `om-dynamic-content-orchestrator`: Dynamic content orchestrator
 - `om-email-nurture`: Email nurture
-- `om-event-producer`: Event and field marketing producer
 - `om-evergreen-webinar`: Evergreen webinar funnel
 - `om-follow-up`: Follow-up agent
 - `om-forecaster`: Forecaster
@@ -138,7 +134,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-microcopy`: UX microcopy writer
 - `om-mutual-action-plan`: Mutual action plan builder
 - `om-next-best-action`: Next-best-action decider
-- `om-nps-survey`: Survey agent
 - `om-objection-handler`: Objection handler
 - `om-onboarding-optimizer`: Onboarding optimizer
 - `om-pacing-monitor`: Budget pacing monitor
@@ -164,7 +159,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-sms-push`: SMS and push agent
 - `om-social-proof`: Social proof builder
 - `om-speed-to-lead`: Speed-to-lead responder
-- `om-tracking-engineer`: Tracking engineer
 - `om-trust-builder`: Trust builder
 - `om-upsell`: Expansion agent
 - `om-utm-manager`: UTM manager

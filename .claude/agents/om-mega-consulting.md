@@ -78,7 +78,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-brand-scientist`: Brand growth scientist
 - `om-budget-allocator`: Budget allocator
 - `om-business-case-modeler`: Business case modeler
-- `om-capi-planner`: Server-side tracking planner
 - `om-case-method-coach`: Case method coach
 - `om-category-designer`: Category designer
 - `om-chief-of-staff`: Chief of staff
@@ -130,7 +129,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-story-bank`: Story bank keeper
 - `om-storyline-writer`: Executive storyline writer
 - `om-swarm-director`: Swarm director
-- `om-tracking-engineer`: Tracking engineer
 - `om-transformation-lead`: Transformation lead
 - `om-utm-manager`: UTM manager
 - `om-micro-anomaly-flag` (micro): Anomaly flag micro-agent

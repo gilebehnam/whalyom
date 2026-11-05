@@ -1,0 +1,3070 @@
+{
+  "updated_at": "2026-11-05T16:11:10.815Z",
+  "advisory": true,
+  "rule": {
+    "min_items": 5,
+    "min_scores": 3,
+    "stale_days": 14,
+    "weights": {
+      "outcome": 0.65,
+      "evaluator": 0.35
+    },
+    "note": "Hint only: never reassigns a task. Below the minimum sample, results blend with the roster prior."
+  },
+  "families": {
+    "seo": [
+      {
+        "agent": "om-landing-builder",
+        "score": 0.522,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 4,
+          "scored_tasks": 0,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-aeo-chatgpt",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-aeo-copilot",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-aeo-gemini",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-aeo-perplexity",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cannibalization-fixer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-comparison-pages",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-competitive-product-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-content-refresher",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-content-strategist",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-editor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-free-tool-builder",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "content": [
+      {
+        "agent": "om-ai-agent-architect",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-output-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-brand-guardian",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-case-study-writer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-changelog-writer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-citation-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-content-provenance-officer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-creator-program-manager",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-data-storyteller",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-docs-writer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-dynamic-content-orchestrator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ebook-author",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "conversion": [
+      {
+        "agent": "om-cro",
+        "score": 0.544,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 5,
+          "scored_tasks": 1,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 1,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-accessibility-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agent-readiness-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agentic-commerce-planner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-traffic-attributor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-bandit-cro",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-benchmark-keeper",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-benchmarking-partner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cart-launch",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-challenge-funnel",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-chat-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-checkout-localizer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "email": [
+      {
+        "agent": "om-activation-emails",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-advocacy",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-sdr-orchestrator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-barter-partnerships",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cart-recovery",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-churn-predictor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-churn-preventer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-community-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-customer-education",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-deliverability",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-deliverability-monitor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-dunning-recovery",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "social": [
+      {
+        "agent": "om-ai-social-listener",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-algorithm-watcher",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-build-in-public-coach",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cms-operator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-community-lead-hunter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-community-manager",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-discord-slack",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-etiquette-checker",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-facebook-groups",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-gbp-manager",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-genai-image-director",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-hn-indiehackers",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "paid": [
+      {
+        "agent": "om-ad-account-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ad-creative",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agent-permission-warden",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-ads",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-fairness-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-apple-search-ads",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-bid-strategist",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-budget-allocator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-compliance-guard",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-conversion-value",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cost-optimizer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 1,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cpa-guard",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "sales": [
+      {
+        "agent": "om-abm-orchestrator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agent-handoff-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-battlecard",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-checkout-finisher",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-contest-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-crm-hygiene",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-deal-desk",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-demo-coach",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-domain-warmup",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-evolution-director",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-follow-up",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-forecast-calibrator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "research": [
+      {
+        "agent": "om-cmo",
+        "score": 0.544,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 5,
+          "scored_tasks": 1,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 3,
+          "tasks_done": 2,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ad-spy",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-answer-monitor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-brand-monitor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-buyer-research-lead",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-case-method-coach",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-claim-substantiator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-commercial-due-diligence",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-commercial-excellence",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-community-scout",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 1,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-competitive-strategist",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-competitor-ai-watch",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "analytics": [
+      {
+        "agent": "om-forecaster",
+        "score": 0.544,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 5,
+          "scored_tasks": 1,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 1,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-tracking-engineer",
+        "score": 0.522,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 4,
+          "scored_tasks": 1,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 1,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-affiliate-fraud",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-roi-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 1,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-anomaly-detector",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-attribution",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-capi-planner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cohort-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-data-quality-steward",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-funnel-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-incrementality",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "authority": [
+      {
+        "agent": "om-award-hunter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-backlink-builder",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-chatgpt-app-planner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-crisis-responder",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-cultural-adapter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-directory-submitter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-eeat-builder",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-entity-builder",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-expert-quotes",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-guest-poster",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-link-reclaimer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-link-risk-auditor",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "creative": [
+      {
+        "agent": "om-video-producer",
+        "score": 0.522,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 4,
+          "scored_tasks": 0,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agent-fleet-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-act-officer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-eval-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ambassador-program",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-caption-subtitler",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-carousel-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-consent-compliance",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-creative-director",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-creative-matrix",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-headline-lab",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-hook-writer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "partners": [
+      {
+        "agent": "om-affiliate-recruiter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-analyst-relations",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-app-store",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-appsumo-ltd",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-brand-health-tracker",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-brand-scientist",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-category-designer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-co-marketing",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-consulting-partner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ctv-planner",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-distinctive-assets-manager",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-event-producer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "intl": [
+      {
+        "agent": "om-hreflang",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-ar",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-de",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-es",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-fr",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-it",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-ja",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-ptbr",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-l10n-tr",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-localizer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-market-entry",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-translator",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ],
+    "general": [
+      {
+        "agent": "om-chief-of-staff",
+        "score": 0.533,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": 4.5,
+          "scored_tasks": 0,
+          "sample": "thin",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-agent-bench",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-governance-officer",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-maturity-benchmarker",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-model-router",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-shopping-feed",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-strategist",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-ai-vendor-diligence",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-bug-hunter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-business-case-modeler",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-conversational-copywriter",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      },
+      {
+        "agent": "om-customer-360-analyst",
+        "score": 0.5,
+        "evidence": {
+          "items": 0,
+          "leads": 0,
+          "won": 0,
+          "revenue": 0,
+          "per_item": null,
+          "avg_score": null,
+          "scored_tasks": 0,
+          "sample": "prior",
+          "prior": 0.5,
+          "tasks": 0,
+          "tasks_done": 0,
+          "channels": []
+        }
+      }
+    ]
+  },
+  "channels": {},
+  "improve_or_retire": []
+}

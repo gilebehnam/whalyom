@@ -118,7 +118,7 @@ test('check marks stale facts; brief writes department briefs and one skill per 
   assert.ok(c.facts_stale >= 1, 'facts past review_by are stale');
   assert.equal(loadBase().facts.filter((f) => f.status === 'stale').length, c.facts_stale);
   const b = brief({ now: NOW, agentDept: { 'om-geo-optimizer': 'seo' } });
-  assert.equal(b.files, 22 + 1 + Object.keys(TOPICS).length); // 22 department briefs, BRIEFING.md, one skill per topic
+  assert.equal(b.files, 28 + 1 + Object.keys(TOPICS).length); // 28 department briefs, BRIEFING.md, one skill per topic
   const seo = fs.readFileSync(K('briefs', 'seo.md'), 'utf8');
   assert.match(seo, /llms\.txt/);
   assert.doesNotMatch(seo, /llms\.txt file for Search ranking/, 'superseded facts leave the briefs');

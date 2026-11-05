@@ -74,7 +74,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-benchmark-keeper`: Benchmark keeper
 - `om-brand-health-tracker`: Brand health tracker
 - `om-budget-allocator`: Budget allocator
-- `om-capi-planner`: Server-side tracking planner
 - `om-chief-of-staff`: Chief of staff
 - `om-cmo`: CMO strategist
 - `om-cost-optimizer`: Cost optimizer
@@ -95,7 +94,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-risk-officer`: Risk officer
 - `om-self-reported-attribution`: Self-reported attribution
 - `om-swarm-director`: Swarm director
-- `om-tracking-engineer`: Tracking engineer
 - `om-utm-manager`: UTM manager
 - `om-micro-anomaly-flag` (micro): Anomaly flag micro-agent
 - `om-micro-kpi-calc` (micro): KPI calculator micro-agent

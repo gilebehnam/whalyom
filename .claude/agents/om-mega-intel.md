@@ -76,7 +76,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-competitor-ai-watch`: Competitor AI feature watcher
 - `om-competitor-intel`: Competitor intel
 - `om-competitor-monitor`: Competitor monitor
-- `om-events-scout`: Events and conference scout
 - `om-founder-brand`: Founder brand strategist
 - `om-frontier-radar`: AI frontier radar
 - `om-icp-builder`: ICP builder

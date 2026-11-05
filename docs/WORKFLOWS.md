@@ -39,7 +39,7 @@ Every workflow takes `slug` and `now`, except `om-self-heal` (`slug` optional) a
 | `om-self-heal` | Ops doctor per workspace → self-debug → bug hunter fix with a test → red team checks no guard was loosened (halts if it was) → repeat until clean → `npm test` → proposals for recurring causes | `slug?`, `maxRounds?` (3) |
 | `om-knowledge-refresh` | Fetch feeds → topic batches → watchers/scouts extract dated facts → fact verifier tries to reject each against its source → merge, re-check stale facts → briefs and `om-knowledge-*` skills → skill smith proposes agent rules → red team → `tools/evolve.mjs apply` and tests → alerts for affected products | `maxItems?` (60), `maxProposals?` (10); no slug |
 | `om-evolve` | Evolution director picks weakest agents → golden-set benchmark → one proposal each → re-benchmark with it → red team and skill auditor → ship measured gains, tests or rollback | `maxAgents?` (10); no slug |
-| `om-mega-sweep` | Context and briefs → the department-head mega agents in parallel → revenue mega agent names the constraint → red team on the plan, compliance guard on drafts | `depts?` (all 22) |
+| `om-mega-sweep` | Context and briefs → the department-head mega agents in parallel → revenue mega agent names the constraint → red team on the plan, compliance guard on drafts | `depts?` (all 28) |
 | `om-product-evolution` | Whalyom improving itself: Measure (agent outcome credit, product scorecard and backlog) → Compete (competitor feature matrix) → Prioritize (product manager specs the top buildable items, owner requests) → Build (each item with a test; red team checks no guard was loosened) → Verify (full suite, re-measure) → Report | `maxItems?` (3, max 5), `compete?` (true); no slug |
 
 ## Running one

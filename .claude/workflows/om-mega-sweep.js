@@ -1,7 +1,7 @@
 export const meta = {
   name: 'om-mega-sweep',
   description: 'Mega sweep: the department-head mega agents each run their whole department for one product in parallel (scorecard, top three items done, the rest delegated), the revenue mega agent names the one constraint across them, the red team attacks the combined plan and the compliance guard checks every outbox draft, then results merge',
-  whenToUse: 'Monthly per active product, after onboarding, or when the owner asks for a full department review. args: {slug, now, depts?: ["seo","paid",...,"commerce","growth-free"] (default all 22 department heads)}',
+  whenToUse: 'Monthly per active product, after onboarding, or when the owner asks for a full department review. args: {slug, now, depts?: ["seo","paid",...,"commerce","growth-free"] (default all 28 department heads)}',
   phases: [
     { title: 'Context', detail: 'product state and the knowledge briefs' },
     { title: 'Heads', detail: 'one mega agent per department, in parallel' },
@@ -18,9 +18,9 @@ const now = args?.now ?? 'unknown-time'
 const day = String(now).slice(0, 10)
 const ws = `products/${slug}/`
 const PFX = `MEGA-${day}`
-// The 22 department heads: the original thirteen, the nine wave-9 departments (roster-wave9.mjs), including om-mega-commerce (wave 7), which spans paid, funnel, social, SEO and finance,
+// The 28 department heads: the original thirteen, the nine wave-9 departments (roster-wave9.mjs), the six wave-10 departments (roster-wave10.mjs), including om-mega-commerce (wave 7), which spans paid, funnel, social, SEO and finance,
 // and om-mega-growth-free (wave 8), which runs zero-budget growth across lead gen, social, SEO, funnel and lifecycle.
-const ALL = ['sovereign', 'intel', 'strategy', 'funnel', 'creative', 'seo', 'social', 'paid', 'leadgen', 'closer', 'lifecycle', 'finops', 'evolve', 'trust', 'consulting', 'data', 'pr', 'partners', 'global', 'commerce', 'growth-free', 'ailab']
+const ALL = ['sovereign', 'intel', 'strategy', 'funnel', 'creative', 'seo', 'social', 'paid', 'leadgen', 'closer', 'lifecycle', 'finops', 'evolve', 'trust', 'consulting', 'data', 'pr', 'partners', 'global', 'commerce', 'growth-free', 'ailab', 'pmm', 'studio', 'success', 'martech', 'local', 'community']
 const depts = (Array.isArray(args?.depts) && args.depts.length ? args.depts : ALL).filter((d) => ALL.includes(d))
 
 const omAgent = async (agentType, prompt, opts) => {

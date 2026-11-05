@@ -22,5 +22,5 @@ if [ "$1" = "--codex" ]; then
 fi
 
 node tools/stats.mjs >/dev/null
-node -e "const s=require('./docs/STATS.json');console.log('\nWhalyom is ready: '+s.agents+' agents, '+s.departments+' departments, '+s.skills+' skills, '+s.commands+' commands, '+s.rules+' rules, '+s.knowledge_notes+' verified notes.')"
+node -e "const s=require('./docs/STATS.json');console.log('\nWhalyom is ready: '+s.agents+' agents, '+s.departments+' departments, '+s.skills+' skills, '+s.commands+' commands, '+s.rules+' rules, '+s.knowledge_facts+' verified facts.')"
 echo "Next: run 'claude' here, then /whalyom-new <slug> <domain>."

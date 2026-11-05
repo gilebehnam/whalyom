@@ -34,7 +34,7 @@ export function stats() {
     workflows: list('.claude/workflows', (e) => e.name.endsWith('.js')).length,
     commands: list('.claude/commands', (e) => e.name.endsWith('.md')).length,
     rules: list('rules', (e) => /^\d\d-.*\.md$/.test(e.name)).length,
-    knowledge_notes: active.length,
+    knowledge_facts: active.length,
     knowledge_topics: new Set(active.map((f) => f.topic)).size,
     knowledge_sources: (read('knowledge/sources.json', { sources: [] }).sources ?? []).length,
     engine_tools: list('tools', (e) => e.name.endsWith('.mjs')).length,

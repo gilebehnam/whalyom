@@ -83,7 +83,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-bid-strategist`: Bid strategist
 - `om-brand-health-tracker`: Brand health tracker
 - `om-budget-allocator`: Budget allocator
-- `om-capi-planner`: Server-side tracking planner
 - `om-conversion-value`: Conversion value mapper
 - `om-cost-optimizer`: Cost optimizer
 - `om-cpa-guard`: CPA kill-switch guard
@@ -109,7 +108,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-revenue-reconciler`: Revenue reconciler
 - `om-self-reported-attribution`: Self-reported attribution
 - `om-tiktok-ads`: TikTok Ads
-- `om-tracking-engineer`: Tracking engineer
 - `om-utm-manager`: UTM manager
 - `om-x-ads`: X Ads
 - `om-youtube-ads`: YouTube Ads

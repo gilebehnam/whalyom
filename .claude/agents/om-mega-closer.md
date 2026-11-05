@@ -71,7 +71,6 @@ You master these skills too. Pick the ones that fit the task; you do not need al
 Hand work to these specialists through `new_tasks` (the main session dispatches them). Micro agents are for single, fast jobs:
 - `om-abm-orchestrator`: ABM orchestrator
 - `om-ai-sdr-orchestrator`: AI SDR orchestrator
-- `om-battlecard`: Battlecard writer
 - `om-brand-scientist`: Brand growth scientist
 - `om-category-designer`: Category designer
 - `om-chat-designer`: Chat flow designer
@@ -82,7 +81,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-deliverability`: Email deliverability
 - `om-demo-coach`: Demo coach
 - `om-domain-warmup`: Outbound domain warmup planner
-- `om-event-producer`: Event and field marketing producer
 - `om-follow-up`: Follow-up agent
 - `om-founder-brand`: Founder brand strategist
 - `om-intent-data-reader`: Intent data reader

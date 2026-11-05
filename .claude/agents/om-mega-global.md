@@ -76,9 +76,7 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-backlink-builder`: Backlink builder
 - `om-brand-scientist`: Brand growth scientist
 - `om-cannibalization-fixer`: Cannibalization fixer
-- `om-case-study-writer`: Case study writer
 - `om-category-designer`: Category designer
-- `om-changelog-writer`: Changelog writer
 - `om-checkout-localizer`: Checkout localizer
 - `om-citation-auditor`: Citation auditor
 - `om-comparison-pages`: Comparison page writer
@@ -88,7 +86,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-cultural-adapter`: Cultural adapter
 - `om-data-storyteller`: Data storyteller
 - `om-directory-submitter`: Directory submitter
-- `om-docs-writer`: Help center writer
 - `om-ebook-author`: Ebook and guide author
 - `om-editor`: Editor and fact-checker
 - `om-eeat-builder`: E-E-A-T builder
@@ -116,7 +113,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-lead-magnet`: Lead magnet creator
 - `om-link-reclaimer`: Link reclaimer
 - `om-link-risk-auditor`: Link risk auditor
-- `om-local-seo`: Local SEO
 - `om-localizer`: Localizer
 - `om-market-entry`: Market entry strategist
 - `om-message-architect`: Message architect
@@ -125,8 +121,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-newsletter-editor`: Newsletter editor
 - `om-offer-engineer`: Offer engineer
 - `om-offer-personalizer`: Offer personalizer
-- `om-page-speed`: Page speed
-- `om-podcast-producer`: Podcast producer
 - `om-positioning-strategist`: Positioning strategist
 - `om-ppp-pricing`: Regional pricing planner
 - `om-price-tester`: Willingness-to-pay researcher
@@ -143,8 +137,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-tech-seo`: Technical SEO
 - `om-template-maker`: Template maker
 - `om-translator`: Translator
-- `om-video-seo`: Video SEO
-- `om-webinar-producer`: Webinar producer
 - `om-writer`: Writer
 - `om-micro-alt-text` (micro): Alt text micro-agent
 - `om-micro-faq-schema` (micro): FAQ schema micro-agent

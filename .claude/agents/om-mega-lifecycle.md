@@ -72,7 +72,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-challenge-funnel`: Challenge funnel designer
 - `om-churn-preventer`: Churn preventer
 - `om-cro`: Conversion optimizer
-- `om-customer-education`: Customer education designer
 - `om-deliverability-monitor`: Deliverability monitor
 - `om-dunning-recovery`: Dunning recovery planner
 - `om-dynamic-content-orchestrator`: Dynamic content orchestrator
@@ -87,7 +86,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-lifecycle-qa`: Lifecycle email QA
 - `om-loyalty-architect`: Loyalty and rewards architect
 - `om-microcopy`: UX microcopy writer
-- `om-nps-survey`: Survey agent
 - `om-onboarding-optimizer`: Onboarding optimizer
 - `om-paywall-optimizer`: Upgrade optimizer
 - `om-personalizer`: Personalization designer

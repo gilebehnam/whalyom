@@ -19,7 +19,7 @@ Copy without a page was useless, so a landing builder came. A page without traff
 Traffic without answers lost the leads, so a sales team came, and a funnel to track every one of them.
 
 Each time a step failed, the fix became an agent, a rule or a script.
-That is how it grew to 489 agents in 22 departments, 492 skills and 38 commands.
+That is how it grew to 536 agents in 28 departments, 498 skills and 106 commands.
 Nobody planned the number. The work did.
 
 ## What could go wrong
@@ -27,7 +27,7 @@ Nobody planned the number. The work did.
 An agent with an email connector is an agent that can email the wrong people.
 An agent with an ad account can spend a month's budget in an afternoon.
 
-So the most important part of Whalyom is not an agent at all. It is 26 rules, and code that enforces them:
+So the most important part of Whalyom is not an agent at all. It is 50 rules, and code that enforces them:
 one executor that sends anything, caps no prompt can raise, a kill switch for ads that waste money,
 consent checked again right before every message, and the owner's yes before anything leaves.
 A model can be talked into anything. A spend cap in code cannot.
@@ -36,7 +36,7 @@ A model can be talked into anything. A spend cap in code cannot.
 
 Marketing knowledge goes stale fast. A rule that was true about ads in spring is wrong by autumn.
 So Whalyom reads 46 official and research sources, and a verifier agent tries to prove each new fact wrong before it is kept.
-1,152 notes survived so far.
+1,152 facts survived so far.
 Every agent reads its department's brief before it acts, and every result goes back into what the system learned.
 
 ## Why it is free

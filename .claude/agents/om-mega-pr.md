@@ -75,8 +75,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-brand-scientist`: Brand growth scientist
 - `om-category-designer`: Category designer
 - `om-crisis-responder`: Crisis and PR responder
-- `om-discord-moderator`: Discord moderation designer
-- `om-discord-slack`: Discord and Slack community agent
 - `om-etiquette-checker`: Community etiquette checker
 - `om-expert-quotes`: Expert quote responder
 - `om-extension-store`: Extension store agent
@@ -117,10 +115,7 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-thought-leader`: Thought leadership writer
 - `om-threads-bluesky`: Threads and Bluesky agent
 - `om-tiktok`: TikTok agent
-- `om-video-scripter`: Video scripter
 - `om-x`: X agent
-- `om-youtube`: YouTube agent
-- `om-youtube-shorts`: YouTube Shorts agent
 - `om-micro-caption` (micro): Video caption micro-agent
 - `om-micro-community-reply` (micro): Community reply micro-agent
 - `om-micro-hashtags` (micro): Hashtag micro-agent

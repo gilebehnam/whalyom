@@ -1,0 +1,1748 @@
+{
+  "generated_at": "2026-11-05T16:11:10.548Z",
+  "totals": {
+    "available": 63,
+    "configured": 2,
+    "missing_keys": 61,
+    "no_keys_needed": 2,
+    "connectors": 48,
+    "readers": 15,
+    "manifests": 0,
+    "invalid_manifests": 0,
+    "mcp_servers": 1,
+    "mcp_tools": 23,
+    "requires_approval": 48
+  },
+  "categories": [
+    {
+      "category": "ads",
+      "available": 23,
+      "configured": 0,
+      "missing_keys": 23
+    },
+    {
+      "category": "analytics",
+      "available": 4,
+      "configured": 0,
+      "missing_keys": 4
+    },
+    {
+      "category": "automation",
+      "available": 1,
+      "configured": 0,
+      "missing_keys": 1
+    },
+    {
+      "category": "content",
+      "available": 5,
+      "configured": 0,
+      "missing_keys": 5
+    },
+    {
+      "category": "email",
+      "available": 4,
+      "configured": 0,
+      "missing_keys": 4
+    },
+    {
+      "category": "other",
+      "available": 9,
+      "configured": 0,
+      "missing_keys": 9
+    },
+    {
+      "category": "payments",
+      "available": 1,
+      "configured": 0,
+      "missing_keys": 1
+    },
+    {
+      "category": "scheduling",
+      "available": 2,
+      "configured": 0,
+      "missing_keys": 2
+    },
+    {
+      "category": "seo",
+      "available": 2,
+      "configured": 0,
+      "missing_keys": 2
+    },
+    {
+      "category": "site",
+      "available": 4,
+      "configured": 2,
+      "missing_keys": 2
+    },
+    {
+      "category": "social",
+      "available": 8,
+      "configured": 0,
+      "missing_keys": 8
+    }
+  ],
+  "missing_env_keys": [
+    "AMAZON_ADS_CLIENT_ID",
+    "AMAZON_ADS_CLIENT_SECRET",
+    "AMAZON_ADS_PROFILE_ID",
+    "AMAZON_ADS_REFRESH_TOKEN",
+    "APPLE_ADS_CLIENT_ID",
+    "APPLE_ADS_KEY_ID",
+    "APPLE_ADS_ORG_ID",
+    "APPLE_ADS_PRIVATE_KEY",
+    "APPLE_ADS_TEAM_ID",
+    "BLUESKY_APP_PASSWORD",
+    "BLUESKY_HANDLE",
+    "BREVO_API_KEY",
+    "BREVO_LIST_ID",
+    "BUFFER_ACCESS_TOKEN",
+    "BUFFER_PROFILE_IDS",
+    "CALCOM_API_KEY",
+    "CALCOM_USERNAME",
+    "CALENDLY_TOKEN",
+    "DEVTO_API_KEY",
+    "DISCORD_WEBHOOK_URL",
+    "FACEBOOK_PAGE_ACCESS_TOKEN",
+    "FACEBOOK_PAGE_ID",
+    "GA4_PROPERTY_ID",
+    "GHOST_ADMIN_API_KEY",
+    "GHOST_ADMIN_URL",
+    "GOOGLE_ADS_CUSTOMER_ID",
+    "GOOGLE_ADS_DEVELOPER_TOKEN",
+    "GSC_SITE_URL",
+    "HASHNODE_PUBLICATION_ID",
+    "HASHNODE_TOKEN",
+    "INDEXNOW_KEY",
+    "INSTAGRAM_ACCESS_TOKEN",
+    "INSTAGRAM_USER_ID",
+    "KIT_API_KEY",
+    "LINKEDIN_ACCESS_TOKEN",
+    "LINKEDIN_AD_ACCOUNT_ID",
+    "LINKEDIN_AUTHOR_URN",
+    "MAILCHIMP_API_KEY",
+    "MAILCHIMP_LIST_ID",
+    "MASTODON_TOKEN",
+    "MASTODON_URL",
+    "MEDIUM_TOKEN",
+    "META_ACCESS_TOKEN",
+    "META_AD_ACCOUNT_ID",
+    "MSADS_ACCESS_TOKEN",
+    "MSADS_ACCOUNT_ID",
+    "MSADS_CUSTOMER_ID",
+    "MSADS_DEVELOPER_TOKEN",
+    "OM_EMAIL_FROM",
+    "PLAUSIBLE_API_KEY",
+    "PLAUSIBLE_SITE_ID",
+    "REDDIT_ADS_ACCESS_TOKEN",
+    "REDDIT_ADS_ACCOUNT_ID",
+    "RESEND_API_KEY",
+    "SLACK_WEBHOOK_URL",
+    "STRIPE_API_KEY",
+    "TELEGRAM_BOT_TOKEN",
+    "TELEGRAM_CHAT_ID",
+    "TIKTOK_ACCESS_TOKEN",
+    "TIKTOK_ADVERTISER_ID",
+    "TIKTOK_POSTING_ACCESS_TOKEN",
+    "TWILIO_ACCOUNT_SID",
+    "TWILIO_AUTH_TOKEN",
+    "TWILIO_VOICE_FROM",
+    "UMAMI_WEBSITE_ID",
+    "WALMART_ADS_ADVERTISER_ID",
+    "WALMART_ADS_AUTH_TOKEN",
+    "WALMART_ADS_CONSUMER_ID",
+    "WALMART_ADS_PRIVATE_KEY",
+    "WP_APP_PASSWORD",
+    "WP_URL",
+    "WP_USER",
+    "X_ADS_ACCESS_SECRET",
+    "X_ADS_ACCESS_TOKEN",
+    "X_ADS_ACCOUNT_ID",
+    "X_ADS_CONSUMER_KEY",
+    "X_ADS_CONSUMER_SECRET",
+    "X_ADS_FUNDING_INSTRUMENT_ID"
+  ],
+  "integrations": [
+    {
+      "id": "connector:amazon-ads",
+      "name": "amazon-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "AMAZON_ADS_CLIENT_ID",
+        "AMAZON_ADS_CLIENT_SECRET",
+        "AMAZON_ADS_REFRESH_TOKEN",
+        "AMAZON_ADS_PROFILE_ID"
+      ],
+      "missing": [
+        "AMAZON_ADS_CLIENT_ID",
+        "AMAZON_ADS_CLIENT_SECRET",
+        "AMAZON_ADS_PROFILE_ID",
+        "AMAZON_ADS_REFRESH_TOKEN"
+      ],
+      "handles": "type \"spend\" with channel \"amazon\": Sponsored Products campaign, ad group, product ads and keywords (paused by default), or a daily budget change",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "SP v3 bodies (campaigns.budget {budgetType DAILY, budget}, dynamicBidding.strategy, state ENABLED/PAUSED, adGroups.defaultBid, productAds asin|sku, keywords matchType/bid, multi-status success/error a"
+    },
+    {
+      "id": "connector:apple-search-ads",
+      "name": "apple-search-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "APPLE_ADS_CLIENT_ID",
+        "APPLE_ADS_TEAM_ID",
+        "APPLE_ADS_KEY_ID",
+        "APPLE_ADS_PRIVATE_KEY",
+        "APPLE_ADS_ORG_ID"
+      ],
+      "missing": [
+        "APPLE_ADS_CLIENT_ID",
+        "APPLE_ADS_KEY_ID",
+        "APPLE_ADS_ORG_ID",
+        "APPLE_ADS_PRIVATE_KEY",
+        "APPLE_ADS_TEAM_ID"
+      ],
+      "handles": "type \"spend\" with channel \"apple\": campaign, ad group and keywords through the Apple Search Ads Campaign Management API v5 (paused by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Campaign Management API v5 field names (dailyBudgetAmount, countriesOrRegions, supplySources, automatedKeywordsOptIn, targetingkeywords/bulk) follow the public reference but were not tested against a "
+    },
+    {
+      "id": "connector:bluesky",
+      "name": "bluesky",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "BLUESKY_HANDLE",
+        "BLUESKY_APP_PASSWORD"
+      ],
+      "missing": [
+        "BLUESKY_APP_PASSWORD",
+        "BLUESKY_HANDLE"
+      ],
+      "handles": "type \"post\" with channel \"bluesky\" (AT Protocol createRecord, links as facets)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:boosters",
+      "name": "boosters",
+      "source": "connector",
+      "kind": "executor",
+      "category": "site",
+      "auth": "none",
+      "configured": true,
+      "status": "no_keys_needed",
+      "needs": [],
+      "missing": [],
+      "handles": "type \"publish\" with channel \"onsite-booster\" (switches an approved on-site booster on)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:brevo",
+      "name": "brevo",
+      "source": "connector",
+      "kind": "executor",
+      "category": "email",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "BREVO_API_KEY",
+        "BREVO_LIST_ID",
+        "OM_EMAIL_FROM"
+      ],
+      "missing": [
+        "BREVO_API_KEY",
+        "BREVO_LIST_ID",
+        "OM_EMAIL_FROM"
+      ],
+      "handles": "type \"send\" with channel \"brevo\" or \"newsletter\": creates an email campaign draft (never sends)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:buffer",
+      "name": "buffer",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "BUFFER_ACCESS_TOKEN",
+        "BUFFER_PROFILE_IDS"
+      ],
+      "missing": [
+        "BUFFER_ACCESS_TOKEN",
+        "BUFFER_PROFILE_IDS"
+      ],
+      "handles": "type \"post\" with channel \"buffer\" (adds to the Buffer queue of BUFFER_PROFILE_IDS)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Uses Buffer API v1 (updates/create). Buffer stopped issuing v1 credentials to new apps; works with existing tokens. Override with BUFFER_API_URL."
+    },
+    {
+      "id": "connector:convertkit",
+      "name": "convertkit",
+      "source": "connector",
+      "kind": "executor",
+      "category": "email",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "KIT_API_KEY"
+      ],
+      "missing": [
+        "KIT_API_KEY"
+      ],
+      "handles": "type \"send\" with channel \"convertkit\"/\"kit\" or \"newsletter\": creates a draft broadcast (never sends)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Kit v4 broadcasts endpoint and X-Kit-Api-Key header from public docs; v3 (api_secret) is not used."
+    },
+    {
+      "id": "connector:devto",
+      "name": "devto",
+      "source": "connector",
+      "kind": "executor",
+      "category": "content",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "DEVTO_API_KEY"
+      ],
+      "missing": [
+        "DEVTO_API_KEY"
+      ],
+      "handles": "type \"publish\" with channel \"devto\" (article, draft unless activate: true)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:discord",
+      "name": "discord",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "DISCORD_WEBHOOK_URL"
+      ],
+      "missing": [
+        "DISCORD_WEBHOOK_URL"
+      ],
+      "handles": "type \"post\" with channel \"discord\" (channel webhook; mentions disabled)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:facebook",
+      "name": "facebook",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "FACEBOOK_PAGE_ID",
+        "FACEBOOK_PAGE_ACCESS_TOKEN"
+      ],
+      "missing": [
+        "FACEBOOK_PAGE_ACCESS_TOKEN",
+        "FACEBOOK_PAGE_ID"
+      ],
+      "handles": "type \"post\" with channel \"facebook\" (Page feed, photo or multi-photo post, optional schedule) and type \"reply\" (comment or Messenger within 24 h)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Page /photos takes the text as \"message\" and multi-photo posts use attached_media; verify against current Graph API docs."
+    },
+    {
+      "id": "connector:ghost",
+      "name": "ghost",
+      "source": "connector",
+      "kind": "executor",
+      "category": "content",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GHOST_ADMIN_URL",
+        "GHOST_ADMIN_API_KEY"
+      ],
+      "missing": [
+        "GHOST_ADMIN_API_KEY",
+        "GHOST_ADMIN_URL"
+      ],
+      "handles": "type \"publish\" with channel \"ghost\" (Admin API post, draft unless activate: true)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:google-ads",
+      "name": "google-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GOOGLE_ADS_DEVELOPER_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "missing": [
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "type \"spend\" with channel \"google\": budget, campaign, ad group, keywords and RSAs through the Google Ads API (paused by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "API version defaults to v26 (set GOOGLE_ADS_API_VERSION); field names follow the REST reference. Test against a test account first."
+    },
+    {
+      "id": "connector:google-ads-budget",
+      "name": "google-ads-budget",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GOOGLE_ADS_DEVELOPER_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "missing": [
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "type \"spend\" kind \"budget_update\" with channel \"google\": campaign budget amountMicros through campaignBudgets:mutate",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:google-ads-csv",
+      "name": "google-ads-csv",
+      "source": "connector",
+      "kind": "exporter",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "missing": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "handles": "type \"spend\" with channel \"google\": writes a Google Ads Editor import CSV to outbox/exports/ (spends nothing)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Column names follow Google Ads Editor import conventions; Editor maps unknown columns interactively."
+    },
+    {
+      "id": "connector:gsc-sitemap",
+      "name": "gsc-sitemap",
+      "source": "connector",
+      "kind": "executor",
+      "category": "seo",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GSC_SITE_URL",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "missing": [
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN",
+        "GSC_SITE_URL"
+      ],
+      "handles": "type \"index\" with channel \"gsc\" or \"sitemap\": submits the sitemap to Google Search Console",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:hashnode",
+      "name": "hashnode",
+      "source": "connector",
+      "kind": "executor",
+      "category": "content",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "HASHNODE_TOKEN",
+        "HASHNODE_PUBLICATION_ID"
+      ],
+      "missing": [
+        "HASHNODE_PUBLICATION_ID",
+        "HASHNODE_TOKEN"
+      ],
+      "handles": "type \"publish\" with channel \"hashnode\" (GraphQL createDraft, or publishPost with activate: true)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Hashnode GraphQL input shapes (CreateDraftInput / PublishPostInput) checked against public docs only."
+    },
+    {
+      "id": "connector:indexnow",
+      "name": "indexnow",
+      "source": "connector",
+      "kind": "executor",
+      "category": "seo",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "INDEXNOW_KEY"
+      ],
+      "missing": [
+        "INDEXNOW_KEY"
+      ],
+      "handles": "type \"index\" (channel \"indexnow\" or none): pings IndexNow with new or changed URLs",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:instagram",
+      "name": "instagram",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "INSTAGRAM_ACCESS_TOKEN",
+        "INSTAGRAM_USER_ID"
+      ],
+      "missing": [
+        "INSTAGRAM_ACCESS_TOKEN",
+        "INSTAGRAM_USER_ID"
+      ],
+      "handles": "type \"post\" with channel \"instagram\" (image, carousel or reel: container, then publish) and type \"reply\" (comment reply or DM within 24 h)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Graph API content publishing and Instagram messaging paths follow the documented v2x shape; verify against current Meta docs. DMs go to /{page-id}/messages (Facebook Login, needs FACEBOOK_PAGE_ID + FA"
+    },
+    {
+      "id": "connector:linkedin",
+      "name": "linkedin",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AUTHOR_URN"
+      ],
+      "missing": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AUTHOR_URN"
+      ],
+      "handles": "type \"post\" with channel \"linkedin\" (Posts API, member or organization author)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "LinkedIn-Version header defaults to two months before now; set LINKEDIN_VERSION if LinkedIn rejects it."
+    },
+    {
+      "id": "connector:linkedin-ads",
+      "name": "linkedin-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "missing": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "handles": "type \"spend\" with channel \"linkedin\": campaign group, campaign and sponsored-content creative through the LinkedIn Marketing API (draft/paused by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "LinkedIn-Version pinned to 202609 (override LINKEDIN_ADS_VERSION); adCampaignGroups/adCampaigns/creatives field names follow the versioned REST reference but were not tested against a live ad account."
+    },
+    {
+      "id": "connector:linkedin-budget",
+      "name": "linkedin-budget",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "missing": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "handles": "type \"spend\" kind \"budget_update\" with channel \"linkedin\": campaign dailyBudget (PARTIAL_UPDATE)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:local-site",
+      "name": "local-site",
+      "source": "connector",
+      "kind": "executor",
+      "category": "site",
+      "auth": "none",
+      "configured": true,
+      "status": "no_keys_needed",
+      "needs": [],
+      "missing": [],
+      "handles": "type \"publish\" (pages, articles, landing pages) into a free static site, no keys needed",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:mailchimp",
+      "name": "mailchimp",
+      "source": "connector",
+      "kind": "executor",
+      "category": "email",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MAILCHIMP_API_KEY",
+        "MAILCHIMP_LIST_ID",
+        "OM_EMAIL_FROM"
+      ],
+      "missing": [
+        "MAILCHIMP_API_KEY",
+        "MAILCHIMP_LIST_ID",
+        "OM_EMAIL_FROM"
+      ],
+      "handles": "type \"send\" with channel \"mailchimp\" or \"newsletter\": creates a campaign draft (never sends)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:mastodon",
+      "name": "mastodon",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MASTODON_URL",
+        "MASTODON_TOKEN"
+      ],
+      "missing": [
+        "MASTODON_TOKEN",
+        "MASTODON_URL"
+      ],
+      "handles": "type \"post\" with channel \"mastodon\" (statuses API on your instance)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:medium",
+      "name": "medium",
+      "source": "connector",
+      "kind": "executor",
+      "category": "content",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MEDIUM_TOKEN"
+      ],
+      "missing": [
+        "MEDIUM_TOKEN"
+      ],
+      "handles": "type \"publish\" with channel \"medium\" (integration token; draft unless activate: true)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Medium no longer issues integration tokens to new accounts; existing tokens still work. The API is unmaintained."
+    },
+    {
+      "id": "connector:meta-ads",
+      "name": "meta-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "META_ACCESS_TOKEN",
+        "META_AD_ACCOUNT_ID"
+      ],
+      "missing": [
+        "META_ACCESS_TOKEN",
+        "META_AD_ACCOUNT_ID"
+      ],
+      "handles": "type \"spend\" with channel \"meta\" (campaign + ad set, paused by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:meta-budget",
+      "name": "meta-budget",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "META_ACCESS_TOKEN"
+      ],
+      "missing": [
+        "META_ACCESS_TOKEN"
+      ],
+      "handles": "type \"spend\" kind \"budget_update\" with channel \"meta\": ad set or campaign daily_budget through the Marketing API",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:microsoft-ads",
+      "name": "microsoft-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MSADS_DEVELOPER_TOKEN",
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_ACCOUNT_ID",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "type \"spend\" with channel \"microsoft\": a paused search campaign through the Microsoft Advertising API",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "UNVERIFIED: the JSON endpoint path for Campaign Management v13 (MSADS_REST_BASE) was not checked against a live account. Prefer the CSV export (OM_ADS_CSV_EXPORT=1) until tested."
+    },
+    {
+      "id": "connector:microsoft-ads-budget",
+      "name": "microsoft-ads-budget",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MSADS_DEVELOPER_TOKEN",
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_ACCOUNT_ID",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "type \"spend\" kind \"budget_update\" with channel \"microsoft\": campaign DailyBudget or Budget Amount (Campaign Management v13 REST)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Microsoft Ads REST UpdateBudgets body: verify against current API docs."
+    },
+    {
+      "id": "connector:microsoft-ads-csv",
+      "name": "microsoft-ads-csv",
+      "source": "connector",
+      "kind": "exporter",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "missing": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "handles": "type \"spend\" with channel \"microsoft\": writes a Microsoft Advertising bulk CSV to outbox/exports/ (spends nothing)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "UNVERIFIED: bulk file columns (Format Version 6.0) from public docs; Microsoft Editor can also import the Google Ads Editor CSV."
+    },
+    {
+      "id": "connector:reddit-ads",
+      "name": "reddit-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "REDDIT_ADS_ACCESS_TOKEN",
+        "REDDIT_ADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "REDDIT_ADS_ACCESS_TOKEN",
+        "REDDIT_ADS_ACCOUNT_ID"
+      ],
+      "handles": "type \"spend\" with channel \"reddit\": campaign, ad group and ad through the Reddit Ads API v3 (paused by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Reddit Ads API v3 field names (objective, configured_status, goal_type/goal_value in microcurrency, bid_strategy, targeting.communities/geolocations, ads.post_id) follow the public reference but were "
+    },
+    {
+      "id": "connector:reddit-ads-csv",
+      "name": "reddit-ads-csv",
+      "source": "connector",
+      "kind": "exporter",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "missing": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "handles": "type \"spend\" with channel \"reddit\": writes a Reddit Ads setup sheet (CSV) to outbox/exports/ (spends nothing)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Reddit Ads offers no documented bulk CSV import; this is a setup sheet for manual entry."
+    },
+    {
+      "id": "connector:resend",
+      "name": "resend",
+      "source": "connector",
+      "kind": "executor",
+      "category": "email",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "RESEND_API_KEY",
+        "OM_EMAIL_FROM"
+      ],
+      "missing": [
+        "OM_EMAIL_FROM",
+        "RESEND_API_KEY"
+      ],
+      "handles": "type \"send\" with channel \"email\" (single or small-batch emails)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:satellite",
+      "name": "satellite",
+      "source": "connector",
+      "kind": "executor",
+      "category": "site",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "tools/attach.mjs <domain> --satellite <url>"
+      ],
+      "missing": [
+        "tools/attach.mjs <domain> --satellite <url>"
+      ],
+      "handles": "type \"publish\" or \"site-change\" on an attached site, through its satellite",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:site-git",
+      "name": "site-git",
+      "source": "connector",
+      "kind": "executor",
+      "category": "site",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_SITE_REPO_<SLUG> or OM_SITE_REPO (local clone of the site repo)"
+      ],
+      "missing": [
+        "OM_SITE_REPO_<SLUG> or OM_SITE_REPO (local clone of the site repo)"
+      ],
+      "handles": "type \"publish\" with channel \"site\" or \"blog\" (pages and articles)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:site-install",
+      "name": "site-install",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_CPANEL_URL_<SLUG> + OM_CPANEL_USER_<SLUG> + OM_CPANEL_TOKEN_<SLUG>, or OM_SSH_TARGET_<SLUG> (+ OM_SSH_KEY_<SLUG>)"
+      ],
+      "missing": [
+        "OM_CPANEL_URL_<SLUG> + OM_CPANEL_USER_<SLUG> + OM_CPANEL_TOKEN_<SLUG>, or OM_SSH_TARGET_<SLUG> (+ OM_SSH_KEY_<SLUG>)"
+      ],
+      "handles": "type \"publish\" with channel \"site-install\" (adds the Whalyom plugin or collector files to the product's own site over cPanel or SSH)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:slack",
+      "name": "slack",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "SLACK_WEBHOOK_URL"
+      ],
+      "missing": [
+        "SLACK_WEBHOOK_URL"
+      ],
+      "handles": "type \"post\" with channel \"slack\" (incoming webhook)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:telegram",
+      "name": "telegram",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_CHAT_ID"
+      ],
+      "missing": [
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_CHAT_ID"
+      ],
+      "handles": "type \"post\" with channel \"telegram\" (Bot API sendMessage to your channel)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:tiktok-ads",
+      "name": "tiktok-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "missing": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "handles": "type \"spend\" with channel \"tiktok\": campaign, ad group and ad through the TikTok Marketing API (disabled by default)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Business API v1.3 field names (placements, promotion_type, schedule_start_time, ad creatives) follow the public reference but were not tested against a live advertiser. Test with a sandbox advertiser "
+    },
+    {
+      "id": "connector:tiktok-ads-csv",
+      "name": "tiktok-ads-csv",
+      "source": "connector",
+      "kind": "exporter",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "missing": [
+        "OM_ADS_CSV_EXPORT=1"
+      ],
+      "handles": "type \"spend\" with channel \"tiktok\": writes a TikTok Ads setup sheet (CSV) to outbox/exports/ (spends nothing)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "UNVERIFIED: TikTok's bulk template changes often; this sheet uses its field names but may need column mapping."
+    },
+    {
+      "id": "connector:tiktok-budget",
+      "name": "tiktok-budget",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "missing": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "handles": "type \"spend\" kind \"budget_update\" with channel \"tiktok\": campaign or ad group budget",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "TikTok campaign/update and adgroup/budget/update field names: verify against current API docs."
+    },
+    {
+      "id": "connector:tiktok-posting",
+      "name": "tiktok-posting",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TIKTOK_POSTING_ACCESS_TOKEN"
+      ],
+      "missing": [
+        "TIKTOK_POSTING_ACCESS_TOKEN"
+      ],
+      "handles": "type \"post\" with channel \"tiktok\" (Content Posting API: inbox draft by default, direct post when activated; video or photos pulled from a verified https URL)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "PULL_FROM_URL needs the media domain verified in the TikTok developer portal; unaudited apps post SELF_ONLY. Verify field names against current Content Posting API docs."
+    },
+    {
+      "id": "connector:twilio-voice",
+      "name": "twilio-voice",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TWILIO_ACCOUNT_SID",
+        "TWILIO_AUTH_TOKEN",
+        "TWILIO_VOICE_FROM"
+      ],
+      "missing": [
+        "TWILIO_ACCOUNT_SID",
+        "TWILIO_AUTH_TOKEN",
+        "TWILIO_VOICE_FROM"
+      ],
+      "handles": "type \"call\" with channel \"voice\" (one approved AI call; consent, DNC, hours and caps checked first)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:walmart-connect",
+      "name": "walmart-connect",
+      "source": "connector",
+      "kind": "executor",
+      "category": "other",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "WALMART_ADS_CONSUMER_ID",
+        "WALMART_ADS_PRIVATE_KEY",
+        "WALMART_ADS_AUTH_TOKEN",
+        "WALMART_ADS_ADVERTISER_ID"
+      ],
+      "missing": [
+        "WALMART_ADS_ADVERTISER_ID",
+        "WALMART_ADS_AUTH_TOKEN",
+        "WALMART_ADS_CONSUMER_ID",
+        "WALMART_ADS_PRIVATE_KEY"
+      ],
+      "handles": "type \"spend\" with channel \"walmart\": Sponsored Search campaign, ad group, ad items and keywords through the Walmart Connect API (always created paused)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "Walmart Sponsored Search API host, signature headers (WM_CONSUMER.ID, WM_SEC.KEY_VERSION, WM_CONSUMER.intimestamp, WM_SEC.AUTH_SIGNATURE), campaign fields (campaignType sponsoredProducts, targetingTyp"
+    },
+    {
+      "id": "connector:webhook",
+      "name": "webhook",
+      "source": "connector",
+      "kind": "executor",
+      "category": "automation",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "OM_WEBHOOK_<CHANNEL> or OM_WEBHOOK_DEFAULT"
+      ],
+      "missing": [
+        "OM_WEBHOOK_<CHANNEL> or OM_WEBHOOK_DEFAULT"
+      ],
+      "handles": "any approved item, by channel (n8n / Make / Zapier / Pipedream)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:wordpress",
+      "name": "wordpress",
+      "source": "connector",
+      "kind": "executor",
+      "category": "content",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "WP_URL",
+        "WP_USER",
+        "WP_APP_PASSWORD"
+      ],
+      "missing": [
+        "WP_APP_PASSWORD",
+        "WP_URL",
+        "WP_USER"
+      ],
+      "handles": "type \"publish\" with channel \"wordpress\" (REST API post, status draft unless activate: true)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:x",
+      "name": "x",
+      "source": "connector",
+      "kind": "executor",
+      "category": "social",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "X_API_KEY + X_API_SECRET + X_ACCESS_TOKEN + X_ACCESS_TOKEN_SECRET, or X_USER_ACCESS_TOKEN"
+      ],
+      "missing": [
+        "X_USER_ACCESS_TOKEN or X_API_KEY + X_API_SECRET + X_ACCESS_TOKEN + X_ACCESS_TOKEN_SECRET"
+      ],
+      "handles": "type \"post\" with channel \"x\" (API v2 tweets; threads split on \"---\" lines)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "connector:x-ads",
+      "name": "x-ads",
+      "source": "connector",
+      "kind": "executor",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "X_ADS_CONSUMER_KEY",
+        "X_ADS_CONSUMER_SECRET",
+        "X_ADS_ACCESS_TOKEN",
+        "X_ADS_ACCESS_SECRET",
+        "X_ADS_ACCOUNT_ID",
+        "X_ADS_FUNDING_INSTRUMENT_ID"
+      ],
+      "missing": [
+        "X_ADS_ACCESS_SECRET",
+        "X_ADS_ACCESS_TOKEN",
+        "X_ADS_ACCOUNT_ID",
+        "X_ADS_CONSUMER_KEY",
+        "X_ADS_CONSUMER_SECRET",
+        "X_ADS_FUNDING_INSTRUMENT_ID"
+      ],
+      "handles": "type \"spend\" with channel \"x_ads\": campaign, line item, targeting and promoted posts through the X Ads API v12 (paused by default; channel \"x\" stays organic)",
+      "capabilities": [],
+      "requires_approval": true,
+      "docs_url": "",
+      "unverified": "X Ads API v12 parameter names (daily_budget_amount_local_micro, objective, placements, product_type, bid_strategy, targeting types) follow the public reference but were not tested against a live ads a"
+    },
+    {
+      "id": "reader:amazon-ads-metrics",
+      "name": "amazon-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "AMAZON_ADS_CLIENT_ID",
+        "AMAZON_ADS_CLIENT_SECRET",
+        "AMAZON_ADS_REFRESH_TOKEN",
+        "AMAZON_ADS_PROFILE_ID"
+      ],
+      "missing": [
+        "AMAZON_ADS_CLIENT_ID",
+        "AMAZON_ADS_CLIENT_SECRET",
+        "AMAZON_ADS_PROFILE_ID",
+        "AMAZON_ADS_REFRESH_TOKEN"
+      ],
+      "handles": "daily spend, clicks, orders, sales and ACOS per Amazon Sponsored Products campaign (Reporting v3, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Reporting v3 body (reportTypeId spCampaigns, groupBy campaign, timeUnit DAILY, GZIP_JSON) and column names (cost, purchases7d, sales7d) follow the public v3 reference; the 425 duplicate-report answer "
+    },
+    {
+      "id": "reader:apple-search-ads-metrics",
+      "name": "apple-search-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "APPLE_ADS_CLIENT_ID",
+        "APPLE_ADS_TEAM_ID",
+        "APPLE_ADS_KEY_ID",
+        "APPLE_ADS_PRIVATE_KEY",
+        "APPLE_ADS_ORG_ID"
+      ],
+      "missing": [
+        "APPLE_ADS_CLIENT_ID",
+        "APPLE_ADS_KEY_ID",
+        "APPLE_ADS_ORG_ID",
+        "APPLE_ADS_PRIVATE_KEY",
+        "APPLE_ADS_TEAM_ID"
+      ],
+      "handles": "daily spend, taps and installs per Apple Search Ads campaign (v5 campaign reports, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "ReportingRequest body (startTime/endTime YYYY-MM-DD, granularity DAILY, selector.pagination) and response (data.reportingDataResponse.row[].metadata.campaignId, granularity[].date/localSpend.amount/ta"
+    },
+    {
+      "id": "reader:calcom",
+      "name": "calcom",
+      "source": "reader",
+      "kind": "links",
+      "category": "scheduling",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "CALCOM_API_KEY",
+        "CALCOM_USERNAME"
+      ],
+      "missing": [
+        "CALCOM_API_KEY",
+        "CALCOM_USERNAME"
+      ],
+      "handles": "booking links from Cal.com event types (API v2)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Cal.com v2 event-types response shape (data as array or data.eventTypeGroups) and cal-api-version header value."
+    },
+    {
+      "id": "reader:calendly",
+      "name": "calendly",
+      "source": "reader",
+      "kind": "links",
+      "category": "scheduling",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "CALENDLY_TOKEN"
+      ],
+      "missing": [
+        "CALENDLY_TOKEN"
+      ],
+      "handles": "scheduling links from Calendly event types (API v2)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "reader:ga4",
+      "name": "ga4",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "analytics",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GA4_PROPERTY_ID",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "missing": [
+        "GA4_PROPERTY_ID",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "handles": "daily sessions and key events per default channel group (GA4 Data API runReport)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "reader:google-ads-metrics",
+      "name": "google-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "GOOGLE_ADS_DEVELOPER_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN"
+      ],
+      "missing": [
+        "GOOGLE_ACCESS_TOKEN or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN",
+        "GOOGLE_ADS_CUSTOMER_ID",
+        "GOOGLE_ADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "daily cost, clicks and conversions per Google Ads campaign (GAQL searchStream, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "API version defaults to v26 (GOOGLE_ADS_API_VERSION). Cost is in the account currency."
+    },
+    {
+      "id": "reader:linkedin-ads-metrics",
+      "name": "linkedin-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "missing": [
+        "LINKEDIN_ACCESS_TOKEN",
+        "LINKEDIN_AD_ACCOUNT_ID"
+      ],
+      "handles": "daily spend, clicks and conversions per LinkedIn campaign (adAnalytics, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "adAnalytics finder q=analytics, pivot CAMPAIGN; conversions are externalWebsiteConversions. verify against current API docs."
+    },
+    {
+      "id": "reader:microsoft-ads-metrics",
+      "name": "microsoft-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "MSADS_DEVELOPER_TOKEN",
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "MSADS_ACCESS_TOKEN",
+        "MSADS_ACCOUNT_ID",
+        "MSADS_CUSTOMER_ID",
+        "MSADS_DEVELOPER_TOKEN"
+      ],
+      "handles": "daily spend, clicks and conversions per Microsoft Ads campaign (Reporting v13 CampaignPerformanceReport, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "CampaignPerformanceReportRequest column names (TimePeriod, CampaignId, Spend, Clicks, Conversions) and the CSV date format follow the v13 reference but were not tested against a live account. MSADS_RE"
+    },
+    {
+      "id": "reader:plausible",
+      "name": "plausible",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "analytics",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "PLAUSIBLE_API_KEY",
+        "PLAUSIBLE_SITE_ID"
+      ],
+      "missing": [
+        "PLAUSIBLE_API_KEY",
+        "PLAUSIBLE_SITE_ID"
+      ],
+      "handles": "daily visitors and pageviews from Plausible (Stats API v2)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "reader:reddit-ads-metrics",
+      "name": "reddit-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "REDDIT_ADS_ACCESS_TOKEN",
+        "REDDIT_ADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "REDDIT_ADS_ACCESS_TOKEN",
+        "REDDIT_ADS_ACCOUNT_ID"
+      ],
+      "handles": "daily spend, clicks and conversions per Reddit Ads campaign (Ads API v3 reports, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Report body (data.starts_at/ends_at hour-aligned UTC, breakdowns CAMPAIGN_ID+DATE, fields SPEND/CLICKS/KEY_CONVERSION_TOTAL_COUNT), the lower-case keys in data.metrics and spend in microcurrency follo"
+    },
+    {
+      "id": "reader:stripe",
+      "name": "stripe",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "payments",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "STRIPE_API_KEY"
+      ],
+      "missing": [
+        "STRIPE_API_KEY"
+      ],
+      "handles": "daily revenue from Stripe balance transactions (read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": null
+    },
+    {
+      "id": "reader:tiktok-ads-metrics",
+      "name": "tiktok-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "missing": [
+        "TIKTOK_ACCESS_TOKEN",
+        "TIKTOK_ADVERTISER_ID"
+      ],
+      "handles": "daily spend, clicks and conversions per TikTok campaign (report/integrated/get, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "BASIC report, data_level AUCTION_CAMPAIGN; metric \"conversion\" counts the optimization event. verify against current API docs."
+    },
+    {
+      "id": "reader:umami",
+      "name": "umami",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "analytics",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "UMAMI_WEBSITE_ID",
+        "UMAMI_API_KEY (Cloud) or UMAMI_URL + UMAMI_TOKEN (self-hosted)"
+      ],
+      "missing": [
+        "UMAMI_API_KEY or UMAMI_URL + UMAMI_TOKEN",
+        "UMAMI_WEBSITE_ID"
+      ],
+      "handles": "daily pageviews and sessions from Umami (Cloud or self-hosted)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Response shape differs between Umami versions; both {x,y} series and plain numbers are handled."
+    },
+    {
+      "id": "reader:walmart-connect-metrics",
+      "name": "walmart-connect-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "analytics",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "WALMART_ADS_CONSUMER_ID",
+        "WALMART_ADS_PRIVATE_KEY",
+        "WALMART_ADS_AUTH_TOKEN",
+        "WALMART_ADS_ADVERTISER_ID"
+      ],
+      "missing": [
+        "WALMART_ADS_ADVERTISER_ID",
+        "WALMART_ADS_AUTH_TOKEN",
+        "WALMART_ADS_CONSUMER_ID",
+        "WALMART_ADS_PRIVATE_KEY"
+      ],
+      "handles": "daily spend, clicks, orders, sales and ACOS per Walmart Sponsored Search campaign (snapshot report, read-only)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Snapshot v2 flow (POST api/v2/snapshot/report with reportType adGroup and reportMetrics, GET api/v2/snapshot?advertiserId&snapshotId → jobStatus/details URL, pre-signed download fetched without API he"
+    },
+    {
+      "id": "reader:x-ads-metrics",
+      "name": "x-ads-metrics",
+      "source": "reader",
+      "kind": "metrics",
+      "category": "ads",
+      "auth": "api_key",
+      "configured": false,
+      "status": "missing_keys",
+      "needs": [
+        "X_ADS_CONSUMER_KEY",
+        "X_ADS_CONSUMER_SECRET",
+        "X_ADS_ACCESS_TOKEN",
+        "X_ADS_ACCESS_SECRET",
+        "X_ADS_ACCOUNT_ID"
+      ],
+      "missing": [
+        "X_ADS_ACCESS_SECRET",
+        "X_ADS_ACCESS_TOKEN",
+        "X_ADS_ACCOUNT_ID",
+        "X_ADS_CONSUMER_KEY",
+        "X_ADS_CONSUMER_SECRET"
+      ],
+      "handles": "daily spend, clicks and conversions per X Ads campaign (stats endpoint, read-only GET)",
+      "capabilities": [],
+      "requires_approval": false,
+      "docs_url": "",
+      "unverified": "Metric names (billed_charge_local_micro, url_clicks/clicks, conversion_purchases and conversion_sign_ups with post_engagement/post_view arrays) follow the Ads API metrics reference; billed_charge_loca"
+    }
+  ],
+  "mcp": {
+    "servers": [
+      {
+        "id": "mcp:whalyom-core",
+        "name": "whalyom-core",
+        "source": "mcp",
+        "transport": "stdio",
+        "command": "node",
+        "host": "",
+        "local_entry": "tools/mcp/whalyom-core.mjs",
+        "env_keys": [
+          "WHALYOM_HOME"
+        ],
+        "missing": [],
+        "configured": true,
+        "tools": [
+          {
+            "name": "ads_budget",
+            "description": "Show budget status for a product: spend this month, caps, per-channel results and proposed split (budget.mjs). With record_amount and record_channel, also records actual spend in the ledger."
+          },
+          {
+            "name": "ads_connectors_status",
+            "description": "Show which outbound connectors (ads, email, publishing, webhooks) are configured. Never prints secrets (connectors-status.mjs)."
+          },
+          {
+            "name": "approve_item",
+            "description": "Owner decision on one approval (approve or reject), applied through apply-decisions.mjs. Requires owner_token to match WHALYOM_OWNER_TOKEN from the environment that started the server (never the repo .env, which disables this tool); disable"
+          },
+          {
+            "name": "attach_site_status",
+            "description": "Show how a product is attached to its website: connection.json (secrets masked), whether the satellite secret and site repo are present (yes/no only), local static site pages, and the next attach step."
+          },
+          {
+            "name": "booking_links",
+            "description": "Read booking links from Cal.com and Calendly event types into products/<slug>/research/booking-links.json (read-only on the platforms). dry_run defaults to true."
+          },
+          {
+            "name": "build_landing",
+            "description": "Build landing pages for a product with tools/landing-builder.mjs into products/<slug>/landing/dist/ (claims-guarded). Does not publish: publishing goes through an approval. Use list=true to see templates."
+          },
+          {
+            "name": "connector_status",
+            "description": "Status of one connector by name: configured, which env variable NAMES are missing, what it handles, and (with slug) whether it is usable for that product. Never returns secret values."
+          },
+          {
+            "name": "experiments_summary",
+            "description": "Summarise experiments.json for one product or all: counts by status and verdict, running tests with metric and stop date, and recent verdicts."
+          },
+          {
+            "name": "graph_snapshot",
+            "description": "Rebuild the live control-room snapshot (live-snapshot.mjs) and return its counts plus a size-capped excerpt of state/live-graph.json."
+          },
+          {
+            "name": "growth_execute",
+            "description": "Execute approved/auto-approved actions through configured connectors, or write manual steps (execute.mjs). dry_run defaults to true (preview only); set false to really execute. Respects kill switches and budget caps."
+          },
+          {
+            "name": "growth_policy",
+            "description": "Apply the product autonomy policy: turns eligible pending approvals into auto-approved (policy.mjs). Writes approvals.json."
+          },
+          {
+            "name": "license_status",
+            "description": "Show the Whalyom edition from the local license key (offline check; never blocks the free features, never phones home)."
+          },
+          {
+            "name": "list_connectors",
+            "description": "List every connector (executors in routing order, opt-in ad CSV exporters, read-only metrics and booking-link readers) with configured flag, missing env names and notes. Never returns secret values."
+          },
+          {
+            "name": "metrics_ingest",
+            "description": "Ingest metrics for a product from metrics/inbox files and Stripe (if configured) into metrics/kpis.json (metrics.mjs)."
+          },
+          {
+            "name": "metrics_pull",
+            "description": "Pull read-only metrics into products/<slug>/metrics/inbox/ for metrics_ingest. Sources: ${METRIC_SOURCES.join(', ')}. Without sources every configured reader except stripe runs (stripe only when named), and the dry run previews exactly that"
+          },
+          {
+            "name": "nyk_build",
+            "description": "Build the Needs-You-Know feed (ranked owner decisions, approvals, blocked work, alerts) via needs-you-know.mjs and return its summary plus items."
+          },
+          {
+            "name": "queue_task",
+            "description": "Queue a task for an om-* agent. Respects the single-writer rule: writes products/<slug>/runs/Q-<stamp>.json (an owner request with new_tasks) and, with apply=true, runs apply-results.mjs to merge it into tasks.json."
+          },
+          {
+            "name": "results_apply",
+            "description": "Merge agent result files (products/<slug>/runs/*.json) into tasks.json, approvals.json and experiments.json (apply-results.mjs). Writes workspace ledgers."
+          },
+          {
+            "name": "run_doctor",
+            "description": "Health check: validate.mjs for one product or every product; with self_debug=true also runs self-debug.mjs --no-tests (writes state/self-debug.json and raises system alerts)."
+          },
+          {
+            "name": "tasks_ready",
+            "description": "List tasks that can run now for a product (status todo, all dependencies done), as JSON (ready.mjs)."
+          },
+          {
+            "name": "workspace_create",
+            "description": "Create a new product workspace from the template (new-product.mjs). Sets preset, autonomy level, monthly budget (switches to paid mode) and currency."
+          },
+          {
+            "name": "workspace_list",
+            "description": "List all product workspaces (products/*/product.json, excluding templates) with name, stage, budget mode, caps and currency."
+          },
+          {
+            "name": "workspace_validate",
+            "description": "Check a product workspace for broken JSON, unknown agents, bad dependencies and stuck tasks (validate.mjs)."
+          }
+        ],
+        "tools_known": true
+      }
+    ]
+  },
+  "invalid_manifests": [],
+  "errors": []
+}

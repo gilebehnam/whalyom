@@ -35,7 +35,7 @@ test('every agent sits in a known pod, department and layer', () => {
     assert.ok(DEPARTMENTS[a.dept], `${a.name} dept ${a.dept}`);
     assert.ok(Number.isInteger(a.layer) && a.layer >= 1 && a.layer <= 6 && LAYERS[a.layer], `${a.name} layer ${a.layer}`);
   }
-  assert.equal(Object.keys(DEPARTMENTS).length, 22, 'twenty-two departments: the original thirteen and the nine of wave 9');
+  assert.equal(Object.keys(DEPARTMENTS).length, 28, 'twenty-eight departments: the original thirteen, the nine of wave 9 and the six of wave 10');
   assert.equal(Object.keys(LAYERS).length, 6, 'six layers');
   for (const d of Object.keys(DEPARTMENTS)) assert.ok(roster.some((a) => a.dept === d), `department ${d} has agents`);
   for (const l of Object.keys(LAYERS)) assert.ok(roster.some((a) => a.layer === Number(l)), `layer ${l} has agents`);

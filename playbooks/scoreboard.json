@@ -2682,5 +2682,85 @@
     "at": "2026-11-05T15:33:44.056Z",
     "preset": null,
     "winners": []
+  },
+  "zz-paid-44736": {
+    "at": "2026-11-05T15:47:25.950Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-112512": {
+    "at": "2026-11-05T15:47:53.566Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-105544": {
+    "at": "2026-11-05T15:51:41.805Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-17564": {
+    "at": "2026-11-05T15:52:02.340Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-40180": {
+    "at": "2026-11-05T16:04:42.197Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-100164": {
+    "at": "2026-11-05T16:05:01.896Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-104360": {
+    "at": "2026-11-05T16:06:30.203Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-124228": {
+    "at": "2026-11-05T16:06:49.991Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-87004": {
+    "at": "2026-11-05T16:11:13.657Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-107436": {
+    "at": "2026-11-05T16:11:32.598Z",
+    "preset": null,
+    "winners": []
   }
 }

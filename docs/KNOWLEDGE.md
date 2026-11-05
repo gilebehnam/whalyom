@@ -67,7 +67,7 @@ External skills and connectors are never installed by the loop: `om-tool-scout` 
 
 ## The workforce this feeds
 
-- **24 mega agents** (`om-mega-<dept>` for each of the 22 departments, plus `om-mega-revenue` and `om-mega-launch`): opus department heads that run a whole department in one pass, master every skill pack their mandate spans, and hand the rest to the specialists listed in their file. `flow om-mega-sweep <slug>` runs them all.
+- **30 mega agents** (`om-mega-<dept>` for each of the 28 departments, plus `om-mega-revenue` and `om-mega-launch`): opus department heads that run a whole department in one pass, master every skill pack their mandate spans, and hand the rest to the specialists listed in their file. `flow om-mega-sweep <slug>` runs them all.
 - **Core specialists** (the current count per tier is in `state/agents.json`), each with its method skills, its department skill pack and its current-knowledge skills (32 skills per agent on average).
 - **Micro agents** (`om-micro-*`, haiku): one input, one output, one job (meta titles, UTM links, sample sizes, spam checks, claim checks…), cheap enough to run by the hundred.
 - **12 knowledge and evolution agents**: knowledge scout, algorithm, policy and regulation watchers, marketing science reader, benchmark keeper, martech and skill scout, fact verifier, knowledge curator, skill smith, evolution director, playbook editor.

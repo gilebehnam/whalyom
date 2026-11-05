@@ -1,5 +1,5 @@
 ---
-description: "All 22 department heads in parallel, then the revenue constraint and a red-team check"
+description: "All department heads in parallel, then the revenue constraint and a red-team check"
 argument-hint: "<product-slug>"
 ---
 

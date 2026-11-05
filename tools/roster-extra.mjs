@@ -1,6 +1,7 @@
 // Extended OM roster in compact form: [name, pod, model, title, does, skills, writes?].
 // roster.mjs expands these into full agent entries with pod-default inputs and outputs.
 import { NEW_DEPARTMENTS } from './roster-wave9.mjs';
+import { WAVE10_DEPARTMENTS } from './roster-wave10.mjs';
 
 export const podReads = {
   research: ['product.json', 'profile.md'],
@@ -261,6 +262,8 @@ export const DEPARTMENTS = {
   // Wave 9: nine specialist departments (roster-wave9.mjs). Appended so older department order, and
   // with it every older agent's color, stays the same.
   ...NEW_DEPARTMENTS,
+  // Wave 10: six more departments (roster-wave10.mjs), appended for the same reason.
+  ...WAVE10_DEPARTMENTS,
 };
 const POD_DEPT = {
   command: 'sovereign', research: 'intel', intel: 'intel', seo: 'seo', content: 'seo', authority: 'seo',

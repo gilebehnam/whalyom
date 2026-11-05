@@ -1,0 +1,16 @@
+[
+  {
+    "product": "sample-quoteflow",
+    "name": "Quoteflow (sample)",
+    "domain": "",
+    "stage": "paused",
+    "goal": "Sample test: first 50 trial signups in 30 days",
+    "monthly_cap": 0,
+    "currency": "USD",
+    "spent": 0,
+    "tasks_open": 51,
+    "tasks_done": 44,
+    "tasks_blocked": 0,
+    "approvals_pending": 5
+  }
+]

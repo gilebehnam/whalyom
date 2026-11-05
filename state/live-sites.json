@@ -1,0 +1,20 @@
+{
+  "updated_at": "2026-11-05T16:11:42.518Z",
+  "sites": [
+    {
+      "product": "zzsat51776",
+      "domain": "zzsat51776.test",
+      "repo": false,
+      "framework": null,
+      "stack": null,
+      "satellite": "http://127.0.0.1:4876",
+      "state": "connected",
+      "checked_at": "2026-11-05T16:11:42.496Z",
+      "version": "1.1.0",
+      "kind": "satellite",
+      "writes": false,
+      "events_total": 4,
+      "new_events": 1
+    }
+  ]
+}

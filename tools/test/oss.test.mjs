@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { COMMANDS, GROUPS, commandFile } from '../commands.mjs';
 import { RULES, RULE_GROUPS } from '../rules.mjs';
 import { stats } from '../stats.mjs';
-import { denied, fill } from '../oss/build.mjs';
+const HAS_BUILDER = fs.existsSync(fileURLToPath(new URL('../oss/build.mjs', import.meta.url)));
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const exists = (rel) => fs.existsSync(path.join(root, rel));
@@ -28,6 +28,7 @@ test('commands: every workflow, tool and om command they point at exists', () =>
     const body = commandFile(c);
     for (const m of body.matchAll(/flow (om-[a-z-]+)/g)) assert.ok(exists(`.claude/workflows/${m[1]}.js`), `${c[0]}: workflow ${m[1]}`);
     for (const m of body.matchAll(/node (tools\/[\w/.-]+\.mjs)/g)) assert.ok(exists(m[1]), `${c[0]}: ${m[1]}`);
+    for (const m of body.matchAll(/Dispatch the `(om-[a-z0-9-]+)` agent/g)) assert.ok(exists(`.claude/agents/${m[1]}.md`), `${c[0]}: agent ${m[1]}`);
     for (const m of body.matchAll(/run its `([a-z-]+)/g)) assert.ok(omSkill.includes(`### \`${m[1]}`), `${c[0]}: om ${m[1]}`);
     assert.match(body, /^---\ndescription: "/);
   }
@@ -54,10 +55,11 @@ test('stats are counted from the files and agree with the roster', () => {
   assert.equal(s.commands, COMMANDS.length);
   assert.equal(s.rules, RULES.length);
   assert.equal(s.agents, fs.readdirSync(path.join(root, '.claude/agents')).filter((f) => /^om-.*\.md$/.test(f)).length);
-  assert.ok(s.departments >= 20 && s.layers === 6 && s.skills > 100 && s.knowledge_notes > 0);
+  assert.ok(s.departments >= 20 && s.layers === 6 && s.skills > 100 && s.knowledge_facts > 0);
 });
 
-test('free edition: the paid app, pricing, fonts, accounts, state and real products never ship', () => {
+test('free edition: the paid app, pricing, fonts, accounts, state and real products never ship', { skip: !HAS_BUILDER }, async () => {
+  const { denied, fill } = await import('../oss/build.mjs');
   for (const rel of ['tools/cloud/web.mjs', 'tools/cloud/web-ui.mjs', 'tools/cloud/web-landing.mjs', 'tools/cloud/web-cc.js', 'tools/cloud/accounts.mjs', 'config/pricing.json', 'assets/fonts/private/samarqand-vf.woff2', 'accounts/store.json', 'state/live-roster.json', 'products/acme/product.json', 'products/sample-quoteflow/leads.jsonl', 'products/sample-quoteflow/edge/x.json', '.env', 'LICENSE-COMMERCIAL.md', 'tools/plugin/package.mjs', 'knowledge/inbox.jsonl'])
     assert.ok(denied(rel), `${rel} must be excluded`);
   for (const rel of ['tools/daemon.mjs', 'tools/cloud/edge.mjs', 'tools/plugin/license.mjs', 'config/ai-modes.json', 'products/_template/product.json', 'products/sample-quoteflow/claims.md', '.env.example', 'knowledge/base.json'])
@@ -65,8 +67,8 @@ test('free edition: the paid app, pricing, fonts, accounts, state and real produ
   assert.equal(fill('{{a}} and {{b}}', { a: 1 }), '1 and {{b}}');
 });
 
-test('free edition: every template placeholder has a value', async () => {
-  const { variables } = await import('../oss/build.mjs');
+test('free edition: every template placeholder has a value', { skip: !HAS_BUILDER }, async () => {
+  const { variables, fill } = await import('../oss/build.mjs');
   const vars = variables();
   for (const f of fs.readdirSync(path.join(root, 'tools/oss')).filter((f) => /\.md$|^LICENSE$/.test(f))) {
     const left = fill(fs.readFileSync(path.join(root, 'tools/oss', f), 'utf8'), vars).match(/\{\{\w+\}\}/g);
@@ -74,7 +76,7 @@ test('free edition: every template placeholder has a value', async () => {
   }
 });
 
-test('free edition: builds into a folder with its own README, MIT license, plugin manifest and no findings', () => {
+test('free edition: builds into a folder with its own README, MIT license, plugin manifest and no findings', { skip: !HAS_BUILDER }, () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'wy-oss-'));
   try {
     fs.rmSync(out, { recursive: true });

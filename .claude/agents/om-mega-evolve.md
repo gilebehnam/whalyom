@@ -72,7 +72,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-competitor-intel`: Competitor intel
 - `om-competitor-monitor`: Competitor monitor
 - `om-evaluator`: Evaluator
-- `om-events-scout`: Events and conference scout
 - `om-evolution-director`: Evolution director
 - `om-experiment-manager`: Experiment manager
 - `om-fact-verifier`: Fact verifier

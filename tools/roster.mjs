@@ -8,6 +8,7 @@ import { wave5, alsoConsulting } from './roster-wave5.mjs';
 import { wave7, alsoFrontier } from './roster-wave7.mjs';
 import { wave8, alsoZero } from './roster-wave8.mjs';
 import { wave9, moves, extraSpans } from './roster-wave9.mjs';
+import { wave10, moves10 } from './roster-wave10.mjs';
 export { DEPARTMENTS, LAYERS };
 // pod: dashboard grouping. reads/writes: paths relative to products/<slug>/.
 // skills: installed skills the agent should invoke (Skill tool) for method.
@@ -548,6 +549,19 @@ for (const w of wave9) {
   });
 }
 
+// Wave 10: six more departments (roster-wave10.mjs): heads, specialists and micro agents.
+for (const w of wave10) {
+  const { bash, ...rest } = w;
+  roster.push({
+    ...rest,
+    tools: bash ? WEB_BASH : WEB,
+    reads: w.reads ?? ['product.json', 'profile.md', 'claims.md', 'plan.md', 'LEARNINGS.md', 'funnel/', 'research/', 'reports/', '../../knowledge/briefs/'],
+    writes: w.writes ?? ['research/', 'outbox/'],
+    notes: w.notes ?? '',
+    wave: 10,
+  });
+}
+
 // Wave 6: agents Whalyom grows itself. tools/evolve.mjs adds them to config/learned-agents.json
 // (new-agent proposals, inside the limits in config/evolution.json); this file is never edited by the
 // loop. They get web tools only (no Bash), sonnet or haiku, and roll back with evolve.mjs rollback <id>.
@@ -588,7 +602,7 @@ for (const a of roster) {
 // Wave 9 re-homes agents into the nine new departments. A moved agent keeps its old department's
 // skill pack and its color (homeDept is the department it was painted in).
 for (const a of roster) {
-  const to = moves[a.name];
+  const to = moves[a.name] ?? moves10[a.name];
   if (to && to !== a.dept) { a.homeDept = a.dept; a.packs = [...new Set([...(a.packs ?? []), a.dept])]; a.dept = to; a.layer = DEPARTMENTS[to].layer; }
   if (extraSpans[a.name]) a.spans = [...new Set([...extraSpans[a.name], ...(a.spans ?? [])])];
 }
@@ -648,7 +662,7 @@ import { buildPalette, FAMILIES, BASE_SIZE } from './palette.mjs';
   // Each wave picks only from the tones that existed when it arrived (wave 2: ids < 300, wave 3:
   // < 380, wave 4 and 5: < 480, wave 7: < 580, wave 6: all), so adding colors never moves an older
   // agent's color. Wave 7 picks before wave 6 so agents grown later never shift a wave-7 color.
-  for (const [wave, limit] of [[2, 300], [3, 380], [4, 480], [5, 480], [7, 580], [8, 580], [9, 580], [6, Infinity]]) for (const a of roster.filter((x) => x.wave === wave).sort(byDept)) {
+  for (const [wave, limit] of [[2, 300], [3, 380], [4, 480], [5, 480], [7, 580], [8, 580], [9, 580], [10, 580], [6, Infinity]]) for (const a of roster.filter((x) => x.wave === wave).sort(byDept)) {
     const fams = famOrder(paintDept(a));
     const pick = fams.flatMap((f) => palette.filter((c) => c.family === f && c.id < limit).sort((x, y) => Number(!!y.extension) - Number(!!x.extension)))
       .find((c) => !used.has(c.id));

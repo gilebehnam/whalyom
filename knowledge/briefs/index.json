@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-05T15:22:28.812Z",
+  "built_at": "2026-11-05T15:43:32.372Z",
   "facts": 1152,
   "files": [
     "knowledge/briefs/sovereign.md",
@@ -24,6 +24,12 @@
     "knowledge/briefs/commerce.md",
     "knowledge/briefs/growth-free.md",
     "knowledge/briefs/ailab.md",
+    "knowledge/briefs/pmm.md",
+    "knowledge/briefs/studio.md",
+    "knowledge/briefs/martech.md",
+    "knowledge/briefs/local.md",
+    "knowledge/briefs/success.md",
+    "knowledge/briefs/community.md",
     "knowledge/BRIEFING.md",
     ".claude/skills/om-knowledge-search/SKILL.md",
     ".claude/skills/om-knowledge-ai-search/SKILL.md",

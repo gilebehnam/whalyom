@@ -76,7 +76,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-compliance-guard`: Compliance guard
 - `om-consent-compliance`: Consent and cookie compliance
 - `om-content-provenance-officer`: Content provenance officer
-- `om-customer-education`: Customer education designer
 - `om-deliverability-monitor`: Deliverability monitor
 - `om-dsar-coordinator`: Privacy rights coordinator
 - `om-dunning-recovery`: Dunning recovery planner
@@ -88,7 +87,6 @@ Hand work to these specialists through `new_tasks` (the main session dispatches 
 - `om-lifecycle-qa`: Lifecycle email QA
 - `om-loyalty-architect`: Loyalty and rewards architect
 - `om-messaging-compliance`: SMS, WhatsApp and voice compliance officer
-- `om-nps-survey`: Survey agent
 - `om-nyk-curator`: Needs-You-Know curator
 - `om-okr-planner`: OKR planner
 - `om-preference-center`: Preference center designer
