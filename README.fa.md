@@ -62,6 +62,17 @@ claude
 
 </div>
 
+روی ویندوز، توی PowerShell و داخل همون پوشه:
+
+<div dir="ltr">
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+claude
+```
+
+</div>
+
 بعد توی Claude Code:
 
 <div dir="ltr">

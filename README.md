@@ -46,13 +46,20 @@ claude plugin install whalyom@whalyom
 ```bash
 git clone https://github.com/gilebehnam/whalyom.git whalyom
 cd whalyom
-./install.sh          # runs npm install; Windows: ./install.ps1
+./install.sh          # runs npm install
+claude
+```
+
+**On Windows** (PowerShell, in the cloned folder):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\install.ps1
 claude
 ```
 
 Connectors (email, ads, social, payments) are optional: copy `.env.example` to `.env` and fill only the ones you want ([docs/CONNECTORS.md](docs/CONNECTORS.md)).
 
-**With Codex:** `./install.sh --codex` links the skills and the commands into `~/.codex`, and `AGENTS.md` tells Codex how the system works.
+**With Codex:** `./install.sh --codex` (Windows: add `-Codex` to the PowerShell line) puts the skills and the commands into `~/.codex`, and `AGENTS.md` tells Codex how the system works.
 
 Try it on the sample product first: `node tools/build-state.mjs && npm run command-center`, then open http://localhost:4321.
 

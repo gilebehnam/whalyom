@@ -2747,8 +2747,8 @@
     "preset": null,
     "winners": []
   },
-  "zz-paid-87004": {
-    "at": "2026-11-05T16:11:13.657Z",
+  "zz-paid-106288": {
+    "at": "2026-11-05T16:12:20.965Z",
     "preset": "ecommerce",
     "winners": [
       {
@@ -2758,8 +2758,24 @@
       }
     ]
   },
-  "zz-ma-107436": {
-    "at": "2026-11-05T16:11:32.598Z",
+  "zz-ma-75620": {
+    "at": "2026-11-05T16:12:40.666Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-121836": {
+    "at": "2026-11-06T16:30:44.509Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-124524": {
+    "at": "2026-11-06T16:31:07.899Z",
     "preset": null,
     "winners": []
   }

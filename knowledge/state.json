@@ -1,52 +1,52 @@
 {
   "sources": {
     "google-search-central": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 1
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
     },
     "google-search-status": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 0
     },
     "google-search-product": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 0
     },
     "google-ads-commerce": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 0
     },
     "google-ads-developers": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 6
-    },
-    "google-marketing-platform": {
-      "last_fetch": "2026-11-03T08:00:00Z",
-      "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 2
     },
-    "google-workspace-updates": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+    "google-marketing-platform": {
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 3
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
+    },
+    "google-workspace-updates": {
+      "last_fetch": "2026-11-05T21:22:28.794Z",
+      "failures": 0,
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
     },
     "youtube-official": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 20
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
     },
     "android-developers": {
       "last_fetch": "2026-11-03T08:00:00Z",
@@ -55,22 +55,22 @@
       "last_new": 2
     },
     "bing-webmaster": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 1
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
     },
     "microsoft-advertising": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 6
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 2
     },
     "meta-newsroom": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 0
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 2
     },
     "pinterest-newsroom": {
       "last_fetch": "2026-11-03T08:00:00Z",
@@ -79,9 +79,9 @@
       "last_new": 0
     },
     "openai-news": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 1
     },
     "apple-developer-news": {
@@ -115,10 +115,11 @@
       "last_new": 2
     },
     "edpb": {
-      "last_fetch": "2026-11-03T08:00:00Z",
-      "failures": 0,
+      "last_fetch": "2026-11-05T21:22:28.794Z",
+      "failures": 1,
       "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 10
+      "last_new": 10,
+      "last_error": "HTTP 503"
     },
     "cnil": {
       "last_fetch": "2026-11-03T08:00:00Z",
@@ -127,22 +128,22 @@
       "last_new": 10
     },
     "ftc-consumer-protection": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 19
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 1
     },
     "arxiv-cs-ir": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 19
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 14
     },
     "arxiv-econ-gn": {
-      "last_fetch": "2026-11-03T08:00:00Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T08:00:00Z",
-      "last_new": 0
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 2
     },
     "nngroup": {
       "last_fetch": "2026-11-03T08:00:00Z",
@@ -157,16 +158,16 @@
       "last_new": 0
     },
     "seroundtable": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 15
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 11
     },
     "searchenginejournal": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 14
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 9
     },
     "hubspot-marketing": {
       "last_fetch": "2026-11-03T08:00:00Z",
@@ -175,10 +176,10 @@
       "last_new": 49
     },
     "mckinsey-insights": {
-      "last_fetch": "2026-11-03T19:48:24.412Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T19:48:24.412Z",
-      "last_new": 28
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 6
     },
     "mit-smr": {
       "last_fetch": "2026-11-03T19:48:26.674Z",
@@ -187,38 +188,38 @@
       "last_new": 11
     },
     "google-ai-blog": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 0
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 1
     },
     "salesforce-news": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 4
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 1
     },
     "huggingface-blog": {
-      "last_fetch": "2026-11-03T20:57:05.837Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-03T20:57:05.837Z",
-      "last_new": 7
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 0
     },
     "producthunt": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 13
     },
     "marketing-ai-institute": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
+      "last_ok": "2026-11-05T21:22:28.794Z",
       "last_new": 0
     },
     "martech-org": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
-      "failures": 1,
+      "last_fetch": "2026-11-05T21:22:28.794Z",
+      "failures": 2,
       "last_ok": "2026-11-03T20:57:15.725Z",
       "last_new": 10,
       "last_error": "HTTP 403"
@@ -236,22 +237,22 @@
       "last_new": 12
     },
     "uk-cma": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 20
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 5
     },
     "adexchanger": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 10
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 5
     },
     "digiday": {
-      "last_fetch": "2026-11-04T21:22:28.690Z",
+      "last_fetch": "2026-11-05T21:22:28.794Z",
       "failures": 0,
-      "last_ok": "2026-11-04T21:22:28.690Z",
-      "last_new": 15
+      "last_ok": "2026-11-05T21:22:28.794Z",
+      "last_new": 6
     },
     "streamtv-insider": {
       "last_fetch": "2026-11-04T21:22:28.690Z",
@@ -859,7 +860,88 @@
     "I-ebf8ca82ab6d",
     "I-9a2a65128087",
     "I-0047f3fa8d20",
-    "I-51571ddf80de"
+    "I-51571ddf80de",
+    "I-c2f0591e31b7",
+    "I-e100f7d9b0ef",
+    "I-a2dd2abba425",
+    "I-06f199aaa7b1",
+    "I-b1039a464e8e",
+    "I-d82e5dedbe56",
+    "I-53c56afbaf05",
+    "I-0a4879efd6bc",
+    "I-c49ff6737114",
+    "I-713a54f0619e",
+    "I-e134ebdc45f5",
+    "I-5728d74064ca",
+    "I-44459d6fcd44",
+    "I-c52811de11e6",
+    "I-60285d5158f0",
+    "I-5f493979bd5e",
+    "I-e30b62e45566",
+    "I-671010c49cc7",
+    "I-c4ad59b17a84",
+    "I-d1d58b9870d1",
+    "I-bd4c5765f24e",
+    "I-581f5cf21596",
+    "I-c04d4c11af54",
+    "I-959061f0c8a5",
+    "I-3b8c844e10f5",
+    "I-3c36f6c268ed",
+    "I-4ed01059acc1",
+    "I-3cca45c6915c",
+    "I-ad251d42354a",
+    "I-c2184b654253",
+    "I-6cca701b1d54",
+    "I-1a3bab6bb333",
+    "I-7ae743accc16",
+    "I-1a4500f3283a",
+    "I-e7b18bc9118f",
+    "I-2b52da817783",
+    "I-957c6ba16dff",
+    "I-45e37e8436a8",
+    "I-e2dd735ab218",
+    "I-856bc8e67a82",
+    "I-74b75eb9f849",
+    "I-40112c92b09c",
+    "I-64c2aa07d3ea",
+    "I-c39e0ebc9731",
+    "I-94a3afa0c9d2",
+    "I-59b8c2e1478e",
+    "I-bf20d53392f1",
+    "I-ceeab902448c",
+    "I-cab1194e8b7e",
+    "I-d1e7331651e4",
+    "I-63c3d56bc72b",
+    "I-df5e28b9d104",
+    "I-dc5c49fa3feb",
+    "I-9b74ba7c528c",
+    "I-792bd9d77d28",
+    "I-e62e51a8def5",
+    "I-74d9f5c0d635",
+    "I-55062964a153",
+    "I-dfd84c938597",
+    "I-7c1d06d40d3f",
+    "I-a488b06fbae7",
+    "I-76dcaa6324cb",
+    "I-e36c6d9eab3d",
+    "I-c825db988216",
+    "I-7efe9e7261bf",
+    "I-62116a3212e6",
+    "I-6086d3457e96",
+    "I-0e31a5ce288c",
+    "I-e5a94b951e7c",
+    "I-6c88230d36f9",
+    "I-e15ef0d3645c",
+    "I-977c069b6312",
+    "I-abf318b62ce9",
+    "I-cbaecbcc3bdb",
+    "I-8666142f6f9d",
+    "I-1fd4a686bf8c",
+    "I-bcb17dfcb87c",
+    "I-f3c231f7d28b",
+    "I-a71d74cc4db8",
+    "I-cffeafbb9a8b",
+    "I-a067e64b8258"
   ],
-  "last_refresh": "2026-11-04T21:22:28.690Z"
+  "last_refresh": "2026-11-05T21:22:28.794Z"
 }
