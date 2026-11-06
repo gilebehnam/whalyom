@@ -2,7 +2,9 @@
 
 <p align="center"><img src="assets/brand/hero.svg" alt="والیوم" width="100%"></p>
 
-<p align="center"><a href="README.md">English</a> · <b>فارسی</b> · <a href="STORY.md">داستان</a></p>
+<p align="center"><a href="README.md">English</a> · <b>فارسی</b> · <a href="docs/ar/README.md">العربية</a> · <a href="docs/tr/README.md">Türkçe</a> · <a href="docs/es/README.md">Español</a> · <a href="docs/de/README.md">Deutsch</a> · <a href="docs/fr/README.md">Français</a> · <a href="docs/zh-CN/README.md">简体中文</a> · <a href="docs/ja/README.md">日本語</a> · <a href="docs/pt-BR/README.md">Português (Brasil)</a></p>
+
+<p align="center"><a href="https://whalyom.com/open-source?lang=fa">وب‌سایت</a> · <a href="STORY.md">داستان</a> · <a href="docs/COMMANDS.md">دستورها</a> · <a href="rules/README.md">قانون‌ها</a></p>
 
 # والیوم
 
@@ -94,5 +96,11 @@ claude
 | ایجنت‌ها، مهارت‌ها، دستورها، قانون‌ها، دانش | همه | همه |
 | مرکز فرماندهی | روی سیستم خودتون | آنلاین، روی هر دستگاهی، فارسی و انگلیسی |
 | راه‌اندازی | با خودتون | با ما |
+
+## سازنده
+
+والیوم رو **[بهنام جعفری](https://behnaam.com)** ساخته، مدیر محصول و عملیات · بنیان‌گذار والیون · هم‌بنیان‌گذار وهو، تهران.
+
+ایمیل: [bjafaribox@gmail.com](mailto:bjafaribox@gmail.com) · تلفن: <span dir="ltr">+98 912 464 75 35</span> · [تلگرام](https://t.me/gilebehnam) · [لینکدین](https://www.linkedin.com/in/behnamjafari) · [اینستاگرام](https://www.instagram.com/gilebehnam/) · [رزرو تماس ۳۰ دقیقه‌ای](https://calendly.com/bjafaribox/30min)
 
 </div>

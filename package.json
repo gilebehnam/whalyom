@@ -1,6 +1,8 @@
 {
   "name": "whalyom",
   "version": "0.1.0",
+  "author": "Behnam Jafari Balalami <bjafaribox@gmail.com> (https://behnaam.com)",
+  "homepage": "https://whalyom.com/open-source",
   "description": "Your entire marketing department inside Claude Code: AI agents, skills, commands, rules and a verified knowledge base.",
   "license": "MIT",
   "type": "module",

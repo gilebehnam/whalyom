@@ -2778,5 +2778,21 @@
     "at": "2026-11-06T16:31:07.899Z",
     "preset": null,
     "winners": []
+  },
+  "zz-paid-58676": {
+    "at": "2026-11-06T19:37:23.997Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-123732": {
+    "at": "2026-11-06T19:37:44.259Z",
+    "preset": null,
+    "winners": []
   }
 }

@@ -2,7 +2,14 @@
 
 <p align="center">![license](https://img.shields.io/badge/license-MIT-2b6cb0) ![agents](https://img.shields.io/badge/agents-536-F2C230) ![skills](https://img.shields.io/badge/skills-498-7FE6F2) ![departments](https://img.shields.io/badge/departments-28-7FE6F2) ![commands](https://img.shields.io/badge/commands-106-7FE6F2) ![rules](https://img.shields.io/badge/rules-50-9BE7A2) ![verified facts](https://img.shields.io/badge/verified%20facts-1%2C152-9BE7A2)</p>
 
-<p align="center"><b>English</b> · <a href="README.fa.md">فارسی</a> · <a href="STORY.md">The story</a> · <a href="docs/COMMANDS.md">Commands</a> · <a href="rules/README.md">Rules</a></p>
+<p align="center"><b>English</b> · <a href="README.fa.md">فارسی</a> · <a href="docs/ar/README.md">العربية</a> · <a href="docs/tr/README.md">Türkçe</a> · <a href="docs/es/README.md">Español</a> · <a href="docs/de/README.md">Deutsch</a> · <a href="docs/fr/README.md">Français</a> · <a href="docs/zh-CN/README.md">简体中文</a> · <a href="docs/ja/README.md">日本語</a> · <a href="docs/pt-BR/README.md">Português (Brasil)</a></p>
+
+<p align="center"><a href="https://whalyom.com/open-source">Website</a> · <a href="STORY.md">The story</a> · <a href="docs/COMMANDS.md">Commands</a> · <a href="rules/README.md">Rules</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="TROUBLESHOOTING.md">Troubleshooting</a></p>
+
+<p align="center"><a href="https://www.star-history.com/#gilebehnam/whalyom&Date"><img src="https://api.star-history.com/svg?repos=gilebehnam/whalyom&type=Date&theme=dark" alt="Star history" width="560"></a></p>
+
+> [!WARNING]
+> **Official sources only.** Install Whalyom only from this repository ([github.com/gilebehnam/whalyom](https://github.com/gilebehnam/whalyom)), its plugin entry `whalyom@whalyom` and [whalyom.com](https://whalyom.com). Copies elsewhere are not reviewed and may be unsafe.
 
 # Whalyom
 
@@ -224,6 +231,20 @@ The hosted one is for people who want the result without running anything.
 ## Works with
 
 Claude Code (full: agents, skills, commands, workflows, MCP server) · Codex (skills, commands as prompts, `AGENTS.md`) · any agent that reads `AGENTS.md` and Agent Skills.
+
+## Who makes it
+
+Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, Product & Operations Executive · Founder of Whalyon · Co-founder of VOHU, Tehran.
+
+| | |
+|---|---|
+| Email | [bjafaribox@gmail.com](mailto:bjafaribox@gmail.com) |
+| Phone | +98 912 464 75 35 |
+| Telegram | [@gilebehnam](https://t.me/gilebehnam) |
+| LinkedIn | [behnamjafari](https://www.linkedin.com/in/behnamjafari) |
+| Instagram | [@gilebehnam](https://www.instagram.com/gilebehnam/) |
+| A 30-minute call | [Book on Calendly](https://calendly.com/bjafaribox/30min) |
+| The hosted version | [whalyom.com](https://whalyom.com) |
 
 ## Contributing
 

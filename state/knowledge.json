@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-06T19:37:20.601Z",
+  "fetched": {
+    "skipped": "offline (OM_KNOWLEDGE_OFFLINE=1)",
+    "last_refresh": "2026-11-06T01:36:30.502Z"
+  },
+  "merged": {
+    "added": 0,
+    "updated": 0,
+    "retired": 0,
+    "rejected": 0,
+    "waiting": []
+  },
+  "ok": true,
+  "facts_active": 1152,
+  "facts_stale": 0,
+  "stale": [],
+  "sources_overdue": [],
+  "sources_pending_first_fetch": [],
+  "briefs_outdated": false,
+  "topics_without_facts": [],
+  "facts_by_topic": {
+    "search": 15,
+    "ai-search": 15,
+    "paid-search": 15,
+    "paid-social": 15,
+    "social-organic": 14,
+    "email": 15,
+    "privacy-law": 15,
+    "ai-regulation": 16,
+    "cro-ux": 15,
+    "analytics-measurement": 16,
+    "app-stores": 15,
+    "ecommerce": 15,
+    "b2b-sales": 15,
+    "content": 12,
+    "pricing": 14,
+    "research": 28,
+    "consulting": 39,
+    "ai-tech": 33,
+    "management-canon": 125,
+    "canon-marketing": 199,
+    "canon-sales": 200,
+    "ai-marketing-tools": 17,
+    "canon-brand": 200,
+    "retail-media": 18,
+    "video-ctv": 15,
+    "brand-science": 19,
+    "plg": 20,
+    "partnerships": 17
+  },
+  "gaps": [
+    {
+      "topic": "content",
+      "facts": 12,
+      "need": 3
+    },
+    {
+      "topic": "social-organic",
+      "facts": 14,
+      "need": 1
+    },
+    {
+      "topic": "pricing",
+      "facts": 14,
+      "need": 1
+    }
+  ],
+  "inbox_new": 0,
+  "last_refresh": "2026-11-06T01:36:30.502Z",
+  "knowledge_updated": "2026-11-04T03:02:02.106Z",
+  "briefs": 57
+}

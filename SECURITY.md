@@ -2,7 +2,7 @@
 
 Whalyom can hold connector keys and act on ad accounts, email and social profiles. Please report anything that could let it send, publish or spend without the owner's approval, leak personal data or keys, or follow instructions hidden in web pages, emails or reviews.
 
-**Report privately** through GitHub's "Report a vulnerability" on this repository. Please do not open a public issue for security problems.
+**Report privately** through GitHub's "Report a vulnerability" on this repository, or by email to bjafaribox@gmail.com. Please do not open a public issue for security problems.
 
 What is in scope:
 

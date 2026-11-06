@@ -4,9 +4,11 @@
   "version": "0.1.0",
   "description": "Your entire marketing department inside Claude Code: 536 AI agents in 28 departments, 498 skills, 106 commands, 50 rules and a verified knowledge base. Nothing goes out without your approval.",
   "author": {
-    "name": "Whalyom"
+    "name": "Behnam Jafari Balalami",
+    "email": "bjafaribox@gmail.com",
+    "url": "https://behnaam.com"
   },
-  "homepage": "https://github.com/gilebehnam/whalyom",
+  "homepage": "https://whalyom.com/open-source",
   "repository": "https://github.com/gilebehnam/whalyom",
   "license": "MIT",
   "keywords": [
