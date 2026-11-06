@@ -234,7 +234,7 @@ Claude Code (full: agents, skills, commands, workflows, MCP server) · Codex (sk
 
 ## Who makes it
 
-Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, Product & Operations Executive · Founder of Whalyon · Co-founder of VOHU, Tehran.
+Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, Founder of Whalya Venture Studio (Whalyom, Whalory, Whalyon), Tehran.
 
 | | |
 |---|---|

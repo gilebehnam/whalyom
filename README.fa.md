@@ -99,7 +99,7 @@ claude
 
 ## سازنده
 
-والیوم رو **[بهنام جعفری](https://behnaam.com)** ساخته، مدیر محصول و عملیات · بنیان‌گذار والیون · هم‌بنیان‌گذار وهو، تهران.
+والیوم رو **[بهنام جعفری](https://behnaam.com)** ساخته، بنیان‌گذار ونچر استودیوی والیا (والیوم، والوری، والیون)، تهران.
 
 ایمیل: [bjafaribox@gmail.com](mailto:bjafaribox@gmail.com) · تلفن: <span dir="ltr">+98 912 464 75 35</span> · [تلگرام](https://t.me/gilebehnam) · [لینکدین](https://www.linkedin.com/in/behnamjafari) · [اینستاگرام](https://www.instagram.com/gilebehnam/) · [رزرو تماس ۳۰ دقیقه‌ای](https://calendly.com/bjafaribox/30min)
 
