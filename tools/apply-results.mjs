@@ -143,7 +143,12 @@ const restore = (snap) => {
 };
 
 // Extra approval fields kept from a run file. Never add status, compliance or activate here.
-const APPROVAL_EXTRA_KEYS = ['channel', 'amount', 'currency', 'target', 'lead', 'template', 'funnel_stage', 'sequence', 'step', 'manual', 'expires_at', 'quiet_hours', 'timezone', 'utm_source', 'from_channel'];
+// kind and the budget_update fields (tools/reallocate.mjs, tools/connectors/budgets.mjs) keep a budget change a
+// budget change: without kind "budget_update" the merged item would be a plain spend item that opens a new
+// campaign. asset, ai_generated and label carry an AI creative's publish approval (tools/creative-gen.mjs).
+const BUDGET_UPDATE_KEYS = ['kind', 'campaign', 'ref', 'level', 'old_daily', 'new_daily', 'source_approval', 'budget_id', 'budget_resource'];
+const APPROVAL_EXTRA_KEYS = ['channel', 'amount', 'currency', 'target', 'lead', 'template', 'funnel_stage', 'sequence', 'step', 'manual', 'expires_at', 'quiet_hours', 'timezone', 'utm_source', 'from_channel',
+  ...BUDGET_UPDATE_KEYS, 'asset', 'ai_generated', 'label'];
 // A hint is data only: strings are cut to 500 characters, numbers must be finite, and an object or
 // array (quiet_hours, for example) is kept only when it is small (2 KB of JSON at most). Anything else is dropped.
 const approvalHint = (v) => {

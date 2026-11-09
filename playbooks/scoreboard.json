@@ -2794,5 +2794,101 @@
     "at": "2026-11-06T19:36:35.190Z",
     "preset": null,
     "winners": []
+  },
+  "zz-paid-86604": {
+    "at": "2026-11-06T21:39:23.426Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-59860": {
+    "at": "2026-11-06T21:39:45.957Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-77688": {
+    "at": "2026-11-06T21:45:43.190Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-64472": {
+    "at": "2026-11-06T21:46:07.107Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-41364": {
+    "at": "2026-11-06T21:56:59.806Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-71104": {
+    "at": "2026-11-06T21:57:21.608Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-58884": {
+    "at": "2026-11-09T13:59:03.014Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-68836": {
+    "at": "2026-11-09T13:59:39.188Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-65920": {
+    "at": "2026-11-09T14:03:36.511Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-55336": {
+    "at": "2026-11-09T14:04:11.595Z",
+    "preset": null,
+    "winners": []
+  },
+  "zz-paid-58032": {
+    "at": "2026-11-09T14:07:04.524Z",
+    "preset": "ecommerce",
+    "winners": [
+      {
+        "channel": "meta",
+        "campaign": "v2",
+        "fitness": 9.838
+      }
+    ]
+  },
+  "zz-ma-66888": {
+    "at": "2026-11-09T14:07:30.694Z",
+    "preset": null,
+    "winners": []
   }
 }

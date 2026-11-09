@@ -19,10 +19,12 @@ import path from 'node:path';
 import { loadEnv, readJson, writeJson, root } from './lib/env.mjs';
 import { pick } from './connectors/index.mjs';
 import { checkSpendCaps } from './budget.mjs';
+import { isBudgetUpdate, checkBudgetUpdateCaps, resolveUpdate } from './connectors/budgets.mjs';
 import { redact } from './connectors/_http.mjs';
 import { acquireLock, productLockFile, readLock, holdsLease, readLease } from './lib/lock.mjs';
 import { suppressCheck, inQuietHours, DEFAULT_QUIET } from './sequences.mjs';
 import { hashEmail } from './inbox.mjs';
+import { writeCreativeFollowup } from './lib/followups.mjs';
 
 loadEnv();
 const args = process.argv.slice(2);
@@ -98,11 +100,14 @@ const liveApprovals = () => {
 // - an item whose expires_at has passed is not sent;
 // - an item inside its quiet hours (lead's time zone) is deferred to a later run, unchanged.
 // A file that is missing or unreadable holds the item (no status change): the guard fails closed.
-const SEND_TYPES = ['send', 'email', 'message', 'reply'];
+// 'call' (tools/connectors/voice.mjs, one AI call per approval) is a send to a person too: the suppression
+// list and expiry apply before the connector runs (the voice connector re-checks suppression, consent,
+// DNC and calling hours itself).
+const SEND_TYPES = ['send', 'email', 'message', 'reply', 'call'];
 const isSequenceItem = (item) => Boolean(item.sequence) || /^SEQ-/.test(String(item.id ?? '')) || /^SEQ-/.test(String(item.task_id ?? ''));
 // A raw address on the item (to / email) also counts, so a send without a lead id cannot skip the suppression list.
 const hasRawAddress = (item) => [item.to, item.email].some((x) => typeof x === 'string' && x.includes('@'));
-const isLeadSend = (item) => SEND_TYPES.includes(item.type) && (Boolean(item.lead) || Boolean(item.email_hash) || hasRawAddress(item) || isSequenceItem(item));
+const isLeadSend = (item) => SEND_TYPES.includes(item.type) && (item.type === 'call' || Boolean(item.lead) || Boolean(item.email_hash) || hasRawAddress(item) || isSequenceItem(item));
 // Strict read: {ok:false} when the file exists but is not valid JSON, {missing:true} when it is absent.
 function readStrict(file) {
   if (!fs.existsSync(file)) return { ok: true, missing: true, value: null };
@@ -142,11 +147,23 @@ function sendGuard(item) {
 function writeManualSteps(item) {
   const manualDir = path.join(dir, 'outbox', 'manual');
   fs.mkdirSync(manualDir, { recursive: true });
+  if (isBudgetUpdate(item)) { fs.writeFileSync(path.join(manualDir, `${item.id}.md`), budgetUpdateSteps(item).join('\n') + '\n'); return; }
   const steps = [`# Do this by hand: ${item.title}`, '', `Approval ${item.id} (${item.type}${item.channel ? ', ' + item.channel : ''}) was approved but no connector is set up for it.`, '',
     `1. Open the draft: \`products/${slug}/${item.file ?? '(no file)'}\`.`, `2. ${item.type === 'spend' ? `Create the campaign it describes, with a budget of no more than ${item.amount} ${product.budget?.currency ?? ''}.` : 'Publish or send it on its channel exactly as written.'}`,
     `3. Tell OM it is done: \`/om approve ${slug} ${item.id} done\`${item.type === 'spend' ? ` and record the spend: \`node tools/budget.mjs ${slug} --record ${item.amount} ${item.channel ?? ''}\`` : ''}.`, '',
     'To automate this next time, configure a connector (see docs/CONNECTORS.md).'];
   fs.writeFileSync(path.join(manualDir, `${item.id}.md`), steps.join('\n') + '\n');
+}
+
+// Manual steps for a budget change on a live campaign: change the existing budget, never create a campaign.
+function budgetUpdateSteps(item) {
+  const u = resolveUpdate(item, ctx);
+  const cur = u.currency ?? item.currency ?? product.budget?.currency ?? '';
+  return [`# Do this by hand: ${item.title}`, '', `Approval ${item.id} (budget update${item.channel ? `, ${item.channel}` : ''}) was approved but no budget connector is set up for it.`, '',
+    `1. In the ${item.channel ?? 'ad'} account, open the live campaign \`${u.campaign || '(see the plan)'}\`${u.ref && u.ref !== u.campaign ? ` (id \`${u.ref}\`${u.level ? `, ${u.level}` : ''})` : ''}. Do not create a new campaign.`,
+    `2. Change its daily budget from ${Number.isFinite(u.old_daily) ? u.old_daily : '?'} to ${Number.isFinite(u.new_daily) ? u.new_daily : '?'} ${cur} (never above the approved ${item.amount} ${cur}). Plan: \`products/${slug}/${item.file ?? 'reports/reallocation.json'}\`.`,
+    `3. Tell OM it is done: \`/om approve ${slug} ${item.id} done\`.`, '',
+    'To automate this next time, configure the budget connector for this channel (see docs/CONNECTORS.md).'];
 }
 
 try {
@@ -194,10 +211,17 @@ try {
     }
     // Last line of defence for money: the new daily total across every live campaign must fit
     // daily_cap, and spend so far + that daily total for the rest of the month must fit monthly_cap.
+    // A budget_update replaces the campaign's daily amount (never adds to it), so it gets its own check:
+    // other live campaigns + the new amount, the 20% step, the approved amount and free mode.
     if (item.type === 'spend') {
-      const c = checkSpendCaps({ item, budget: product.budget ?? {}, approvals: liveApprovals(), ledgerFile, now, killed: killedCampaigns });
+      const upd = isBudgetUpdate(item);
+      const c = upd
+        ? checkBudgetUpdateCaps({ item, update: resolveUpdate(item, ctx), budget: product.budget ?? {}, approvals: liveApprovals(), ledgerFile, now, killed: killedCampaigns })
+        : checkSpendCaps({ item, budget: product.budget ?? {}, approvals: liveApprovals(), ledgerFile, now, killed: killedCampaigns });
       if (!c.ok) {
-        const note = `held by executor: ${c.why} (amount ${c.amount}, live ${c.committed}/day, spent ${c.spent}, caps ${product.budget?.daily_cap}/day ${product.budget?.monthly_cap}/month)`;
+        const note = upd
+          ? `held by executor: ${c.why} (budget update ${c.old_daily} -> ${c.new_daily}/day, other live ${c.others}/day, spent ${c.spent}, caps ${product.budget?.daily_cap}/day ${product.budget?.monthly_cap}/month)`
+          : `held by executor: ${c.why} (amount ${c.amount}, live ${c.committed}/day, spent ${c.spent}, caps ${product.budget?.daily_cap}/day ${product.budget?.monthly_cap}/month)`;
         if (!dryRun) { item.status = 'pending'; item.review_notes = note; touch(item); }
         out.items.push({ id: item.id, result: 'held', why: note });
         continue;
@@ -250,6 +274,16 @@ try {
           if (item.committed_daily > 0) fs.appendFileSync(ledgerFile, JSON.stringify({ at: now, channel: item.channel, amount: item.committed_daily, kind: 'committed_daily', ref: r.ref, approval: item.id }) + '\n');
         }
         events.push({ at: now, agent: 'om-executor', product: slug, task_id: item.task_id, kind: 'done', text: `${connector.name}: ${item.title} — ${r.detail ?? ''}`.slice(0, 160) });
+        // A generated creative carries a pending "publish" approval draft. It reaches approvals.json only
+        // through runs/CREATIVE-<id>.json and apply-results (the single writer), never from here.
+        if (r.creative?.approval_draft) {
+          try {
+            const f = writeCreativeFollowup({ dir, item, creative: r.creative, now });
+            if (f) { item.result = `${item.result ? `${item.result}; ` : ''}publish approval ${r.creative.approval_draft.id} queued in ${f.file}`.slice(0, 500); out.followups = [...(out.followups ?? []), f.file]; }
+          } catch (e) {
+            events.push({ at: now, agent: 'om-executor', product: slug, task_id: item.task_id, kind: 'blocked', text: `Could not queue the publish approval for ${item.id}: ${String(e?.message ?? e)}`.slice(0, 160) });
+          }
+        }
         // A sent message to a lead moves it to "contacted" in the funnel (tools/funnel.mjs merges it).
         if (item.lead && ['send', 'email', 'message', 'reply'].includes(item.type)) {
           const upd = path.join(dir, 'funnel', 'updates');

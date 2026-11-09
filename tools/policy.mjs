@@ -13,6 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spentThisMonth, checkSpendCaps } from './budget.mjs';
+import { isBudgetUpdate, checkBudgetUpdateCaps, resolveUpdate } from './connectors/budgets.mjs';
 import { acquireLock, productLockFile } from './lib/lock.mjs';
 import { earnedTypes, earnedKey } from './lib/earned.mjs';
 
@@ -63,10 +64,18 @@ const noSite = !String(product.domain ?? '').trim();
 const utcDay = (t) => { const d = new Date(t ?? ''); return Number.isNaN(d.getTime()) ? '' : d.toISOString().slice(0, 10); };
 const day = utcDay(now);
 const WAITING = new Set(['approved', 'auto-approved']);
+// What a spend item adds per day: its amount, or for a budget_update only the increase (new - old daily;
+// a decrease adds nothing). The item's file is read for missing fields, as the budget connectors do.
+const autoAmount = (x) => {
+  if (!isBudgetUpdate(x)) return Number(x.amount ?? 0);
+  const u = resolveUpdate(x, { dir });
+  const nd = Math.min(Number(u.new_daily) || 0, Number(x.amount) || 0), od = Number(u.old_daily) || 0;
+  return Math.max(0, Math.round((nd - od) * 100) / 100);
+};
 const autoSpendToday = (exceptId) => Math.round(100 * approvals.reduce((s, x) => {
   if (x?.type !== 'spend' || x.id === exceptId) return s;
   const byPolicyToday = String(x.decided_by ?? '').startsWith('policy:') && !!day && utcDay(x.decided_at) === day;
-  return byPolicyToday || WAITING.has(x.status) ? s + Number(x.amount ?? 0) : s;
+  return byPolicyToday || WAITING.has(x.status) ? s + autoAmount(x) : s;
 }, 0)) / 100;
 
 let changed = 0;
@@ -83,15 +92,21 @@ for (const ap of approvals) {
   else if (type === 'spend') {
     const daily = Number(a.auto_spend_per_day ?? 0);
     const left = Number(budget.monthly_cap ?? 0) - spentNow;
+    // A budget_update counts only its increase against the automatic limits (a decrease only lowers spend).
+    const upd = isBudgetUpdate(ap);
+    const add = upd ? autoAmount(ap) : amount;
     if (amount <= 0) why = 'spend approval has no amount';
-    else if (amount > daily) why = `amount ${amount} is over the automatic limit ${daily}/day`;
-    else if (autoSpendToday(ap.id) + amount > daily) why = `automatic spend today ${autoSpendToday(ap.id)} + this ${amount} is over the automatic limit ${daily}/day`;
-    else if (amount > left) why = `amount ${amount} is over the ${left} left in the monthly cap`;
+    else if (add > daily) why = `${upd ? 'increase' : 'amount'} ${add} is over the automatic limit ${daily}/day`;
+    else if (autoSpendToday(ap.id) + add > daily) why = `automatic spend today ${autoSpendToday(ap.id)} + this ${add} is over the automatic limit ${daily}/day`;
+    else if (!upd && amount > left) why = `amount ${amount} is over the ${left} left in the monthly cap`;
     else {
       // The same total-commitment check the executor makes: live campaigns + this one, per day and to month end.
-      // Spend approved but not yet executed (this run's decisions included) counts as committed here.
+      // Spend approved but not yet executed (this run's decisions included) counts as committed here; an
+      // approved budget_update replaces its campaign's daily amount (liveCommittedDaily), never adds to it.
       const asCommitted = approvals.map((x) => (x?.type === 'spend' && WAITING.has(x.status) ? { ...x, status: 'executing' } : x));
-      const c = checkSpendCaps({ item: ap, budget, approvals: asCommitted, ledgerFile, now, killed: killedCampaigns });
+      const c = upd
+        ? checkBudgetUpdateCaps({ item: ap, update: resolveUpdate(ap, { dir }), budget, approvals: asCommitted, ledgerFile, now, killed: killedCampaigns })
+        : checkSpendCaps({ item: ap, budget, approvals: asCommitted, ledgerFile, now, killed: killedCampaigns });
       if (!c.ok) why = c.why;
     }
   }

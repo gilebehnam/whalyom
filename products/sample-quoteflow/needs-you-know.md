@@ -1,6 +1,6 @@
 # Needs you know
 
-Updated 2026-11-06T21:22:30.562Z. Most important first.
+Updated 2026-11-09T14:15:32.057Z. Most important first.
 
 - **critical** — Decision 14: How many people in your warm network fit the ICP? A count, not names. — Due Fri Nov 6
 - **decision** — Decision 1: Domain: which domain, and has the "Quoteflow" / "Quote Flow" name collision check been done? Pick domain; name — Due Fri Nov 6

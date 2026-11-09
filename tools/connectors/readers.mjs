@@ -17,6 +17,10 @@
 //   apple-search-ads-metrics spend / taps / installs per campaign and day (Campaign Management v5
 //                         reports/campaigns, POST; the OAuth token exchange is a POST too)
 //   Ad-platform rows carry a campaign id (row.campaign) for the CPA kill-switch and attribution.
+//   amazon-ads-metrics    spend / clicks / conversions / sales per Sponsored Products campaign and day
+//                         (Reporting v3, defined in amazon-ads.mjs; ACoS from spend and sales)
+//   walmart-connect-metrics spend / clicks / conversions / sales per campaign and day (snapshot reports,
+//                         defined in walmart-connect.mjs)
 //   calcom    event types → booking links (Cal.com API v2)
 //   calendly   event types → scheduling links (Calendly API v2)
 // Note: tools/metrics.mjs already pulls Stripe revenue when STRIPE_API_KEY is set; pullMetrics()
@@ -31,6 +35,8 @@ import zlib from 'node:zlib';
 import { API as REDDIT_API } from './reddit-ads.mjs';
 import { API as X_API, oauth1Sign } from './x-ads.mjs';
 import { API as APPLE_API, TOKEN_URL as APPLE_TOKEN_URL, clientSecret as appleClientSecret } from './apple-search-ads.mjs';
+import { amazonAdsMetrics } from './amazon-ads.mjs';
+import { walmartConnectMetrics } from './walmart-connect.mjs';
 
 const range = (ctx, opts) => { const days = Math.min(Math.max(Number(opts.days ?? 7), 1), 90); return { days, from: daysAgo(ctx.now, days), to: new Date(ctx.now ?? Date.now()) }; };
 
@@ -464,7 +470,8 @@ export const calendly = defineReader({
   },
 });
 
-export const metricReaders = [stripe, plausible, umami, ga4, googleAdsMetrics, tiktokAdsMetrics, linkedinAdsMetrics, microsoftAdsMetrics, redditAdsMetrics, xAdsMetrics, appleSearchAdsMetrics];
+export { amazonAdsMetrics, walmartConnectMetrics };
+export const metricReaders = [stripe, plausible, umami, ga4, googleAdsMetrics, tiktokAdsMetrics, linkedinAdsMetrics, microsoftAdsMetrics, redditAdsMetrics, xAdsMetrics, appleSearchAdsMetrics, amazonAdsMetrics, walmartConnectMetrics];
 export const linkReaders = [calcom, calendly];
 export const readers = [...metricReaders, ...linkReaders];
 

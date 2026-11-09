@@ -82,6 +82,7 @@ export function connectorCategory(name, kind) {
   if (['indexnow', 'gsc-sitemap'].includes(n)) return 'seo';
   if (['site-git', 'satellite', 'local-site', 'boosters'].includes(n)) return 'site';
   if (n === 'webhook') return 'automation';
+  if (n === 'twilio-messaging') return 'messaging';
   return 'other';
 }
 

@@ -473,7 +473,7 @@ export const creativeConnector = {
       const r = await generateCreative({ dir: ctx.dir, briefRel: item.file, env, approval: item, fetch: ctx.fetch, now: ctx.now, dryRun: Boolean(ctx.dryRun) });
       if (!r.ok) return { ok: false, detail: r.why };
       if (r.dry_run) return { ok: true, ref: 'dry-run', detail: `would ${r.preview}` };
-      return { ok: true, ref: r.id, detail: redact(`generated ${r.files.join(', ')} (${r.provider}, est. ${r.cost}); publishing needs its own approval`, env), committed_daily: 0, creative: { id: r.id, approval_draft: r.approval_draft } };
+      return { ok: true, ref: r.id, detail: redact(`generated ${r.files.join(', ')} (${r.provider}, est. ${r.cost}); publishing needs its own approval`, env), committed_daily: 0, creative: { id: r.id, kind: r.provenance?.kind ?? null, approval_draft: r.approval_draft } };
     } catch (e) { return { ok: false, detail: redact(e?.message ?? e, env) }; }
   },
 };

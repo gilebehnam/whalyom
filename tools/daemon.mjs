@@ -8,6 +8,11 @@
 // reallocate and social-inbox only write drafts and runs/ files: every budget change or reply they propose
 // still goes through approvals, policy and execute. autonomy-report only reads approvals and writes reports.
 // Run files written after apply-results (crm, creators, bandit, competitor-watch) merge in the next cycle.
+// Before the products, once per cycle, the decisions step: `cloud/agency.mjs export-decisions` (only when an
+// agency tenant has queued client decisions in tenants/<tid>/decisions.json) moves them into
+// state/inbox-decisions.json, then `apply-decisions.mjs` applies that inbox (only when it holds decisions or
+// requests), so policy and execute see the owner's and clients' decisions in the same cycle. It is hub-wide,
+// so OM_DAEMON_ONLY (a per-product test filter) leaves it out.
 // Every step is its own child process: a failing step is logged and the next one still runs; a new
 // step whose script is missing is left out.
 // Then once: knowledge cycle (fetches feeds when due, merges verified facts, rebuilds briefs),
@@ -124,12 +129,39 @@ export async function cycle({ leaseMs = 30 * 60 * 1000, release = true } = {}) {
   return summary;
 }
 
+// The decisions step's commands for this cycle (pure: reads files only). base is the repo root.
+export function decisionSteps({ base = root } = {}) {
+  const steps = [];
+  const tdir = path.join(base, 'tenants');
+  const queued = (() => {
+    try {
+      return fs.readdirSync(tdir).filter((d) => /^t[0-9a-f]{10}$/.test(d)).some((d) => {
+        try { const q = JSON.parse(fs.readFileSync(path.join(tdir, d, 'decisions.json'), 'utf8')); return Array.isArray(q) && q.some((x) => x && !x.exported_at && !x.dropped_at); } catch { return false; }
+      });
+    } catch { return false; }
+  })();
+  if (queued && fs.existsSync(path.join(base, 'tools', 'cloud', 'agency.mjs'))) steps.push(['cloud/agency.mjs', ['export-decisions']]);
+  const inboxFile = path.join(base, 'state', 'inbox-decisions.json');
+  const pending = (() => { try { const j = JSON.parse(fs.readFileSync(inboxFile, 'utf8')); return (Array.isArray(j?.decisions) && j.decisions.length > 0) || (Array.isArray(j?.requests) && j.requests.length > 0); } catch { return false; } })();
+  // After an export the inbox will hold the client decisions even if it was empty before.
+  if (pending || queued) steps.push(['apply-decisions.mjs', []]);
+  return steps;
+}
+
 async function runProducts(summary, leaseMs) {
   const hasKillswitch = fs.existsSync(path.join(tools, 'killswitch.mjs'));
   const opt = (s, args = []) => (fs.existsSync(path.join(tools, s)) ? [[s, args]] : []);
   const today = new Date().toISOString().slice(0, 10);
   const skipExecute = process.env.OM_SKIP_EXECUTE === '1';
   if (skipExecute) summary.execute = 'skipped (OM_SKIP_EXECUTE=1: another scheduler executes approvals)';
+  // Decisions first (agency client decisions exported, then every queued decision applied), hub-wide.
+  if (!only.length) {
+    const ds = decisionSteps();
+    if (ds.length) {
+      summary.decisions = [];
+      for (const [s, a] of ds) summary.decisions.push({ ...(await run(s, a)), step: s.replace(/\.mjs$/, '').replace(/^cloud\//, '') });
+    }
+  }
   for (const slug of activeProducts()) {
     // Renew before each product so a long cycle keeps its lease; stop if another scheduler took it.
     if (!takeLease({ holder, ttlMs: leaseMs }).ok) { summary.lease_lost = true; break; }
@@ -158,7 +190,7 @@ async function runProducts(summary, leaseMs) {
     summary.products.push({ slug, ok: steps.every((s) => s.ok), steps });
   }
   for (const [s, a] of [['knowledge.mjs', ['cycle']], ...(fs.existsSync(path.join(tools, 'integrations.mjs')) ? [['integrations.mjs', []]] : []), ['outcomes.mjs', []], ['ai-modes.mjs', ['schedule']], ...opt('routing.mjs'), ['product-review.mjs', []], ['needs-you-know.mjs', []], ['build-state.mjs', []], ['live-snapshot.mjs', ['--idle']]]) summary.global.push(await run(s, a));
-  summary.ok = summary.products.every((p) => p.ok) && summary.global.every((s) => s.ok);
+  summary.ok = summary.products.every((p) => p.ok) && summary.global.every((s) => s.ok) && (summary.decisions ?? []).every((s) => s.ok);
 }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);

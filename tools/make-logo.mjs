@@ -101,7 +101,9 @@ export const stackedSvg = ({ color = 'currentColor' } = {}) => {
   const wm = wordmark({ color, x: (W - ww) / 2, y: 112, scale: 0.6 });
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${r2(W)} ${r2(112 + w.height * 0.6 + 4)}" role="img" aria-label="Whalyom"><title>Whalyom</title><g transform="translate(${r2((W - 100) / 2)} 0)">${markInner({ color })}</g>${wm.svg}</svg>\n`;
 };
-export const faviconSvg = () => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="${NIGHT}"/><g transform="translate(6 6) scale(.88)">${markInner({ color: CREAM })}</g></svg>\n`;
+// The kit's symbol artwork on the ink tile (the vector redraw above stays for print and tests only).
+const symbolUri = () => { try { return `data:image/png;base64,${fs.readFileSync(path.join(brand, 'web', 'whalyom-symbol-64.png')).toString('base64')}`; } catch { return ''; } };
+export const faviconSvg = () => `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="${NIGHT}"/><image x="12" y="12" width="76" height="76" href="${symbolUri()}"/></svg>\n`;
 export const liveMark = () => `<svg class="mark" viewBox="0 0 100 100" aria-hidden="true">${markInner()}</svg>`;
 
 // ── PNG through a local headless browser (dev only) ──
@@ -157,7 +159,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     // The masthead shows the approved logo artwork from the brand kit (never the wordmark as live text):
     // English or Persian by the page language, as data URIs so the local and online Command Center need no extra route.
     const uri = (f) => `data:image/png;base64,${fs.readFileSync(path.join(brand, 'web', f)).toString('base64')}`;
-    const logos = `<!-- brand:logo --><style>.brand .logo{height:52px;width:auto;display:block;margin-inline-start:-8px}.brand .logo-fa,html[data-web-lang=fa] .brand .logo-en{display:none}html[data-web-lang=fa] .brand .logo-fa{display:block}.brand .wy-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}@media(max-width:700px){.brand .logo{height:40px}}</style>` +
+    const logos = `<!-- brand:logo --><style>.brand .logo{height:36px;width:auto;display:block}.brand .logo-fa,html[data-web-lang=fa] .brand .logo-en{display:none}html[data-web-lang=fa] .brand .logo-fa{display:block}.brand .wy-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}@media(max-width:700px){.brand .logo{height:28px}}</style>` +
       `<img class="logo logo-en" src="${uri('whalyom-horizontal-en.png')}" alt="WHALYOM"><img class="logo logo-fa" src="${uri('whalyom-horizontal-fa.png')}" alt="والیوم"><!-- /brand:logo -->`;
     html = /<!-- brand:logo -->[\s\S]*?<!-- \/brand:logo -->/.test(html) ? html.replace(/<!-- brand:logo -->[\s\S]*?<!-- \/brand:logo -->/, () => logos) : html.replace(/<svg class="mark"[\s\S]*?<\/svg>/, () => logos);
     html = html.replace(/<h1 aria-label="Whalyom">[\s\S]*?<\/h1>/, '<h1 class="wy-sr">Whalyom</h1>');

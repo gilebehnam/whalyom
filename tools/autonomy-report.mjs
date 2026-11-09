@@ -16,7 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readJson, writeJson, root } from './lib/env.mjs';
-import { earnedTypes, earnedKey } from './lib/earned.mjs';
+import { earnedTypes, earnedKey, NEVER_EARNED } from './lib/earned.mjs';
 
 // Same table as tools/policy.mjs: action types that are automatic at each level.
 export const LEVEL_AUTO = {
@@ -104,6 +104,7 @@ export function autonomyRows(product = {}, approvals = [], { env = process.env }
     if (allowed.has(type)) { mode = 'level'; why = `automatic at level ${level}`; }
     else if (isNever(type)) { mode = 'never'; why = 'never_auto in product.json: always waits for the owner'; }
     else if (type === 'price') { mode = 'never'; why = 'price changes never earn autonomy'; }
+    else if (NEVER_EARNED.has(type)) { mode = 'never'; why = `"${type}" never earns autonomy: the owner approves each one`; }
     else if (types && !types.includes(type)) { mode = 'manual'; why = 'not in autonomy.earned.types'; }
     else if (eligible.has(k)) {
       if (cfg) { mode = 'earned'; why = `earned: the owner approved the last ${eligible.get(k)} unchanged`; }

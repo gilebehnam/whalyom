@@ -1,6 +1,6 @@
 # Market OSINT & Intelligence: what is true now
 
-Generated 2026-11-06 by `node tools/knowledge.mjs brief` from knowledge/base.json (1152 usable verified facts). Do not edit: change the knowledge base instead. Newer rules here beat older playbook rules; if a rule here conflicts with what you were going to do, follow the rule and say so in your summary.
+Generated 2026-11-09 by `node tools/knowledge.mjs brief` from knowledge/base.json (1152 usable verified facts). Do not edit: change the knowledge base instead. Newer rules here beat older playbook rules; if a rule here conflicts with what you were going to do, follow the rule and say so in your summary.
 
 ## Search engines and SEO rules
 

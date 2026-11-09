@@ -11,6 +11,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readJson, writeJson, root } from './lib/env.mjs';
+// Circular with connectors/budgets.mjs (which imports readLedger, committedDaily and friends from here). Safe:
+// both sides use the other's functions only when called, never while the modules load.
+import { liveCommittedDaily } from './connectors/budgets.mjs';
+export { liveCommittedDaily };
 
 export function readLedger(file) {
   if (!fs.existsSync(file)) return [];
@@ -97,11 +101,15 @@ export function committedDaily({ approvals = [], ledger = [], killed = [], exclu
 // The executor's cap check for one spend item: the daily total across every live campaign plus this
 // one must fit daily_cap, and spend so far plus that daily total for every day left in the month must
 // fit monthly_cap. Returns {ok, why, amount, committed, spent, daysLeft, projected}.
+// The live total is liveCommittedDaily(): an executed (or approved, in flight, or done-by-hand) budget_update
+// replaces the daily amount of the campaign it changed instead of adding a second campaign's worth; with no
+// budget updates it equals committedDaily(). A budget_update item itself is checked with
+// checkBudgetUpdateCaps() in tools/connectors/budgets.mjs.
 export function checkSpendCaps({ item, budget = {}, approvals = [], ledgerFile, now = new Date().toISOString(), killed = [] }) {
   const amount = Number(item?.amount ?? 0);
   const ledger = ledgerFile ? readLedger(ledgerFile) : [];
   const spent = ledgerFile ? spentThisMonth(ledgerFile, now) : 0;
-  const committed = committedDaily({ approvals, ledger, killed, excludeId: item?.id });
+  const committed = liveCommittedDaily({ approvals, ledger, killed, excludeId: item?.id });
   const daysLeft = daysLeftInMonth(now);
   const daily = Number(budget.daily_cap ?? 0), monthly = Number(budget.monthly_cap ?? 0);
   const newDaily = Math.round((committed + amount) * 100) / 100;

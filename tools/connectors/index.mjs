@@ -17,6 +17,8 @@ import voice from './voice.mjs';
 import amazonAds from './amazon-ads.mjs';
 import walmartConnect from './walmart-connect.mjs';
 import siteInstall from './site-install.mjs';
+import twilioMessaging from './twilio-messaging.mjs';
+import { creativeConnector } from '../creative-gen.mjs';
 
 // Keyed connectors first (extra.mjs adds social, blogs, newsletters, indexing and ads APIs, each
 // on its own channels only); the site repo, then the site's satellite, then local-site (zero-key
@@ -26,8 +28,11 @@ import siteInstall from './site-install.mjs';
 // Facebook Page, TikTok Content Posting), the Twilio voice caller (type "call", one call per
 // approval) and the retail-media APIs (Amazon Ads, Walmart Connect; created paused, Amazon only active when the approval says activate) each accept only
 // their own channels and sit before the site publishers and the webhook catch-all. A module that
-// extra.mjs also lists is kept once (first position wins).
-const own = [instagram, facebook, tiktokPosting, voice, amazonAds, walmartConnect, siteInstall];
+// extra.mjs also lists is kept once (first position wins). The Twilio messaging connector (one SMS or
+// WhatsApp message per approved "send" on channel sms / whatsapp, opt-in required) and the AI creative
+// generator (type "creative": generates from the approved brief, publishes nothing; the executor queues
+// the publish approval draft through runs/) sit there too, before the webhook catch-all.
+const own = [instagram, facebook, tiktokPosting, voice, twilioMessaging, amazonAds, walmartConnect, siteInstall, creativeConnector];
 const ordered = [...budgetConnectors, boosters, metaAds, resend, ...extraKeyed, ...own, siteGit, satelliteConn, localSite, webhook, ...extraExporters];
 export const connectors = ordered.filter((c, i) => ordered.findIndex((d) => d.name === c.name) === i);
 
