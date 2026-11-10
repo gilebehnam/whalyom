@@ -300,6 +300,7 @@ Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, founder of
 | Phone | +98 912 464 75 35 |
 | Telegram | [@gilebehnam](https://t.me/gilebehnam) |
 | LinkedIn | [behnamjafari](https://www.linkedin.com/in/behnamjafari) |
+| X | [@gilebehnam](https://x.com/gilebehnam) |
 | Instagram | [@gilebehnam](https://www.instagram.com/gilebehnam/) |
 | A 30-minute call | [Book on Calendly](https://calendly.com/bjafaribox/30min) |
 | The hosted version | [whalyom.com](https://whalyom.com) |
