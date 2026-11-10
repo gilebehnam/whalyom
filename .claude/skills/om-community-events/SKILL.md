@@ -1,6 +1,6 @@
 ---
 name: om-community-events
-description: Run community and events in Whalyom: the community's purpose and who it is for, rituals and the programming calendar, moderation and safety, an ambassador program with disclosed benefits, meetups and virtual summits (run sheets, speakers, consent-based registration, follow-up), and measuring community by active members, answered questions, member-sourced leads and retention. Use for any task about a Discord, Slack or forum community, ambassadors, meetups, webinars at scale, summits or event presence.
+description: "Run community and events in Whalyom: the community's purpose and who it is for, rituals and the programming calendar, moderation and safety, an ambassador program with disclosed benefits, meetups and virtual summits (run sheets, speakers, consent-based registration, follow-up), and measuring community by active members, answered questions, member-sourced leads and retention. Use for any task about a Discord, Slack or forum community, ambassadors, meetups, webinars at scale, summits or event presence."
 ---
 
 # Community and events

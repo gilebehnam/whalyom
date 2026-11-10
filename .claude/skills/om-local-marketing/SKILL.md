@@ -1,6 +1,6 @@
 ---
 name: om-local-marketing
-description: Run local and field marketing in Whalyom: Google Business Profile, Apple Business Connect and Bing Places completeness, posts, Q&A, photos and hours, NAP consistency and citations, reviews asked of every customer, local landing pages with real local content, local service ads and radius campaigns inside the caps, partnerships with nearby businesses, and in-store and event promotions with trackable codes. Use for any business with a location or a service area.
+description: "Run local and field marketing in Whalyom: Google Business Profile, Apple Business Connect and Bing Places completeness, posts, Q&A, photos and hours, NAP consistency and citations, reviews asked of every customer, local landing pages with real local content, local service ads and radius campaigns inside the caps, partnerships with nearby businesses, and in-store and event promotions with trackable codes. Use for any business with a location or a service area."
 ---
 
 # Local and field marketing

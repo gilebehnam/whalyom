@@ -1,3 +1,8 @@
+---
+name: market-launch
+description: "Product/Service Launch Playbook Generator. Generate a complete, week-by-week launch playbook for any product, service, or feature launch."
+---
+
 # Product/Service Launch Playbook Generator
 
 ## Skill Purpose

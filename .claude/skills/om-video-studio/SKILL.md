@@ -1,6 +1,6 @@
 ---
 name: om-video-studio
-description: Run the video and audio studio in Whalyom: one long recording cut into many pieces, script structure (hook, payoff, CTA), captions and subtitles, thumbnail and title tests, retention graph reading, podcasts, webinars, live streams, sonic branding, music and footage rights, and labels for AI-generated media. Use for any task about video, YouTube, Shorts, podcasts, webinars, live streams, captions, thumbnails or audio identity.
+description: "Run the video and audio studio in Whalyom: one long recording cut into many pieces, script structure (hook, payoff, CTA), captions and subtitles, thumbnail and title tests, retention graph reading, podcasts, webinars, live streams, sonic branding, music and footage rights, and labels for AI-generated media. Use for any task about video, YouTube, Shorts, podcasts, webinars, live streams, captions, thumbnails or audio identity."
 ---
 
 # Video and audio studio

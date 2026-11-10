@@ -9,6 +9,7 @@
 <p align="center">
   <a href="https://github.com/gilebehnam/whalyom/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/gilebehnam/whalyom?style=flat&color=F2C230"></a>
   <a href="https://github.com/gilebehnam/whalyom/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/gilebehnam/whalyom?style=flat&color=7FE6F2"></a>
+  <a href="https://skills.sh/gilebehnam/whalyom"><img alt="skills.sh installs" src="https://skills.sh/b/gilebehnam/whalyom"></a>
   <a href="https://github.com/gilebehnam/whalyom/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/gilebehnam/whalyom?style=flat&color=9BE7A2"></a>
   <a href="https://github.com/gilebehnam/whalyom/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/gilebehnam/whalyom?style=flat&color=2b6cb0"></a>
   <a href="https://github.com/gilebehnam/whalyom/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/gilebehnam/whalyom?style=flat&color=7FE6F2"></a>
@@ -60,6 +61,12 @@ find -> plan -> make -> review -> you approve -> send -> measure -> learn
 Every number above is counted from the files by `npm run stats`.
 
 ## Install in one minute
+
+**With the skills CLI (any agent that reads Agent Skills):**
+
+```bash
+npx skills add gilebehnam/whalyom
+```
 
 **As a Claude Code plugin:**
 

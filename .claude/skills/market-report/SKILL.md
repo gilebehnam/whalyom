@@ -1,3 +1,8 @@
+---
+name: market-report
+description: "Marketing Report Generator (Markdown Format). Generate a comprehensive, professionally formatted marketing report in Markdown."
+---
+
 # Marketing Report Generator (Markdown Format)
 
 ## Skill Purpose

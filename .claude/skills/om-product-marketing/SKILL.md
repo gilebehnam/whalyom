@@ -1,6 +1,6 @@
 ---
 name: om-product-marketing
-description: Run product marketing in Whalyom: buyer research turned into positioning per segment, release tiers for launches, messaging per feature (problem, value, proof), the sales enablement kit, a customer evidence program with written consent, the pricing page and win/loss inputs. Use for any task about positioning, a feature or release launch, battlecards, case studies, sales collateral, the pricing page or why deals are won and lost.
+description: "Run product marketing in Whalyom: buyer research turned into positioning per segment, release tiers for launches, messaging per feature (problem, value, proof), the sales enablement kit, a customer evidence program with written consent, the pricing page and win/loss inputs. Use for any task about positioning, a feature or release launch, battlecards, case studies, sales collateral, the pricing page or why deals are won and lost."
 ---
 
 # Product marketing

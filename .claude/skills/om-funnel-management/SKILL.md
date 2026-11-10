@@ -1,6 +1,6 @@
 ---
 name: om-funnel-management
-description: Manage the lead pipeline in Whalyom: how many leads arrive, which stage each one is in and for how long, which channels turn leads into sales, and what happens next. Covers the stage model, the funnel ledger, how agents record stage changes, SLAs, stuck leads and the funnel report. Use for any task about leads, pipeline, funnel stages, conversion rates or whether leads became sales.
+description: "Manage the lead pipeline in Whalyom: how many leads arrive, which stage each one is in and for how long, which channels turn leads into sales, and what happens next. Covers the stage model, the funnel ledger, how agents record stage changes, SLAs, stuck leads and the funnel report. Use for any task about leads, pipeline, funnel stages, conversion rates or whether leads became sales."
 ---
 
 # Funnel management

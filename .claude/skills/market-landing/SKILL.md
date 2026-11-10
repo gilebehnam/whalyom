@@ -1,3 +1,8 @@
+---
+name: market-landing
+description: "Landing Page CRO Analysis. Perform a comprehensive Conversion Rate Optimization (CRO) analysis on any landing page."
+---
+
 # Landing Page CRO Analysis
 
 ## Skill Purpose

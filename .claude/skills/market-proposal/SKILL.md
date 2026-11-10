@@ -1,3 +1,8 @@
+---
+name: market-proposal
+description: "Client Proposal Generator for Marketing Services. Generate a professional, client-ready marketing services proposal."
+---
+
 # Client Proposal Generator for Marketing Services
 
 ## Skill Purpose

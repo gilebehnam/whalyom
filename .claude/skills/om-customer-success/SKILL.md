@@ -1,6 +1,6 @@
 ---
 name: om-customer-success
-description: Run customer success and support in Whalyom: ticket taxonomy and deflection through the help center, macros in the brand voice, a health score from usage, billing and support signals, onboarding to first value, QBRs for B2B accounts, closing the voice-of-customer loop to product and marketing, NPS and CSAT done right, and escalation. Use for any task about support tickets, help docs, onboarding, account health, churn risk, surveys or customer feedback.
+description: "Run customer success and support in Whalyom: ticket taxonomy and deflection through the help center, macros in the brand voice, a health score from usage, billing and support signals, onboarding to first value, QBRs for B2B accounts, closing the voice-of-customer loop to product and marketing, NPS and CSAT done right, and escalation. Use for any task about support tickets, help docs, onboarding, account health, churn risk, surveys or customer feedback."
 ---
 
 # Customer success and support

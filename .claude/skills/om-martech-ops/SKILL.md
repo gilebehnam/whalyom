@@ -1,6 +1,6 @@
 ---
 name: om-martech-ops
-description: Run web and martech engineering in Whalyom: live site changes as reviewed diffs or plugin files after approval, staging first with a rollback plan, CMS operations on WordPress and Shopify, tag governance, stack audits, email HTML that renders, form to CRM integrations with consent fields, Core Web Vitals and server-side conversions with deduplication. Use for any task that touches the live site, tags, tracking, the CMS, email templates, forms, integrations or page speed.
+description: "Run web and martech engineering in Whalyom: live site changes as reviewed diffs or plugin files after approval, staging first with a rollback plan, CMS operations on WordPress and Shopify, tag governance, stack audits, email HTML that renders, form to CRM integrations with consent fields, Core Web Vitals and server-side conversions with deduplication. Use for any task that touches the live site, tags, tracking, the CMS, email templates, forms, integrations or page speed."
 ---
 
 # Web and martech engineering
