@@ -6,6 +6,24 @@
 
 <p align="center"><a href="https://whalyom.com/open-source">Website</a> · <a href="STORY.md">The story</a> · <a href="docs/COMMANDS.md">Commands</a> · <a href="rules/README.md">Rules</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="TROUBLESHOOTING.md">Troubleshooting</a></p>
 
+<p align="center">
+  <a href="https://github.com/gilebehnam/whalyom/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/gilebehnam/whalyom?style=flat&color=F2C230"></a>
+  <a href="https://github.com/gilebehnam/whalyom/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/gilebehnam/whalyom?style=flat&color=7FE6F2"></a>
+  <a href="https://github.com/gilebehnam/whalyom/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/gilebehnam/whalyom?style=flat&color=9BE7A2"></a>
+  <a href="https://github.com/gilebehnam/whalyom/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/gilebehnam/whalyom?style=flat&color=2b6cb0"></a>
+  <a href="https://github.com/gilebehnam/whalyom/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/gilebehnam/whalyom?style=flat&color=7FE6F2"></a>
+</p>
+
+<div align="center">
+<table>
+<tr>
+<td width="33%" align="center"><b><a href="#install-in-one-minute">Install in one minute</a></b><br><sub>Claude Code plugin or full workspace</sub></td>
+<td width="33%" align="center"><b><a href="https://github.com/gilebehnam/whalyom/discussions">Community</a></b><br><sub>Q&amp;A · Show and tell · Ideas</sub></td>
+<td width="33%" align="center"><b><a href="https://github.com/gilebehnam/whalyom/labels/good%20first%20issue">Contribute</a></b><br><sub>Good first issues, translations welcome</sub></td>
+</tr>
+</table>
+</div>
+
 <p align="center"><a href="https://www.star-history.com/#gilebehnam/whalyom&Date"><img src="https://api.star-history.com/svg?repos=gilebehnam/whalyom&type=Date&theme=dark" alt="Star history" width="560"></a></p>
 
 > [!WARNING]
