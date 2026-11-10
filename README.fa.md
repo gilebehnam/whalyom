@@ -2,7 +2,7 @@
 
 <p align="center"><img src="assets/brand/hero.svg" alt="والیوم" width="100%"></p>
 
-<p align="center"><a href="README.md">English</a> · <b>فارسی</b> · <a href="docs/ar/README.md">العربية</a> · <a href="docs/tr/README.md">Türkçe</a> · <a href="docs/es/README.md">Español</a> · <a href="docs/de/README.md">Deutsch</a> · <a href="docs/fr/README.md">Français</a> · <a href="docs/zh-CN/README.md">简体中文</a> · <a href="docs/ja/README.md">日本語</a> · <a href="docs/pt-BR/README.md">Português (Brasil)</a></p>
+<p align="center"><a href="README.md">English</a> · <b>فارسی</b> · <a href="docs/ar/README.md">العربية</a> · <a href="docs/tr/README.md">Türkçe</a> · <a href="docs/es/README.md">Español</a> · <a href="docs/de/README.md">Deutsch</a> · <a href="docs/fr/README.md">Français</a> · <a href="docs/zh-CN/README.md">简体中文</a> · <a href="docs/ja/README.md">日本語</a> · <a href="docs/pt-BR/README.md">Português (Brasil)</a> · <a href="docs/ko/README.md">한국어</a></p>
 
 <p align="center"><a href="https://whalyom.com/open-source?lang=fa">وب‌سایت</a> · <a href="STORY.md">داستان</a> · <a href="docs/COMMANDS.md">دستورها</a> · <a href="rules/README.md">قانون‌ها</a></p>
 
