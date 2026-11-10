@@ -283,14 +283,16 @@ From 46 official and research sources. Each fact is dated, and a fact-verifier a
 
 Whalyom is made by **[Whalya](https://github.com/whalya-studio)**, a product-led venture studio.
 
-| Product | What it does |
-|:--|:--|
-| **[Whalory](https://github.com/gilebehnam/whalory)** | Makes the AI you already use write like a professional copywriter, in English and Persian, with local linters. |
-| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. |
+| Product | What it does | Website |
+|:--|:--|:--|
+| **[Whalory](https://github.com/gilebehnam/whalory)** | Makes the AI you already use write like a professional copywriter, in English and Persian, with local linters. | [whalory.com](https://whalory.com) |
+| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. | [whalyon.com](https://whalyon.com) |
+
+Whalya was founded by **[Behnam Jafari Balalami](https://behnaam.com)**. More about the studio: [github.com/whalya-studio](https://github.com/whalya-studio).
 
 ## Who makes it
 
-Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, Founder of Whalya Venture Studio (Whalyom, Whalory, Whalyon), Tehran.
+Whalyom is made by **[Behnam Jafari Balalami](https://behnaam.com)**, founder of Whalya, a product-led venture studio (Whalyom, Whalory, Whalyon), Tehran.
 
 | | |
 |---|---|
