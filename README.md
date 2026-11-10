@@ -24,6 +24,8 @@ Nothing leaves without your yes.
 find -> plan -> make -> review -> you approve -> send -> measure -> learn
 ```
 
+> ⭐ **If Whalyom is useful to you, star this repository.** Stars help other founders and small teams find it.
+
 ## The numbers
 
 | | |
@@ -231,6 +233,35 @@ The hosted one is for people who want the result without running anything.
 ## Works with
 
 Claude Code (full: agents, skills, commands, workflows, MCP server) · Codex (skills, commands as prompts, `AGENTS.md`) · any agent that reads `AGENTS.md` and Agent Skills.
+
+## FAQ
+
+**Is Whalyom free?**
+Yes. This repository is the whole engine, under the MIT license, and it runs on your own Claude Code or Codex subscription. Whalyom Cloud is the paid, hosted option for people who want the result without running anything.
+
+**Can it send email, post or spend money without me?**
+No. Nothing goes out without your yes, and spend stays inside the caps you set. Both are rules enforced in code; see [rules/](rules/README.md).
+
+**Which AI coding tools does it work with?**
+Claude Code gets everything: agents, skills, commands, workflows and the MCP server. Codex gets the skills, the commands as prompts and `AGENTS.md`. Any agent that reads `AGENTS.md` and Agent Skills can use it too.
+
+**What does it do for SEO and AI search?**
+`/seo-sprint` builds a keyword cluster, briefs, articles, schema, internal links and indexing. `/ai-search` writes citable passages and `llms.txt`, and tracks share of answer per engine.
+
+**Where do its marketing facts come from?**
+From 46 official and research sources. Each fact is dated, and a fact-verifier agent tries to reject it before it is kept.
+
+**How do I install it?**
+`claude plugin marketplace add gilebehnam/whalyom`, then `claude plugin install whalyom@whalyom`. The full workspace is in [Install in one minute](#install-in-one-minute).
+
+## More from Whalya
+
+Whalyom is made by **[Whalya](https://github.com/whalya-studio)**, a product-led venture studio.
+
+| Product | What it does |
+|:--|:--|
+| **[Whalory](https://github.com/gilebehnam/whalory)** | Makes the AI you already use write like a professional copywriter, in English and Persian, with local linters. |
+| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. |
 
 ## Who makes it
 
